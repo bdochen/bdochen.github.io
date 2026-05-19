@@ -1,4 +1,4 @@
-name: 每6小时抓取
+name: 定期抓取IPTV
 
 on:
   schedule:
@@ -14,7 +14,7 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
       
-      - name: 抓取并保存为index.html
+      - name: 抓取并保存为iptv.html
         run: |
           curl -s "http://47.110.243.216:51234/" > iptv.html
           echo "抓取完成，文件大小："
@@ -24,6 +24,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html
+          git add iptv.html
           git diff --staged --quiet || git commit -m "自动抓取更新 $(date '+%Y-%m-%d %H:%M:%S')"
           git push
