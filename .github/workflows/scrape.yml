@@ -2,7 +2,7 @@ name: 每6小时抓取
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */4 * * *'
   workflow_dispatch:
 
 jobs:
@@ -16,9 +16,9 @@ jobs:
       
       - name: 抓取并保存为index.html
         run: |
-          curl -s "http://47.110.243.216:51234/" > index.html
+          curl -s "http://47.110.243.216:51234/" > iptv.html
           echo "抓取完成，文件大小："
-          ls -lh index.html
+          ls -lh iptv.html
       
       - name: 提交更改
         run: |
