@@ -1,0 +1,26 @@
+name: 爬取EPG信息
+
+on:
+  workflow_dispatch:  # 手动触发
+  schedule:
+    - cron: '0 */4 * * *' # 每小时执行一次（可按需改）
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Download playback.xml
+        run: |
+          curl -o playback.xml "http://47.110.243.216:51234/playback.xml"
+          ls -l playback.xml  # 看是否生成
+
+      - name: Commit & Push
+        uses: ad-m/github-push-action@master
+        with:
+          branch: ${{ github.ref }}
+          message: "auto update playback.xml"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
