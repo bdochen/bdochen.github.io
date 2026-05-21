@@ -1,0 +1,32 @@
+name: EPG自动更新
+
+on:
+  workflow_dispatch:    # 手动运行
+  schedule:
+    - cron: '0 4 * * *' # 每天凌晨4点自动更新
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取仓库代码
+        uses: actions/checkout@v4
+
+      - name: 安装Python环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 安装依赖
+        run: pip install requests
+
+      - name: 执行EPG处理脚本
+        run: python epg_convert.py
+
+      - name: 提交并推送更新文件
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add playback.xml
+          git commit -m "自动更新EPG节目表 $(date +%Y-%m-%d)"
+          git push
