@@ -24,7 +24,7 @@ jobs:
         run: pip install requests
 
       - name: 运行爬取
-        run: python crawl.py
+        run: python epg_crawl.py
 
       - name: 提交更新（仅变化时提交）
         run: |
