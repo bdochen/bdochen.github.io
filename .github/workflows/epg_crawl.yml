@@ -6,38 +6,36 @@ on:
     - cron: '0 * * * *'
 
 jobs:
-  crawl:
+  run:
     runs-on: ubuntu-latest
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.ACTION_TOKEN }}
-
-      - name: Set up Python
+      - uses: actions/checkout@v4
+        name: 拉取代码
+      
+      - name: 安装 Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install requests
+      - name: 安装依赖
         run: pip install requests
 
-      - name: Run Python crawler
+      - name: 运行爬取
         run: python crawl.py
 
-      - name: Commit & Push only if changed
+      - name: 提交更新（仅变化时提交）
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add playback.xml
 
           if git diff --cached --quiet; then
-            echo "✅ 文件无变化，跳过提交"
+            echo "✅ 无变化，跳过提交"
             exit 0
           fi
 
-          git commit -m "Auto update playback.xml (Python)"
+          git commit -m "Auto update playback.xml"
           git push
