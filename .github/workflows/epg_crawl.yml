@@ -1,26 +1,37 @@
 name: 爬取EPG信息
 
+
 on:
   workflow_dispatch:  # 手动触发
   schedule:
-    - cron: '0 */4 * * *' # 每小时执行一次（可按需改）
+    - cron: '0 */5 * * *' # 每小时执行一次
 
 jobs:
   crawl:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # 强制用 Node24，消除警告
+      
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Download playback.xml
         run: |
-          curl -o playback.xml "http://47.110.243.216:51234/playback.xml"
-          ls -l playback.xml  # 看是否生成
+          curl -sSL --retry 3 --connect-timeout 10 -o playback.xml "http://47.110.243.216:51234/playback.xml"
+          ls -lh playback.xml
 
-      - name: Commit & Push
+      # 自动提交更新
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add playback.xml
+          git commit -m "Auto-update playback.xml" || exit 0
+
+      # 推送到仓库（无警告版）
+      - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           branch: ${{ github.ref }}
-          message: "auto update playback.xml"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
