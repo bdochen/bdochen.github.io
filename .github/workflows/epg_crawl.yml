@@ -1,9 +1,9 @@
-name: Crawl playback.xml
+name: Crawl playback.xml (Python)
 
 on:
-  workflow_dispatch:    # 手动触发
+  workflow_dispatch:
   schedule:
-    - cron: '0 */4 * * *' # 每小时自动爬一次
+    - cron: '0 * * * *'
 
 jobs:
   crawl:
@@ -12,29 +12,32 @@ jobs:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          token: ${{ secrets.ACTION_TOKEN }}
 
-      # 下载 XML
-      - name: Download playback.xml
-        run: |
-          curl -sSL --retry 3 --connect-timeout 10 -o playback.xml "http://47.110.243.216:51234/playback.xml"
-          cat playback.xml  # 打印内容方便日志查看
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-      # 只有文件变化才提交，不变就直接跳过
+      - name: Install requests
+        run: pip install requests
+
+      - name: Run Python crawler
+        run: python crawl.py
+
       - name: Commit & Push only if changed
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add playback.xml
 
-          # 判断文件是否变化
           if git diff --cached --quiet; then
-            echo "✅ 文件没有变化，跳过提交"
+            echo "✅ 文件无变化，跳过提交"
             exit 0
           fi
 
-          git commit -m "Auto update playback.xml"
+          git commit -m "Auto update playback.xml (Python)"
           git push
