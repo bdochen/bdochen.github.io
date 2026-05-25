@@ -8,12 +8,13 @@ on:
     - cron: "0 4 * * *"
     # 北京时间 21:00
     - cron: "0 13 * * *"
-  workflow_dispatch:  # 支持手动触发
+  workflow_dispatch:
 
 jobs:
   run:
     runs-on: ubuntu-latest
     env:
+      TZ: Asia/Shanghai  # 关键：把系统时区改成北京时间
       QYWX_BOT_KEY: ${{ secrets.QYWX_BOT_KEY }}
       DISABLE_PUSH: "false"
       REMINDER_CONFIG: ${{ secrets.REMINDER_CONFIG }}
