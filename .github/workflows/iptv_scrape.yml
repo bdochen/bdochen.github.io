@@ -16,7 +16,7 @@ jobs:
       
       - name: 抓取并保存为iptv.html
         run: |
-          curl -s "http://219.142.193.250:3566/" > iptv.html
+          curl -s "http://47.94.35.147:26228/" > iptv.html
           echo "抓取完成，文件大小："
           ls -lh iptv.html
       
