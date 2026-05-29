@@ -3,122 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>简易在线粘贴板 | GitHub Pages</title>
+    <title>在线粘贴板</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, sans-serif;
-        }
-        body {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-            background: #f5f5f5;
-        }
-        .container {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            margin-bottom: 1rem;
-            color: #333;
-        }
-        textarea {
-            width: 100%;
-            height: 350px;
-            padding: 1rem;
-            font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            resize: vertical;
-            margin-bottom: 1rem;
-        }
-        .btn-group {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-        button {
-            padding: 10px 16px;
-            border: none;
-            border-radius: 6px;
-            background: #0969da;
-            color: white;
-            font-size: 15px;
-            cursor: pointer;
-        }
-        button:hover {
-            opacity: 0.9;
-        }
-        .link-box {
-            margin-top: 1rem;
-            padding: 10px;
-            background: #eef5ff;
-            border-radius: 6px;
-            word-break: break-all;
-        }
+        * {margin: 0;padding: 0;box-sizing: border-box;font-family: system-ui, sans-serif;}
+        body {max-width: 900px;margin: 2rem auto;padding: 0 1rem;background: #f5f5f5;}
+        .container {background: #fff;padding: 2rem;border-radius: 10px;box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+        h1 {margin-bottom: 1rem;color: #333;}
+        textarea {width: 100%;height: 350px;padding: 1rem;font-size: 16px;border: 1px solid #ddd;border-radius: 8px;resize: vertical;margin-bottom: 1rem;}
+        .btn-group {display: flex;gap: 10px;flex-wrap: wrap;margin-bottom: 1rem;}
+        button {padding: 10px 16px;border: none;border-radius: 6px;background: #0969da;color: #fff;font-size: 15px;cursor: pointer;}
+        button:hover {opacity: 0.9;}
+        .link-box {padding: 10px;background: #eef5ff;border-radius: 6px;word-break: break-all;margin-bottom: 10px;}
+        /* 二维码样式 */
+        #qrcode {margin: 15px auto;display: flex;justify-content: center;}
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📋 简易在线粘贴板</h1>
-        <textarea id="content" placeholder="在这里粘贴文本/代码，生成分享链接..."></textarea>
+        <h1>📋 在线粘贴板</h1>
+        <textarea id="content" placeholder="输入或粘贴内容，生成链接分享"></textarea>
         
         <div class="btn-group">
-            <button onclick="generateLink()">生成分享链接</button>
+            <button onclick="generateLink()">生成分享链接 + 二维码</button>
             <button onclick="copyContent()">复制文本</button>
             <button onclick="clearContent()">清空</button>
         </div>
 
         <div id="linkArea" class="link-box" style="display: none;"></div>
+        <!-- 二维码显示区域 -->
+        <div id="qrcode"></div>
     </div>
 
+    <!-- 引入二维码库（无需下载，在线CDN） -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+
     <script>
-        // 页面加载时，从URL读取文本
-        window.onload = function() {
-            const params = new URLSearchParams(window.location.search);
-            const text = params.get('text');
-            if (text) {
-                document.getElementById('content').value = decodeURIComponent(text);
+        // 加解密
+        function encodeText(str) {
+            return btoa(unescape(encodeURIComponent(str)));
+        }
+        function decodeText(str) {
+            return decodeURIComponent(escape(atob(str)));
+        }
+
+        window.onload = function () {
+            const params = new URLSearchParams(location.search);
+            const code = params.get('c');
+            if (code) {
+                document.getElementById('content').value = decodeText(code);
             }
         };
 
-        // 生成分享链接
-        function generateLink() {
+        // 生成链接 + 二维码
+        async function generateLink() {
             const text = document.getElementById('content').value;
-            if (!text) {
-                alert('请先输入文本！');
-                return;
-            }
-            // 用当前域名 + 文本编码生成链接
-            const baseUrl = window.location.origin + window.location.pathname;
-            const shareUrl = baseUrl + '?text=' + encodeURIComponent(text);
-            
+            if (!text) return alert('请先输入内容');
+
+            const code = encodeText(text);
+            const baseUrl = location.origin + location.pathname;
+            const shareUrl = `${baseUrl}?c=${code}`;
+
+            // 显示链接
             const linkArea = document.getElementById('linkArea');
             linkArea.style.display = 'block';
-            linkArea.innerHTML = `✅ 分享链接：<a href="${shareUrl}" target="_blank">${shareUrl}</a>`;
-            
-            // 自动复制链接到剪贴板
-            navigator.clipboard.writeText(shareUrl).then(() => {
-                alert('链接已复制到剪贴板！');
+            linkArea.innerHTML = `分享链接：<a href="${shareUrl}" target="_blank">${shareUrl}</a>`;
+
+            // 生成二维码
+            const qrcodeContainer = document.getElementById('qrcode');
+            qrcodeContainer.innerHTML = ''; // 清空旧二维码
+            await QRCode.toCanvas(qrcodeContainer, shareUrl, {
+                width: 200,
+                margin: 1,
+                color: {
+                    dark: '#0969da',
+                    light: '#ffffff'
+                }
             });
+
+            // 复制链接
+            navigator.clipboard.writeText(shareUrl);
+            alert('链接已复制，二维码已生成！');
         }
 
-        // 一键复制文本
         function copyContent() {
-            const content = document.getElementById('content').value;
-            navigator.clipboard.writeText(content);
-            alert('文本已复制！');
+            const val = document.getElementById('content').value;
+            navigator.clipboard.writeText(val);
+            alert('文本已复制');
         }
 
-        // 清空
         function clearContent() {
             document.getElementById('content').value = '';
             document.getElementById('linkArea').style.display = 'none';
+            document.getElementById('qrcode').innerHTML = '';
         }
     </script>
 </body>
