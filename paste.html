@@ -14,7 +14,8 @@
         button {padding: 10px 16px;border: none;border-radius: 6px;background: #0969da;color: #fff;font-size: 15px;cursor: pointer;}
         button:hover {opacity: 0.9;}
         .link-box {padding: 10px;background: #eef5ff;border-radius: 6px;word-break: break-all;margin-bottom: 10px;}
-        #qrcode {margin: 15px auto;display: flex;justify-content: center;}
+        /* 二维码强制居中，不隐藏 */
+        #qrcode {margin: 20px auto;display: flex;justify-content: center;align-items: center;min-height: 220px;}
     </style>
 </head>
 <body>
@@ -29,10 +30,12 @@
         </div>
 
         <div id="linkArea" class="link-box" style="display: none;"></div>
+        <!-- 二维码容器，强制预留高度 -->
         <div id="qrcode"></div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+    <!-- 改用稳定CDN地址 -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
 
     <script>
         function encodeText(str) {
@@ -46,17 +49,17 @@
         const linkArea = document.getElementById('linkArea');
         const qrcodeEl = document.getElementById('qrcode');
 
-        // 核心：输入变化就自动更新二维码
+        // 输入变化自动更新二维码
         contentEl.addEventListener('input', updateQR);
 
-        // 页面加载时，如果有参数就解码显示
+        // 页面加载时处理参数并初始化二维码
         window.onload = function () {
             const params = new URLSearchParams(location.search);
             const code = params.get('c');
             if (code) {
                 contentEl.value = decodeText(code);
             }
-            updateQR(); // 初始化二维码
+            updateQR();
         };
 
         // 实时更新链接+二维码
@@ -76,10 +79,12 @@
             linkArea.innerHTML = `分享链接：<a href="${shareUrl}" target="_blank">${shareUrl}</a>`;
 
             qrcodeEl.innerHTML = '';
+            // 生成二维码，强制指定尺寸和边距
             await QRCode.toCanvas(qrcodeEl, shareUrl, {
                 width: 200,
-                margin: 1,
-                color: { dark: '#0969da', light: '#ffffff' }
+                margin: 2,
+                color: { dark: '#000000', light: '#ffffff' },
+                errorCorrectionLevel: 'M'
             });
         }
 
