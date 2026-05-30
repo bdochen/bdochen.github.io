@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>在线粘贴板</title>
+    <title>在线粘贴板（实时二维码）</title>
     <style>
         * {margin: 0;padding: 0;box-sizing: border-box;font-family: system-ui, sans-serif;}
         body {max-width: 900px;margin: 2rem auto;padding: 0 1rem;background: #f5f5f5;}
@@ -14,31 +14,27 @@
         button {padding: 10px 16px;border: none;border-radius: 6px;background: #0969da;color: #fff;font-size: 15px;cursor: pointer;}
         button:hover {opacity: 0.9;}
         .link-box {padding: 10px;background: #eef5ff;border-radius: 6px;word-break: break-all;margin-bottom: 10px;}
-        /* 二维码样式 */
         #qrcode {margin: 15px auto;display: flex;justify-content: center;}
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📋 在线粘贴板</h1>
-        <textarea id="content" placeholder="输入或粘贴内容，生成链接分享"></textarea>
+        <h1>📋 在线粘贴板（实时二维码）</h1>
+        <textarea id="content" placeholder="输入或粘贴内容，二维码自动更新"></textarea>
         
         <div class="btn-group">
-            <button onclick="generateLink()">生成分享链接 + 二维码</button>
+            <button onclick="copyShareLink()">复制分享链接</button>
             <button onclick="copyContent()">复制文本</button>
             <button onclick="clearContent()">清空</button>
         </div>
 
         <div id="linkArea" class="link-box" style="display: none;"></div>
-        <!-- 二维码显示区域 -->
         <div id="qrcode"></div>
     </div>
 
-    <!-- 引入二维码库（无需下载，在线CDN） -->
     <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
 
     <script>
-        // 加解密
         function encodeText(str) {
             return btoa(unescape(encodeURIComponent(str)));
         }
@@ -46,55 +42,62 @@
             return decodeURIComponent(escape(atob(str)));
         }
 
+        const contentEl = document.getElementById('content');
+        const linkArea = document.getElementById('linkArea');
+        const qrcodeEl = document.getElementById('qrcode');
+
+        // 核心：输入变化就自动更新二维码
+        contentEl.addEventListener('input', updateQR);
+
+        // 页面加载时，如果有参数就解码显示
         window.onload = function () {
             const params = new URLSearchParams(location.search);
             const code = params.get('c');
             if (code) {
-                document.getElementById('content').value = decodeText(code);
+                contentEl.value = decodeText(code);
             }
+            updateQR(); // 初始化二维码
         };
 
-        // 生成链接 + 二维码
-        async function generateLink() {
-            const text = document.getElementById('content').value;
-            if (!text) return alert('请先输入内容');
+        // 实时更新链接+二维码
+        async function updateQR() {
+            const text = contentEl.value;
+            if (!text) {
+                linkArea.style.display = 'none';
+                qrcodeEl.innerHTML = '';
+                return;
+            }
 
             const code = encodeText(text);
             const baseUrl = location.origin + location.pathname;
             const shareUrl = `${baseUrl}?c=${code}`;
 
-            // 显示链接
-            const linkArea = document.getElementById('linkArea');
             linkArea.style.display = 'block';
             linkArea.innerHTML = `分享链接：<a href="${shareUrl}" target="_blank">${shareUrl}</a>`;
 
-            // 生成二维码
-            const qrcodeContainer = document.getElementById('qrcode');
-            qrcodeContainer.innerHTML = ''; // 清空旧二维码
-            await QRCode.toCanvas(qrcodeContainer, shareUrl, {
+            qrcodeEl.innerHTML = '';
+            await QRCode.toCanvas(qrcodeEl, shareUrl, {
                 width: 200,
                 margin: 1,
-                color: {
-                    dark: '#0969da',
-                    light: '#ffffff'
-                }
+                color: { dark: '#0969da', light: '#ffffff' }
             });
+        }
 
-            // 复制链接
-            navigator.clipboard.writeText(shareUrl);
-            alert('链接已复制，二维码已生成！');
+        function copyShareLink() {
+            const a = linkArea.querySelector('a');
+            if (!a) return alert('请先输入内容');
+            navigator.clipboard.writeText(a.href);
+            alert('分享链接已复制');
         }
 
         function copyContent() {
-            const val = document.getElementById('content').value;
-            navigator.clipboard.writeText(val);
+            navigator.clipboard.writeText(contentEl.value);
             alert('文本已复制');
         }
 
         function clearContent() {
-            document.getElementById('content').value = '';
-            document.getElementById('linkArea').style.display = 'none';
-            document.getElementById('qrcode').innerHTML = '';
+            contentEl.value = '';
+            updateQR();
         }
     </script>
 </body>
