@@ -14,7 +14,6 @@
         button {padding: 10px 16px;border: none;border-radius: 6px;background: #0969da;color: #fff;font-size: 15px;cursor: pointer;}
         button:hover {opacity: 0.9;}
         .link-box {padding: 10px;background: #eef5ff;border-radius: 6px;word-break: break-all;margin-bottom: 10px;}
-        /* 二维码强制居中，不隐藏 */
         #qrcode {margin: 20px auto;display: flex;justify-content: center;align-items: center;min-height: 220px;}
         #qrcode img {max-width: 200px;max-height: 200px;}
     </style>
@@ -31,12 +30,11 @@
         </div>
 
         <div id="linkArea" class="link-box" style="display: none;"></div>
-        <!-- 二维码容器，强制预留高度 -->
         <div id="qrcode"></div>
     </div>
 
-    <!-- 改用稳定CDN地址，增加onload事件 -->
-    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js" onload="qrcodeLoaded()" onerror="alert('二维码库加载失败，请检查网络')"></script>
+    <!-- 国内 BootCDN，稳定不会被墙 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
     <script>
         function encodeText(str) {
@@ -49,28 +47,20 @@
         const contentEl = document.getElementById('content');
         const linkArea = document.getElementById('linkArea');
         const qrcodeEl = document.getElementById('qrcode');
-        let qrcodeReady = false;
 
-        // 标记二维码库已加载
-        function qrcodeLoaded() {
-            qrcodeReady = true;
-            // 加载完成后再初始化
-            initPage();
-        }
-
-        function initPage() {
+        // 页面加载
+        window.onload = function () {
             const params = new URLSearchParams(location.search);
             const code = params.get('c');
             if (code) {
                 contentEl.value = decodeText(code);
             }
             updateQR();
-        }
+        };
 
-        // 输入变化自动更新二维码
+        // 输入实时更新
         contentEl.addEventListener('input', updateQR);
 
-        // 实时更新链接+二维码
         function updateQR() {
             const text = contentEl.value;
             if (!text) {
@@ -87,26 +77,14 @@
             linkArea.innerHTML = `分享链接：<a href="${shareUrl}" target="_blank">${shareUrl}</a>`;
 
             qrcodeEl.innerHTML = '';
-            if (!qrcodeReady) {
-                qrcodeEl.innerHTML = '<p style="color: #666;">二维码库加载中...</p>';
-                return;
-            }
-
-            // 改用toDataURL，避免async/await兼容性问题
-            QRCode.toDataURL(shareUrl, {
+            // 使用 qrcodejs 1.0.0 标准用法
+            new QRCode(qrcodeEl, {
+                text: shareUrl,
                 width: 200,
-                margin: 2,
-                color: { dark: '#000000', light: '#ffffff' },
-                errorCorrectionLevel: 'M'
-            }, function (err, url) {
-                if (err) {
-                    console.error(err);
-                    qrcodeEl.innerHTML = '<p style="color: red;">二维码生成失败</p>';
-                    return;
-                }
-                const img = document.createElement('img');
-                img.src = url;
-                qrcodeEl.appendChild(img);
+                height: 200,
+                colorDark: "#000000",
+                colorLight: "#ffffff",
+                correctLevel: QRCode.CorrectLevel.M
             });
         }
 
