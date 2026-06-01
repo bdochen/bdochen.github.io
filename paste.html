@@ -16,6 +16,7 @@
         .link-box {padding: 10px;background: #eef5ff;border-radius: 6px;word-break: break-all;margin-bottom: 10px;}
         /* 二维码强制居中，不隐藏 */
         #qrcode {margin: 20px auto;display: flex;justify-content: center;align-items: center;min-height: 220px;}
+        #qrcode img {max-width: 200px;max-height: 200px;}
     </style>
 </head>
 <body>
@@ -34,8 +35,8 @@
         <div id="qrcode"></div>
     </div>
 
-    <!-- 改用稳定CDN地址 -->
-    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    <!-- 改用稳定CDN地址，增加onload事件 -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js" onload="qrcodeLoaded()" onerror="alert('二维码库加载失败，请检查网络')"></script>
 
     <script>
         function encodeText(str) {
@@ -48,22 +49,29 @@
         const contentEl = document.getElementById('content');
         const linkArea = document.getElementById('linkArea');
         const qrcodeEl = document.getElementById('qrcode');
+        let qrcodeReady = false;
 
-        // 输入变化自动更新二维码
-        contentEl.addEventListener('input', updateQR);
+        // 标记二维码库已加载
+        function qrcodeLoaded() {
+            qrcodeReady = true;
+            // 加载完成后再初始化
+            initPage();
+        }
 
-        // 页面加载时处理参数并初始化二维码
-        window.onload = function () {
+        function initPage() {
             const params = new URLSearchParams(location.search);
             const code = params.get('c');
             if (code) {
                 contentEl.value = decodeText(code);
             }
             updateQR();
-        };
+        }
+
+        // 输入变化自动更新二维码
+        contentEl.addEventListener('input', updateQR);
 
         // 实时更新链接+二维码
-        async function updateQR() {
+        function updateQR() {
             const text = contentEl.value;
             if (!text) {
                 linkArea.style.display = 'none';
@@ -79,12 +87,26 @@
             linkArea.innerHTML = `分享链接：<a href="${shareUrl}" target="_blank">${shareUrl}</a>`;
 
             qrcodeEl.innerHTML = '';
-            // 生成二维码，强制指定尺寸和边距
-            await QRCode.toCanvas(qrcodeEl, shareUrl, {
+            if (!qrcodeReady) {
+                qrcodeEl.innerHTML = '<p style="color: #666;">二维码库加载中...</p>';
+                return;
+            }
+
+            // 改用toDataURL，避免async/await兼容性问题
+            QRCode.toDataURL(shareUrl, {
                 width: 200,
                 margin: 2,
                 color: { dark: '#000000', light: '#ffffff' },
                 errorCorrectionLevel: 'M'
+            }, function (err, url) {
+                if (err) {
+                    console.error(err);
+                    qrcodeEl.innerHTML = '<p style="color: red;">二维码生成失败</p>';
+                    return;
+                }
+                const img = document.createElement('img');
+                img.src = url;
+                qrcodeEl.appendChild(img);
             });
         }
 
