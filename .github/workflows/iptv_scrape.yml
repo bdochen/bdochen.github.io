@@ -25,5 +25,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add iptv.bin
-          git diff --staged --quiet || git commit -m "自动抓取更新 $(date '+%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "update $(date '+%Y-%m-%d %H:%M:%S')"
           git push
