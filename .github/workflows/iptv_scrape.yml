@@ -16,7 +16,7 @@ jobs:
       
       - name: 抓取并保存为iptv.bin
         run: |
-          curl -s "http://47.94.35.147:26228/" > iptv.bin
+          curl -s "http://223.167.209.88:1234/" > iptv.bin
           echo "抓取完成，文件大小："
           ls -lh iptv.bin
       
