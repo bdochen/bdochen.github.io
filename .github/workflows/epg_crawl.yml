@@ -16,7 +16,7 @@ jobs:
       
       - name: 抓取并保存为play.xml
         run: |
-          curl -s "http://61.188.32.196:3000/playback.xml" > play.xml
+          curl -s "http://182.85.163.168:5678/playback.xml" > play.xml
           echo "抓取完成，文件大小："
           ls -lh play.xml
       
