@@ -1,7 +1,7 @@
-name: 自动更新ipcenter.bin
+name: zubo_scrape
 on:
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '0 8,16,23 * * *'
   workflow_dispatch:
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
           echo "#EXTM3U" > ipcenter.bin
           sed '/更新时间/d;/http:\/\/127.0.0.1/d' raw.txt | while IFS=, read -r name url;do
             [ -z "$url" ] && continue
-            echo '#EXTINF:-1 group-title="IPTV组播",'"$name" >> ipcenter.bin
+            echo '#EXTINF:-1 group-title="IPTV",'"$name" >> ipcenter.bin
             echo "$url" >> ipcenter.bin
             echo "" >> ipcenter.bin
           done
@@ -28,5 +28,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "actions@github.com"
           git add ipcenter.bin
-          git commit -m "自动更新ipcenter.bin直播源" || echo "无变更无需提交"
+          git commit -m "A" || echo "无变更无需提交"
           git push
