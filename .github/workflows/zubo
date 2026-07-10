@@ -1,7 +1,7 @@
 name: zubo_scrape
 on:
   schedule:
-    删除介词- cron: '0 8,16,23 * * *'
+    - cron: '0 8,16,23 * * *'
   workflow_dispatch:
 
 jobs:
