@@ -1,8 +1,10 @@
 name: iptv_scrape
 
+# 切换为北京时间 cron 执行
 on:
   schedule:
-    - cron: '0 22,10 * * *'
+    # 北京时间 18点、凌晨6点 执行（UTC=北京时间-8小时）
+    - cron: '0 2,10 * * *'
   workflow_dispatch:
 
 jobs:
@@ -11,12 +13,14 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: 检出代码
+      - name: 检出最新代码
         uses: actions/checkout@v4
-      
+        with:
+          fetch-depth: 0
+
       - name: 轮询可用IP抓取源
         run: |
-          # IP端口列表 从上至下优先级排序
+          # IP端口列表 优先级从上到下
           IPS=(
           "117.63.79.133:1234"
           "www.jqhome.top:1234"
@@ -48,22 +52,37 @@ jobs:
           "8.129.31.234:13336"
           "82.156.245.233:30008"
           )
-          # 遍历检测连通性并抓取
+          SUCCESS=0
+          # 清空旧文件
+          rm -f iptv.bin
+
           for ip in "${IPS[@]}"; do
             echo "正在检测 $ip"
-            if curl -s --connect-timeout 5 "http://$ip/608807420" -o iptv.bin; then
+            curl -s --connect-timeout 5 --max-time 10 "http://$ip/608807420" -o iptv.bin
+            # 校验文件大于1KB才算有效
+            if [ -s iptv.bin ] && [ $(stat -c%s iptv.bin) -gt 1024 ]; then
               echo "✅ 成功使用 $ip 抓取完成"
               ls -lh iptv.bin
+              SUCCESS=1
               break
             fi
             echo "❌ $ip 失效，切换下一个"
             rm -f iptv.bin
           done
-      
+
+          # 全部源抓取失败直接终止任务
+          if [ $SUCCESS -eq 0 ]; then
+            echo "所有IP源全部失效，抓取失败！"
+            exit 1
+          fi
+
       - name: 提交推送更新
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull origin main --rebase
           git add iptv.bin
-          git diff --staged --quiet || git commit -m "update $(date '+%Y-%m-%d %H:%M:%S')"
-          git push
+          if ! git diff --staged --quiet;then
+            git commit -m "自动更新IPTV源 $(date '+%Y-%m-%d %H:%M:%S')"
+            git push origin main
+          fi
