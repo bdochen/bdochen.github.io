@@ -1,9 +1,8 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-logo="https://xxx/cctv1.png" group-title="央视",CCTV1
+#EXTINF:-1 group-title="央视",CCTV1
 http://113.57.140.161:10081/newlive/live/hls/1/live.m3u8
-#EXTINF:-1 tvg-logo="https://xxx/cctv1.png" group-title="央视",CCTV1
 http://60.8.75.178:9002/hls/1/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://xxx/cctv2.png" group-title="央视",CCTV2
+#EXTINF:-1 group-title="央视",CCTV2
 http://113.57.140.161:10081/newlive/live/hls/2/live.m3u8
