@@ -1,10 +1,8 @@
 name: iptv_scrape
 
-# 切换为北京时间 cron 执行
 on:
   schedule:
-    # 北京时间 18点、凌晨6点 执行（UTC=北京时间-8小时）
-    - cron: '0 2,10 * * *'
+    - cron: '0 22 * * *'
   workflow_dispatch:
 
 jobs:
@@ -13,76 +11,24 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: 检出最新代码
+      - name: 检出代码
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: 轮询可用IP抓取源
+      
+      - name: 抓取并保存为iptv.bin
         run: |
-          # IP端口列表 优先级从上到下
-          IPS=(
-          "117.63.79.133:1234"
-          "www.jqhome.top:1234"
-          "101.65.31.162:1234"
-          "106.4.95.173:1234"
-          "106.54.8.114:88"
-          "111.76.16.76:1234"
-          "111.76.17.141:1234"
-          "120.202.231.86:1234"
-          "120.48.113.49:6006"
-          "123.14.2.150:1234"
-          "171.213.133.77:1234"
-          "180.137.128.166:1234"
-          "182.61.15.163:80"
-          "182.85.163.168:5678"
-          "219.156.66.138:1234"
-          "221.9.41.169:1234"
-          "222.129.110.101:3566"
-          "223.247.25.236:1234"
-          "27.202.232.222:1234"
-          "27.214.84.188:1234"
-          "39.72.0.205:1234"
-          "42.193.195.163:3000"
-          "47.102.212.49:1234"
-          "58.212.119.102:307"
-          "59.175.11.109:1234"
-          "60.183.60.22:1234"
-          "60.205.207.126:1234"
-          "8.129.31.234:13336"
-          "82.156.245.233:30008"
-          )
-          SUCCESS=0
-          # 清空旧文件
-          rm -f iptv.bin
-
-          for ip in "${IPS[@]}"; do
-            echo "正在检测 $ip"
-            curl -s --connect-timeout 5 --max-time 10 "http://$ip/608807420" -o iptv.bin
-            # 校验文件大于1KB才算有效
-            if [ -s iptv.bin ] && [ $(stat -c%s iptv.bin) -gt 1024 ]; then
-              echo "✅ 成功使用 $ip 抓取完成"
-              ls -lh iptv.bin
-              SUCCESS=1
-              break
-            fi
-            echo "❌ $ip 失效，切换下一个"
-            rm -f iptv.bin
-          done
-
-          # 全部源抓取失败直接终止任务
-          if [ $SUCCESS -eq 0 ]; then
-            echo "所有IP源全部失效，抓取失败！"
-            exit 1
+          # 检测探测地址是否可通
+          if curl -s --connect-timeout 5 --max-time 8 "http://223.167.209.88:1234/608807420" >/dev/null; then
+            curl -s "http://223.167.209.88:1234/" > iptv.bin
+          else
+            curl -s "http://www.jqhome.top:1234/" > iptv.bin
           fi
-
-      - name: 提交推送更新
+          echo "抓取完成，文件大小："
+          ls -lh iptv.bin
+      
+      - name: 提交更改
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull origin main --rebase
           git add iptv.bin
-          if ! git diff --staged --quiet;then
-            git commit -m "自动更新IPTV源 $(date '+%Y-%m-%d %H:%M:%S')"
-            git push origin main
-          fi
+          git diff --staged --quiet || git commit -m "update $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
