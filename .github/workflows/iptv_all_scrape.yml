@@ -1,4 +1,4 @@
-name: ip_all_scrape
+name: iptv_all_scrape
 
 on:
   schedule:
@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
 
       # 第一步：主源抓取，失败不中断
-      - name: makeiptv.bin
+      - name: 抓取主线路ZB源生成 iptv.bin
         run: |
           MAIN_HOST="117.63.79.133:1234"
           BACKUP_HOST="www.jqhome.top:1234"
@@ -32,7 +32,7 @@ jobs:
         continue-on-error: true
 
       # 第二步：分站源抓取转换，失败不中断
-      - name: makeipcenter.bin
+      - name: 抓取转换生成 ipcenter.bin
         run: |
           curl -s http://studio.hsgf.net:8882/txt > raw.txt
           echo "#EXTM3U" > ipcenter.bin
@@ -46,15 +46,15 @@ jobs:
           echo "分站源转换执行完毕"
         continue-on-error: true
 
-      # 第三步：精准插入：卫视之后、地方之前
-      - name: 精准插入分组
+      # 第三步：安全合并，缺文件也不报错
+      - name: 合并ZB源文件
         run: |
-          if [ -f "ipcenter.bin" ] && [ -s "ipcenter.bin" ]; then
-            sed -i '/group-title="卫视"/r ipcenter.bin' iptv.bin
-            sed -i '/group-title="地方"/{N;N;d}' iptv.bin
+          if [ -f "ipcenter.bin" ]; then
+            echo -e "\n\n# 合并新增频道源" >> iptv.bin
+            cat ipcenter.bin >> iptv.bin
           fi
           rm -f ipcenter.bin raw.txt
-          echo "分组精准插入完成"
+          echo "文件合并完成"
 
       # 第四步：正常提交推送
       - name: 提交更新文件
@@ -62,5 +62,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add iptv.bin
-          git diff --staged --quiet || git commit -m "update $(date '+%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "更新合并ZB源 $(date '+%Y-%m-%d %H:%M:%S')"
           git push
