@@ -1,0 +1,66 @@
+name: ip_all_scrape
+
+on:
+  schedule:
+    - cron: '0 8,16,23 * * *'
+  workflow_dispatch:
+
+jobs:
+  scrape_merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      # 第一步：主源抓取，失败不中断
+      - name: makeiptv.bin
+        run: |
+          MAIN_HOST="117.63.79.133:1234"
+          BACKUP_HOST="www.jqhome.top:1234"
+          CHECK_URL="http://${MAIN_HOST}/608807420"
+          MAIN_URL="http://${MAIN_HOST}/"
+          BACKUP_URL="http://${BACKUP_HOST}/"
+
+          if curl -s --connect-timeout 5 --max-time 8 "$CHECK_URL" >/dev/null; then
+            curl -s "$MAIN_URL" > iptv.bin
+          else
+            curl -s "$BACKUP_URL" > iptv.bin
+          fi
+          echo "主源抓取执行完毕"
+        continue-on-error: true
+
+      # 第二步：分站源抓取转换，失败不中断
+      - name: makeipcenter.bin
+        run: |
+          curl -s http://studio.hsgf.net:8882/txt > raw.txt
+          echo "#EXTM3U" > ipcenter.bin
+          sed '/更新时间/d;/http:\/\/127.0.0.1/d' raw.txt | while IFS=, read -r name url;do
+            [ -z "$url" ] && continue
+            echo '#EXTINF:-1 group-title="IPTV",'"$name" >> ipcenter.bin
+            echo "$url" >> ipcenter.bin
+            echo "" >> ipcenter.bin
+          done
+          rm -f raw.txt
+          echo "分站源转换执行完毕"
+        continue-on-error: true
+
+      # 第三步：安全合并，缺文件也不报错
+      - name: merge文件
+        run: |
+          if [ -f "ipcenter.bin" ]; then
+            echo -e "\n\n# addto" >> iptv.bin
+            cat ipcenter.bin >> iptv.bin
+          fi
+          rm -f ipcenter.bin raw.txt
+          echo "文件合并完成"
+
+      # 第四步：正常提交推送
+      - name: 提交更新文件
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add iptv.bin
+          git diff --staged --quiet || git commit -m "update $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
