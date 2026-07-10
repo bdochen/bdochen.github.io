@@ -2,7 +2,7 @@ name: iptv_scrape
 
 on:
   schedule:
-    删除介词- cron: '0 22,10 * * *'
+    - cron: '0 22,10 * * *'
   workflow_dispatch:
 
 jobs:
