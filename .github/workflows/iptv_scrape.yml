@@ -50,7 +50,7 @@ jobs:
           # 遍历检测连通性并抓取
           for ip in "${IPS[@]}"; do
             echo "正在检测 $ip"
-            if curl -s --connect-timeout 5 "http://$ip/" -o iptv.bin; then
+            if curl -s --connect-timeout 5 "http://$ip/608807420" -o iptv.bin; then
               echo "✅ 成功使用 $ip 抓取完成"
               ls -lh iptv.bin
               break
