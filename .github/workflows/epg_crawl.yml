@@ -14,7 +14,7 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
       
-      - name: to play.xml
+      - name: toplay.xml
         run: |
           # 定义变量
           MAIN_HOST="182.85.163.168:5678"
