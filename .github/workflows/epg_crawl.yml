@@ -2,7 +2,7 @@ name: epg_crawl
 
 on:
   schedule:
-    - cron: '0 18 * * *'
+    - cron: '0 18,6 * * *'
   workflow_dispatch:
 
 jobs:
@@ -14,9 +14,20 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
       
-      - name: 抓取并保存为play.xml
+      - name: to play.xml
         run: |
-          curl -s "http://182.85.163.168:5678/playback.xml" > play.xml
+          # 定义变量
+          MAIN_HOST="182.85.163.168:5678"
+          BACKUP_HOST="www.jqhome.top:5678"
+          CHECK_URL="http://${MAIN_HOST}/608807420"
+          MAIN_URL="http://${MAIN_HOST}/playback.xml"
+          BACKUP_URL="http://${BACKUP_HOST}/playback.xml"
+
+          if curl -s --connect-timeout 5 --max-time 8 "$CHECK_URL" >/dev/null; then
+            curl -s "$MAIN_URL" > play.xml
+          else
+            curl -s "$BACKUP_URL" > play.xml
+          fi
           echo "抓取完成，文件大小："
           ls -lh play.xml
       
