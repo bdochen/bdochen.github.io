@@ -1,4 +1,4 @@
-name: zubo
+name: 自动更新ipcenter.bin
 on:
   schedule:
     - cron: '0 8 * * *'
@@ -11,41 +11,22 @@ jobs:
       - name: 拉取代码
         uses: actions/checkout@main
 
-      - name: 安装Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: 爬取并转换生成ipcenter.bin
+      - name: 拉取并转换直播源
         run: |
-          python3 - << EOF
-          import requests
-
-          url = "http://studio.hsgf.net:8882/txt"
-          res = requests.get(url, timeout=15)
-          res.encoding = "utf-8"
-          lines = res.text.splitlines()
-
-          m3u = ["#EXTM3U",""]
-          for line in lines:
-              line = line.strip()
-              if not line or "更新时间" in line or line.startswith("http://127.0.0.1"):
-                  continue
-              if "," in line:
-                  name, link = line.split(",",1)
-                  m3u.append(f'#EXTINF:-1 group-title="IPTV组播",{name}')
-                  m3u.append(link)
-                  m3u.append("")
-
-          # 输出文件名改为 ipcenter.bin
-          with open("ipcenter.bin","w",encoding="utf-8") as f:
-              f.write("\n".join(m3u).strip())
-          EOF
+          curl -s http://studio.hsgf.net:8882/txt > raw.txt
+          echo "#EXTM3U" > ipcenter.bin
+          sed '/更新时间/d;/http:\/\/127.0.0.1/d' raw.txt | while IFS=, read -r name url;do
+            [ -z "$url" ] && continue
+            echo '#EXTINF:-1 group-title="IPTV组播",'"$name" >> ipcenter.bin
+            echo "$url" >> ipcenter.bin
+            echo "" >> ipcenter.bin
+          done
+          rm -f raw.txt
 
       - name: 提交推送
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "actions@github.com"
           git add ipcenter.bin
-          git commit -m "A" || echo "无变更无需提交"
+          git commit -m "自动更新ipcenter.bin直播源" || echo "无变更无需提交"
           git push
