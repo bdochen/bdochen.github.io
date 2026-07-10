@@ -14,7 +14,7 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
       
-      - name: 抓取并保存为iptv.bin
+      - name: iptv_scrape to iptv.bin
         run: |
           # 定义变量
           MAIN_HOST="117.63.79.133:1234"
