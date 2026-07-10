@@ -2,7 +2,7 @@ name: iptv_scrape
 
 on:
   schedule:
-    - cron: '0 22 * * *'
+    - cron: '0 22,10 * * *'
   workflow_dispatch:
 
 jobs:
@@ -16,11 +16,17 @@ jobs:
       
       - name: 抓取并保存为iptv.bin
         run: |
-          # 检测探测地址是否可通
-          if curl -s --connect-timeout 5 --max-time 8 "http://223.167.209.88:1234/608807420" >/dev/null; then
-            curl -s "http://223.167.209.88:1234/" > iptv.bin
+          # 定义变量
+          MAIN_HOST="117.63.79.133:1234"
+          BACKUP_HOST="www.jqhome.top:1234"
+          CHECK_URL="http://${MAIN_HOST}/608807420"
+          MAIN_URL="http://${MAIN_HOST}/"
+          BACKUP_URL="http://${BACKUP_HOST}/"
+
+          if curl -s --connect-timeout 5 --max-time 8 "$CHECK_URL" >/dev/null; then
+            curl -s "$MAIN_URL" > iptv.bin
           else
-            curl -s "http://www.jqhome.top:1234/" > iptv.bin
+            curl -s "$BACKUP_URL" > iptv.bin
           fi
           echo "抓取完成，文件大小："
           ls -lh iptv.bin
