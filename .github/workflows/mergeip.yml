@@ -35,25 +35,25 @@ jobs:
       - name: makeipcenter.bin
         run: |
           curl -s http://studio.hsgf.net:8882/txt > raw.txt
-          echo "#EXTM3U" > ipcenter.bin
+          echo "#EXTM3U" > ipcenter.tmp
           sed '/更新时间/d;/http:\/\/127.0.0.1/d' raw.txt | while IFS=, read -r name url;do
             [ -z "$url" ] && continue
-            echo '#EXTINF:-1 group-title="IPTV",'"$name" >> ipcenter.bin
-            echo "$url" >> ipcenter.bin
-            echo "" >> ipcenter.bin
+            echo '#EXTINF:-1 group-title="IPTV",'"$name" >> ipcenter.tmp
+            echo "$url" >> ipcenter.tmp
+            echo "" >> ipcenter.tmp
           done
           rm -f raw.txt
           echo "分站源转换执行完毕"
         continue-on-error: true
 
-      # 第三步：精准插入：卫视之后、地方之前
+      # 第三步：精准插入 卫视之后 地方之前 保留所有原有分组
       - name: 精准插入分组
         run: |
-          if [ -f "ipcenter.bin" ] && [ -s "ipcenter.bin" ]; then
-            sed -i '/group-title="卫视"/r ipcenter.bin' iptv.bin
-            sed -i '/group-title="地方"/{N;N;d}' iptv.bin
+          if [ -f "ipcenter.tmp" ] && [ -s "ipcenter.tmp" ]; then
+            # 把IPTV内容插入到 地方分组 这一行的前面
+            sed -i '/group-title="地方"/e cat ipcenter.tmp' iptv.bin
           fi
-          rm -f ipcenter.bin raw.txt
+          rm -f ipcenter.tmp
           echo "分组精准插入完成"
 
       # 第四步：正常提交推送
