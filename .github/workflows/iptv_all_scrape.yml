@@ -56,17 +56,12 @@ jobs:
           rm -f ipcenter.bin raw.txt
           echo "文件合并完成"
 
-      # 新增：打包生成 iptv.gz
-      - name: 压缩生成gz文件
-        run: |
-          gzip -c iptv.bin > iptv.gz
-          echo "已生成压缩文件: iptv.gz"
+
 
       # 第四步：正常提交推送
       - name: 提交更新文件
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add iptv.bin iptv.gz
           git diff --staged --quiet || git commit -m "update  $(date '+%Y-%m-%d %H:%M:%S')"
           git push
