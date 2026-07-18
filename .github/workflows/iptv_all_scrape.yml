@@ -2,7 +2,7 @@ name: iptv_all_scrape
 
 on:
   schedule:
-    - cron: '0 8,16,23 * * *'
+    - cron: '0 */3 * * *'
   workflow_dispatch:
 
 jobs:
