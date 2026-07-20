@@ -14,9 +14,19 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
 
-      # 第一步：主源抓取，失败不中断
+      # 初始化日志文件
+      - name: 初始化日志文件
+        run: |
+          echo "=== IPTV 抓取合并日志 - $(date '+%Y-%m-%d %H:%M:%S') ===" > scrape_log.txt
+          echo "工作流触发方式: ${{ github.event_name }}" >> scrape_log.txt
+          echo "=========================================" >> scrape_log.txt
+          echo "" >> scrape_log.txt
+
+      # 第一步：主源抓取，失败不中断 + 日志记录
       - name: 抓取主线路ZB生成 iptv.bin
         run: |
+          echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 开始执行步骤：抓取主线路ZB生成 iptv.bin" | tee -a scrape_log.txt
+          
           MAIN_HOST="117.63.79.133:1234"
           BACKUP_HOST="www.jqhome.top:1234"
           CHECK_URL="http://${MAIN_HOST}/608807420"
@@ -24,17 +34,36 @@ jobs:
           BACKUP_URL="http://${BACKUP_HOST}/"
 
           if curl -s --connect-timeout 5 --max-time 8 "$CHECK_URL" >/dev/null; then
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 主源可用，使用主线路抓取" | tee -a scrape_log.txt
             curl -s "$MAIN_URL" > iptv.bin
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 主线路抓取完成，已写入 iptv.bin" | tee -a scrape_log.txt
           else
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WARN] 主源不可用，切换至备用线路" | tee -a scrape_log.txt
             curl -s "$BACKUP_URL" > iptv.bin
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 备用线路抓取完成，已写入 iptv.bin" | tee -a scrape_log.txt
           fi
-          echo "主源抓取执行完毕"
+
+          if [ -s "iptv.bin" ]; then
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] iptv.bin 文件大小: $(du -h iptv.bin | awk '{print $1}')" | tee -a scrape_log.txt
+          else
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [ERROR] iptv.bin 文件为空！" | tee -a scrape_log.txt
+          fi
+
+          echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 主源抓取执行完毕" | tee -a scrape_log.txt
+          echo "" >> scrape_log.txt
         continue-on-error: true
 
-      # 第二步：分站源抓取转换，失败不中断
+      # 第二步：分站源抓取转换，失败不中断 + 日志记录
       - name: 抓取转换生成 ipcenter.bin
         run: |
-          curl -s http://studio.hsgf.net:8882/txt > raw.txt
+          echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 开始执行步骤：抓取转换生成 ipcenter.bin" | tee -a scrape_log.txt
+          
+          if curl -s http://studio.hsgf.net:8882/txt > raw.txt; then
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 分站源 raw.txt 抓取成功" | tee -a scrape_log.txt
+          else
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [ERROR] 分站源 raw.txt 抓取失败" | tee -a scrape_log.txt
+          fi
+
           echo "#EXTM3U" > ipcenter.bin
           sed '/更新时间/d;/http:\/\/127.0.0.1/d' raw.txt | while IFS=, read -r name url;do
             [ -z "$url" ] && continue
@@ -42,26 +71,56 @@ jobs:
             echo "$url" >> ipcenter.bin
             echo "" >> ipcenter.bin
           done
+
+          if [ -s "ipcenter.bin" ]; then
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] ipcenter.bin 生成完成，文件大小: $(du -h ipcenter.bin | awk '{print $1}')" | tee -a scrape_log.txt
+          else
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WARN] ipcenter.bin 文件为空或无有效数据" | tee -a scrape_log.txt
+          fi
+
           rm -f raw.txt
-          echo "分站源转换执行完毕"
+          echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 分站源转换执行完毕" | tee -a scrape_log.txt
+          echo "" >> scrape_log.txt
         continue-on-error: true
 
-      # 第三步：安全合并，缺文件也不报错
+      # 第三步：安全合并，缺文件也不报错 + 日志记录
       - name: 合并ZB文件
         run: |
-          if [ -f "ipcenter.bin" ]; then
+          echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 开始执行步骤：合并ZB文件" | tee -a scrape_log.txt
+          
+          if [ -f "ipcenter.bin" ] && [ -s "ipcenter.bin" ]; then
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 开始合并 ipcenter.bin 到 iptv.bin" | tee -a scrape_log.txt
             echo -e "\n\n# 合并" >> iptv.bin
             cat ipcenter.bin >> iptv.bin
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 文件合并完成" | tee -a scrape_log.txt
+          else
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WARN] ipcenter.bin 不存在或为空，跳过合并步骤" | tee -a scrape_log.txt
           fi
+
           rm -f ipcenter.bin raw.txt
-          echo "文件合并完成"
+          echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 合并步骤执行完毕" | tee -a scrape_log.txt
+          echo "" >> scrape_log.txt
 
-
-
-      # 第四步：正常提交推送
+      # 第四步：正常提交推送 + 日志记录
       - name: 提交更新文件
         run: |
+          echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 开始执行步骤：提交更新文件" | tee -a scrape_log.txt
+          
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git diff --staged --quiet || git commit -m "update  $(date '+%Y-%m-%d %H:%M:%S')"
-          git push
+
+          git add iptv.bin scrape_log.txt
+
+          if git diff --staged --quiet; then
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 无文件变更，无需提交" | tee -a scrape_log.txt
+          else
+            git commit -m "update  $(date '+%Y-%m-%d %H:%M:%S')"
+            if git push; then
+              echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 文件提交推送成功" | tee -a scrape_log.txt
+            else
+              echo "[$(date '+%Y-%m-%d %H:%M:%S')] [ERROR] 文件推送失败" | tee -a scrape_log.txt
+            fi
+          fi
+
+          echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 提交步骤执行完毕" | tee -a scrape_log.txt
+          echo "" >> scrape_log.txt
