@@ -2,7 +2,8 @@ name: iptv_all_scrape
 
 on:
   schedule:
-    - cron: '0 */3 * * *'
+    - cron: '0 6,12,18 * * *'
+      timezone: 'Asia/Shanghai' 
   workflow_dispatch:
 
 jobs:
@@ -27,8 +28,8 @@ jobs:
         run: |
           echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] 开始执行步骤：抓取主线路ZB生成 iptv.bin" | tee -a scrape_log.txt
           
-          MAIN_HOST="106.57.6.33:3000"
-          BACKUP_HOST="111.197.172.178:8894"
+          MAIN_HOST="1.202.119.183:15500"
+          BACKUP_HOST="210.16.175.13:1905"
           CHECK_URL="http://${MAIN_HOST}/608807420"
           MAIN_URL="http://${MAIN_HOST}/"
           BACKUP_URL="http://${BACKUP_HOST}/"
