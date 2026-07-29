@@ -1,22 +1,18 @@
-=== IPTV Scrape Log - 2026-07-29 11:58:01 ===
+=== IPTV Scrape Log - 2026-07-29 22:56:28 ===
 Trigger event: schedule
 =========================================
 
-[2026-07-29 11:58:01] [INFO] Start probing host list for iptv.bin
-[2026-07-29 11:58:01] [INFO] Probing host: 124.135.134.159:9003
-[2026-07-29 11:58:01] [INFO] Host 124.135.134.159:9003 available, selected for scraping
-[2026-07-29 11:58:02] [INFO] Fetch completed from 124.135.134.159:9003, saved to iptv.bin
-[2026-07-29 11:58:02] [INFO] iptv.bin size: 76K
-[2026-07-29 11:58:02] [INFO] Host scraping task finished
+[2026-07-29 22:56:28] [INFO] Start probing host list for iptv.bin
+[2026-07-29 22:56:28] [INFO] Probing host: 124.135.134.159:9003
+[2026-07-29 22:56:29] [INFO] Host 124.135.134.159:9003 available, selected for scraping
+[2026-07-29 22:58:42] [INFO] Start fetch and convert secondary source to ipcenter.bin
+[2026-07-29 22:58:43] [INFO] raw.txt fetched successfully
+[2026-07-29 22:58:43] [INFO] ipcenter.bin generated, size: 24K
+[2026-07-29 22:58:43] [INFO] Secondary source convert task finished
 
-[2026-07-29 11:58:02] [INFO] Start fetch and convert secondary source to ipcenter.bin
-[2026-07-29 11:58:03] [INFO] raw.txt fetched successfully
-[2026-07-29 11:58:03] [INFO] ipcenter.bin generated, size: 24K
-[2026-07-29 11:58:03] [INFO] Secondary source convert task finished
+[2026-07-29 22:58:43] [INFO] Start merging files
+[2026-07-29 22:58:43] [INFO] Merge ipcenter.bin into iptv.bin
+[2026-07-29 22:58:43] [INFO] Merge completed
+[2026-07-29 22:58:43] [INFO] Merge task finished
 
-[2026-07-29 11:58:03] [INFO] Start merging files
-[2026-07-29 11:58:03] [INFO] Merge ipcenter.bin into iptv.bin
-[2026-07-29 11:58:03] [INFO] Merge completed
-[2026-07-29 11:58:03] [INFO] Merge task finished
-
-[2026-07-29 11:58:03] [INFO] Start commit and push
+[2026-07-29 22:58:43] [INFO] Start commit and push
