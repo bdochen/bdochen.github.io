@@ -1,22 +1,22 @@
-=== IPTV Scrape Log - 2026-07-29 02:23:19 ===
-Trigger event: workflow_dispatch
+=== IPTV Scrape Log - 2026-07-29 06:27:18 ===
+Trigger event: schedule
 =========================================
 
-[2026-07-29 02:23:19] [INFO] Start probing host list for iptv.bin
-[2026-07-29 02:23:19] [INFO] Probing host: 124.135.134.159:9003
-[2026-07-29 02:23:20] [INFO] Host 124.135.134.159:9003 available, selected for scraping
-[2026-07-29 02:23:21] [INFO] Fetch completed from 124.135.134.159:9003, saved to iptv.bin
-[2026-07-29 02:23:21] [INFO] iptv.bin size: 76K
-[2026-07-29 02:23:21] [INFO] Host scraping task finished
+[2026-07-29 06:27:18] [INFO] Start probing host list for iptv.bin
+[2026-07-29 06:27:18] [INFO] Probing host: 124.135.134.159:9003
+[2026-07-29 06:27:18] [INFO] Host 124.135.134.159:9003 available, selected for scraping
+[2026-07-29 06:27:19] [INFO] Fetch completed from 124.135.134.159:9003, saved to iptv.bin
+[2026-07-29 06:27:19] [INFO] iptv.bin size: 76K
+[2026-07-29 06:27:19] [INFO] Host scraping task finished
 
-[2026-07-29 02:23:21] [INFO] Start fetch and convert secondary source to ipcenter.bin
-[2026-07-29 02:23:22] [INFO] raw.txt fetched successfully
-[2026-07-29 02:23:22] [INFO] ipcenter.bin generated, size: 16K
-[2026-07-29 02:23:22] [INFO] Secondary source convert task finished
+[2026-07-29 06:27:19] [INFO] Start fetch and convert secondary source to ipcenter.bin
+[2026-07-29 06:27:21] [INFO] raw.txt fetched successfully
+[2026-07-29 06:27:21] [INFO] ipcenter.bin generated, size: 24K
+[2026-07-29 06:27:21] [INFO] Secondary source convert task finished
 
-[2026-07-29 02:23:22] [INFO] Start merging files
-[2026-07-29 02:23:22] [INFO] Merge ipcenter.bin into iptv.bin
-[2026-07-29 02:23:22] [INFO] Merge completed
-[2026-07-29 02:23:22] [INFO] Merge task finished
+[2026-07-29 06:27:21] [INFO] Start merging files
+[2026-07-29 06:27:21] [INFO] Merge ipcenter.bin into iptv.bin
+[2026-07-29 06:27:21] [INFO] Merge completed
+[2026-07-29 06:27:21] [INFO] Merge task finished
 
-[2026-07-29 02:23:22] [INFO] Start commit and push
+[2026-07-29 06:27:21] [INFO] Start commit and push
