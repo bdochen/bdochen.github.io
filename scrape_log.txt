@@ -1,17 +1,22 @@
-=== IPTV 抓取合并日志 - 2026-07-28 22:54:33 ===
-工作流触发方式: schedule
+=== IPTV Scrape Log - 2026-07-29 02:23:19 ===
+Trigger event: workflow_dispatch
 =========================================
 
-[2026-07-28 22:54:33] [INFO] 开始执行步骤：抓取主线路ZB生成 iptv.bin
-[2026-07-28 22:54:38] [WARN] 主源不可用，切换至备用线路
-[2026-07-28 22:54:39] [INFO] 开始执行步骤：抓取转换生成 ipcenter.bin
-[2026-07-28 22:54:39] [INFO] 分站源 raw.txt 抓取成功
-[2026-07-28 22:54:39] [INFO] ipcenter.bin 生成完成，文件大小: 24K
-[2026-07-28 22:54:39] [INFO] 分站源转换执行完毕
+[2026-07-29 02:23:19] [INFO] Start probing host list for iptv.bin
+[2026-07-29 02:23:19] [INFO] Probing host: 124.135.134.159:9003
+[2026-07-29 02:23:20] [INFO] Host 124.135.134.159:9003 available, selected for scraping
+[2026-07-29 02:23:21] [INFO] Fetch completed from 124.135.134.159:9003, saved to iptv.bin
+[2026-07-29 02:23:21] [INFO] iptv.bin size: 76K
+[2026-07-29 02:23:21] [INFO] Host scraping task finished
 
-[2026-07-28 22:54:39] [INFO] 开始执行步骤：合并ZB文件
-[2026-07-28 22:54:39] [INFO] 开始合并 ipcenter.bin 到 iptv.bin
-[2026-07-28 22:54:39] [INFO] 文件合并完成
-[2026-07-28 22:54:39] [INFO] 合并步骤执行完毕
+[2026-07-29 02:23:21] [INFO] Start fetch and convert secondary source to ipcenter.bin
+[2026-07-29 02:23:22] [INFO] raw.txt fetched successfully
+[2026-07-29 02:23:22] [INFO] ipcenter.bin generated, size: 16K
+[2026-07-29 02:23:22] [INFO] Secondary source convert task finished
 
-[2026-07-28 22:54:39] [INFO] 开始执行步骤：提交更新文件
+[2026-07-29 02:23:22] [INFO] Start merging files
+[2026-07-29 02:23:22] [INFO] Merge ipcenter.bin into iptv.bin
+[2026-07-29 02:23:22] [INFO] Merge completed
+[2026-07-29 02:23:22] [INFO] Merge task finished
+
+[2026-07-29 02:23:22] [INFO] Start commit and push
