@@ -52,8 +52,8 @@ jobs:
           for HOST in "${HOST_LIST[@]}"; do
             CHECK_URL="http://${HOST}/608807420"
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Probing host: ${HOST}" | tee -a scrape_log.txt
-            # Capture HTTP status, default to "000" on curl failure to avoid script exit
-            HTTP_CODE=$(curl -s --connect-timeout 5 --max-time 8 -o /dev/null -w "%{http_code}" "$CHECK_URL" 2>/dev/null) || HTTP_CODE="000"
+            # Follow redirects with -L, capture final HTTP status
+            HTTP_CODE=$(curl -s -L --connect-timeout 5 --max-time 8 -o /dev/null -w "%{http_code}" "$CHECK_URL" 2>/dev/null) || HTTP_CODE="000"
             if [[ "$HTTP_CODE" =~ ^2 ]]; then
               SELECTED_HOST="${HOST}"
               echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Host ${HOST} available (HTTP ${HTTP_CODE}), selected for scraping" | tee -a scrape_log.txt
@@ -68,6 +68,7 @@ jobs:
             SOURCE_URL="http://${SELECTED_HOST}/"
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Fetching primary source from ${SOURCE_URL}" | tee -a scrape_log.txt
 
+            # Download with -L to follow redirects, save response and status
             HTTP_CODE=$(curl -s -L --connect-timeout 10 --max-time 30 -o iptv.bin -w "%{http_code}" "$SOURCE_URL" 2>curl_error.log)
             CURL_EXIT=$?
 
