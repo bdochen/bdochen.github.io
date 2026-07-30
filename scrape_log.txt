@@ -1,22 +1,60 @@
-=== IPTV Scrape Log - 2026-07-30 06:22:42 ===
-Trigger event: schedule
+=== IPTV Scrape Log - 2026-07-30 06:40:50 ===
+Trigger event: workflow_dispatch
 =========================================
 
-[2026-07-30 06:22:42] [INFO] Start probing host list for iptv.bin
-[2026-07-30 06:22:42] [INFO] Probing host: 124.135.134.159:9003
-[2026-07-30 06:22:43] [INFO] Host 124.135.134.159:9003 available, selected for scraping
-[2026-07-30 06:22:43] [INFO] Fetch completed from 124.135.134.159:9003, saved to iptv.bin
-[2026-07-30 06:22:43] [INFO] iptv.bin size: 76K
-[2026-07-30 06:22:43] [INFO] Host scraping task finished
+[2026-07-30 06:40:50] [INFO] Start probing host list for iptv.bin
+[2026-07-30 06:40:50] [INFO] Probing host: 124.135.134.159:9003
+[2026-07-30 06:40:51] [WARN] Host 124.135.134.159:9003 unreachable or invalid response (HTTP 302), try next
+[2026-07-30 06:40:51] [INFO] Probing host: 106.57.6.77:3000
+[2026-07-30 06:40:51] [WARN] Host 106.57.6.77:3000 unreachable or invalid response (HTTP 000), try next
+[2026-07-30 06:40:51] [INFO] Probing host: 115.194.171.196:1234
+[2026-07-30 06:40:51] [WARN] Host 115.194.171.196:1234 unreachable or invalid response (HTTP 302), try next
+[2026-07-30 06:40:51] [INFO] Probing host: 116.168.160.134:3000
+[2026-07-30 06:40:56] [WARN] Host 116.168.160.134:3000 unreachable or invalid response (HTTP 000), try next
+[2026-07-30 06:40:56] [INFO] Probing host: 123.149.76.28:7788
+[2026-07-30 06:40:57] [WARN] Host 123.149.76.28:7788 unreachable or invalid response (HTTP 302), try next
+[2026-07-30 06:40:57] [INFO] Probing host: 182.122.164.229:3000
+[2026-07-30 06:40:57] [WARN] Host 182.122.164.229:3000 unreachable or invalid response (HTTP 000), try next
+[2026-07-30 06:40:57] [INFO] Probing host: 106.118.123.15:1234
+[2026-07-30 06:40:58] [WARN] Host 106.118.123.15:1234 unreachable or invalid response (HTTP 302), try next
+[2026-07-30 06:40:58] [INFO] Probing host: 106.57.6.77:3000
+[2026-07-30 06:40:59] [WARN] Host 106.57.6.77:3000 unreachable or invalid response (HTTP 000), try next
+[2026-07-30 06:40:59] [INFO] Probing host: 113.232.17.82:1234
+[2026-07-30 06:41:00] [WARN] Host 113.232.17.82:1234 unreachable or invalid response (HTTP 302), try next
+[2026-07-30 06:41:00] [INFO] Probing host: 113.88.79.48:5007
+[2026-07-30 06:41:01] [WARN] Host 113.88.79.48:5007 unreachable or invalid response (HTTP 302), try next
+[2026-07-30 06:41:01] [INFO] Probing host: 114.230.79.148:8088
+[2026-07-30 06:41:02] [WARN] Host 114.230.79.148:8088 unreachable or invalid response (HTTP 302), try next
+[2026-07-30 06:41:02] [INFO] Probing host: 115.194.171.196:1234
+[2026-07-30 06:41:03] [WARN] Host 115.194.171.196:1234 unreachable or invalid response (HTTP 302), try next
+[2026-07-30 06:41:03] [INFO] Probing host: 116.168.160.134:3000
+[2026-07-30 06:41:08] [WARN] Host 116.168.160.134:3000 unreachable or invalid response (HTTP 000), try next
+[2026-07-30 06:41:08] [INFO] Probing host: 119.165.80.210:1234
+[2026-07-30 06:41:09] [WARN] Host 119.165.80.210:1234 unreachable or invalid response (HTTP 302), try next
+[2026-07-30 06:41:09] [INFO] Probing host: 120.48.113.49:6006
+[2026-07-30 06:41:10] [WARN] Host 120.48.113.49:6006 unreachable or invalid response (HTTP 302), try next
+[2026-07-30 06:41:10] [INFO] Probing host: 123.4.197.66:1234
+[2026-07-30 06:41:15] [WARN] Host 123.4.197.66:1234 unreachable or invalid response (HTTP 000), try next
+[2026-07-30 06:41:15] [INFO] Probing host: 124.134.219.106:1234
+[2026-07-30 06:41:15] [WARN] Host 124.134.219.106:1234 unreachable or invalid response (HTTP 302), try next
+[2026-07-30 06:41:15] [INFO] Probing host: 124.152.235.11:5566
+[2026-07-30 06:41:16] [WARN] Host 124.152.235.11:5566 unreachable or invalid response (HTTP 302), try next
+[2026-07-30 06:41:16] [INFO] Probing host: 124.221.146.169:7001
+[2026-07-30 06:41:17] [WARN] Host 124.221.146.169:7001 unreachable or invalid response (HTTP 302), try next
+[2026-07-30 06:41:17] [ERROR] No reachable host found for primary source
+[2026-07-30 06:41:17] [WARN] Primary source unavailable, created empty iptv.bin as placeholder
+[2026-07-30 06:41:17] [INFO] Host scraping task finished
 
-[2026-07-30 06:22:43] [INFO] Start fetch and convert secondary source to ipcenter.bin
-[2026-07-30 06:22:44] [INFO] raw.txt fetched successfully
-[2026-07-30 06:22:44] [INFO] ipcenter.bin generated, size: 40K
-[2026-07-30 06:22:44] [INFO] Secondary source convert task finished
+[2026-07-30 06:41:17] [INFO] Start fetch and convert secondary source to ipcenter.bin
+[2026-07-30 06:41:18] [INFO] raw.txt fetched successfully
+[2026-07-30 06:41:18] [INFO] ipcenter.bin generated, size: 40K
+[2026-07-30 06:41:18] [INFO] Secondary source convert task finished
 
-[2026-07-30 06:22:44] [INFO] Start merging files
-[2026-07-30 06:22:44] [INFO] Merge ipcenter.bin into iptv.bin
-[2026-07-30 06:22:44] [INFO] Merge completed
-[2026-07-30 06:22:44] [INFO] Merge task finished
+[2026-07-30 06:41:18] [INFO] Start merging files
+[2026-07-30 06:41:18] [INFO] iptv.bin size before merge: 4.0K
+[2026-07-30 06:41:18] [INFO] Merge ipcenter.bin into iptv.bin
+[2026-07-30 06:41:18] [INFO] iptv.bin size after merge: 40K
+[2026-07-30 06:41:18] [INFO] Merge summary: merged, primary source NOT included (failed)
+[2026-07-30 06:41:18] [INFO] Merge task finished
 
-[2026-07-30 06:22:44] [INFO] Start commit and push
+[2026-07-30 06:41:18] [INFO] Start commit and push
