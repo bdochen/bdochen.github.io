@@ -15,7 +15,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Init log file
       - name: Initialize log
         run: |
           echo "=== IPTV Scrape Log - $(date '+%Y-%m-%d %H:%M:%S') ===" > scrape_log.txt
@@ -23,9 +22,6 @@ jobs:
           echo "=========================================" >> scrape_log.txt
           echo "" >> scrape_log.txt
 
-      # ------------------------------------------------------------------
-      # Step 1: Fetch primary source (iptv.bin) with detailed logging
-      # ------------------------------------------------------------------
       - name: Fetch ZB source to iptv.bin
         run: |
           echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Start probing host list for iptv.bin" | tee -a scrape_log.txt
@@ -56,7 +52,8 @@ jobs:
           for HOST in "${HOST_LIST[@]}"; do
             CHECK_URL="http://${HOST}/608807420"
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Probing host: ${HOST}" | tee -a scrape_log.txt
-            HTTP_CODE=$(curl -s --connect-timeout 5 --max-time 8 -o /dev/null -w "%{http_code}" "$CHECK_URL" 2>/dev/null)
+            # Capture HTTP status, default to "000" on curl failure to avoid script exit
+            HTTP_CODE=$(curl -s --connect-timeout 5 --max-time 8 -o /dev/null -w "%{http_code}" "$CHECK_URL" 2>/dev/null) || HTTP_CODE="000"
             if [[ "$HTTP_CODE" =~ ^2 ]]; then
               SELECTED_HOST="${HOST}"
               echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Host ${HOST} available (HTTP ${HTTP_CODE}), selected for scraping" | tee -a scrape_log.txt
@@ -71,7 +68,6 @@ jobs:
             SOURCE_URL="http://${SELECTED_HOST}/"
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Fetching primary source from ${SOURCE_URL}" | tee -a scrape_log.txt
 
-            # Download with full status capture
             HTTP_CODE=$(curl -s -L --connect-timeout 10 --max-time 30 -o iptv.bin -w "%{http_code}" "$SOURCE_URL" 2>curl_error.log)
             CURL_EXIT=$?
 
@@ -85,7 +81,7 @@ jobs:
               fi
             else
               if [ ${CURL_EXIT} -ne 0 ]; then
-                ERR_MSG=$(cat curl_error.log | tr '\n' ' ')
+                ERR_MSG=$(cat curl_error.log 2>/dev/null | tr '\n' ' ')
                 echo "[$(date '+%Y-%m-%d %H:%M:%S')] [ERROR] curl failed (exit ${CURL_EXIT}): ${ERR_MSG}" | tee -a scrape_log.txt
               elif [ "${HTTP_CODE}" != "200" ]; then
                 echo "[$(date '+%Y-%m-%d %H:%M:%S')] [ERROR] Primary source returned HTTP ${HTTP_CODE}" | tee -a scrape_log.txt
@@ -96,21 +92,15 @@ jobs:
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [ERROR] No reachable host found for primary source" | tee -a scrape_log.txt
           fi
 
-          # If primary source failed, create an empty placeholder
           if [ "${PRIMARY_SUCCESS}" = false ]; then
             echo "#EXTM3U" > iptv.bin
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WARN] Primary source unavailable, created empty iptv.bin as placeholder" | tee -a scrape_log.txt
           fi
 
-          # Save primary status for later steps
           echo "${PRIMARY_SUCCESS}" > primary_status.txt
-
           echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Host scraping task finished" | tee -a scrape_log.txt
           echo "" >> scrape_log.txt
 
-      # ------------------------------------------------------------------
-      # Step 2: Fetch and convert secondary source to ipcenter.bin
-      # ------------------------------------------------------------------
       - name: Fetch & convert secondary source to ipcenter.bin
         run: |
           echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Start fetch and convert secondary source to ipcenter.bin" | tee -a scrape_log.txt
@@ -119,7 +109,6 @@ jobs:
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] raw.txt fetched successfully" | tee -a scrape_log.txt
           else
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [ERROR] Failed to fetch raw.txt" | tee -a scrape_log.txt
-            # Create empty file to avoid errors later
             touch raw.txt
           fi
 
@@ -141,21 +130,16 @@ jobs:
           echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Secondary source convert task finished" | tee -a scrape_log.txt
           echo "" >> scrape_log.txt
 
-      # ------------------------------------------------------------------
-      # Step 3: Merge sources with size tracking
-      # ------------------------------------------------------------------
       - name: Merge source files
         run: |
           echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Start merging files" | tee -a scrape_log.txt
 
-          # Read primary status from file
           if [ -f "primary_status.txt" ]; then
             PRIMARY_SUCCESS=$(cat primary_status.txt)
           else
             PRIMARY_SUCCESS="false"
           fi
 
-          # Record pre-merge size of iptv.bin
           if [ -f "iptv.bin" ]; then
             PRE_SIZE=$(du -h iptv.bin | awk '{print $1}')
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] iptv.bin size before merge: ${PRE_SIZE}" | tee -a scrape_log.txt
@@ -175,7 +159,6 @@ jobs:
             MERGE_STATUS="skipped"
           fi
 
-          # Record post-merge size and summarize
           if [ -f "iptv.bin" ]; then
             POST_SIZE=$(du -h iptv.bin | awk '{print $1}')
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] iptv.bin size after merge: ${POST_SIZE}" | tee -a scrape_log.txt
@@ -193,9 +176,6 @@ jobs:
           echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Merge task finished" | tee -a scrape_log.txt
           echo "" >> scrape_log.txt
 
-      # ------------------------------------------------------------------
-      # Step 4: Commit and push changes
-      # ------------------------------------------------------------------
       - name: Commit & push changes
         run: |
           echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Start commit and push" | tee -a scrape_log.txt
