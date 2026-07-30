@@ -48,18 +48,32 @@ jobs:
             "124.221.146.169:7001"
           )
 
+          # Define common User-Agent
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
           SELECTED_HOST=""
           for HOST in "${HOST_LIST[@]}"; do
-            CHECK_URL="http://${HOST}/608807420"
-            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Probing host: ${HOST}" | tee -a scrape_log.txt
-            # Follow redirects with -L, capture final HTTP status
-            HTTP_CODE=$(curl -s -L --connect-timeout 5 --max-time 8 -o /dev/null -w "%{http_code}" "$CHECK_URL" 2>/dev/null) || HTTP_CODE="000"
+            # Probe with root path (more likely to succeed) and follow redirects
+            CHECK_URL="http://${HOST}/"
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Probing host: ${HOST} (using root path)" | tee -a scrape_log.txt
+
+            # Use -v to capture redirect chain, store in temp file
+            TMP_ERR=$(mktemp)
+            HTTP_CODE=$(curl -s -L -A "$UA" --connect-timeout 5 --max-time 8 --max-redirs 20 -o /dev/null -w "%{http_code}" "$CHECK_URL" 2>"$TMP_ERR") || HTTP_CODE="000"
             if [[ "$HTTP_CODE" =~ ^2 ]]; then
               SELECTED_HOST="${HOST}"
               echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Host ${HOST} available (HTTP ${HTTP_CODE}), selected for scraping" | tee -a scrape_log.txt
+              # Save debug info
+              echo "[$(date '+%Y-%m-%d %H:%M:%S')] [DEBUG] curl verbose output for ${HOST}:" >> scrape_log.txt
+              cat "$TMP_ERR" >> scrape_log.txt
+              rm -f "$TMP_ERR"
               break
             else
-              echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WARN] Host ${HOST} unreachable or invalid response (HTTP ${HTTP_CODE}), try next" | tee -a scrape_log.txt
+              # Log failure details
+              echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WARN] Host ${HOST} invalid response (HTTP ${HTTP_CODE}), try next" | tee -a scrape_log.txt
+              echo "[$(date '+%Y-%m-%d %H:%M:%S')] [DEBUG] curl verbose output for ${HOST}:" >> scrape_log.txt
+              cat "$TMP_ERR" >> scrape_log.txt
+              rm -f "$TMP_ERR"
             fi
           done
 
@@ -68,8 +82,9 @@ jobs:
             SOURCE_URL="http://${SELECTED_HOST}/"
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Fetching primary source from ${SOURCE_URL}" | tee -a scrape_log.txt
 
-            # Download with -L to follow redirects, save response and status
-            HTTP_CODE=$(curl -s -L --connect-timeout 10 --max-time 30 -o iptv.bin -w "%{http_code}" "$SOURCE_URL" 2>curl_error.log)
+            # Download with browser UA and verbose logging
+            TMP_ERR=$(mktemp)
+            HTTP_CODE=$(curl -s -L -A "$UA" --connect-timeout 10 --max-time 30 --max-redirs 20 -o iptv.bin -w "%{http_code}" "$SOURCE_URL" 2>"$TMP_ERR")
             CURL_EXIT=$?
 
             if [ ${CURL_EXIT} -eq 0 ] && [ "${HTTP_CODE}" = "200" ]; then
@@ -81,14 +96,11 @@ jobs:
                 echo "[$(date '+%Y-%m-%d %H:%M:%S')] [ERROR] Primary source returned HTTP 200 but file is empty" | tee -a scrape_log.txt
               fi
             else
-              if [ ${CURL_EXIT} -ne 0 ]; then
-                ERR_MSG=$(cat curl_error.log 2>/dev/null | tr '\n' ' ')
-                echo "[$(date '+%Y-%m-%d %H:%M:%S')] [ERROR] curl failed (exit ${CURL_EXIT}): ${ERR_MSG}" | tee -a scrape_log.txt
-              elif [ "${HTTP_CODE}" != "200" ]; then
-                echo "[$(date '+%Y-%m-%d %H:%M:%S')] [ERROR] Primary source returned HTTP ${HTTP_CODE}" | tee -a scrape_log.txt
-              fi
+              echo "[$(date '+%Y-%m-%d %H:%M:%S')] [ERROR] Primary source fetch failed (exit ${CURL_EXIT}, HTTP ${HTTP_CODE})" | tee -a scrape_log.txt
+              echo "[$(date '+%Y-%m-%d %H:%M:%S')] [DEBUG] curl verbose output for download:" >> scrape_log.txt
+              cat "$TMP_ERR" >> scrape_log.txt
             fi
-            rm -f curl_error.log
+            rm -f "$TMP_ERR"
           else
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [ERROR] No reachable host found for primary source" | tee -a scrape_log.txt
           fi
@@ -106,7 +118,8 @@ jobs:
         run: |
           echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Start fetch and convert secondary source to ipcenter.bin" | tee -a scrape_log.txt
 
-          if curl -s -L --connect-timeout 10 --max-time 30 -o raw.txt http://studio.hsgf.net:8882/txt; then
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+          if curl -s -L -A "$UA" --connect-timeout 10 --max-time 30 -o raw.txt http://studio.hsgf.net:8882/txt; then
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] raw.txt fetched successfully" | tee -a scrape_log.txt
           else
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [ERROR] Failed to fetch raw.txt" | tee -a scrape_log.txt
