@@ -114,6 +114,11 @@
       filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
     }
 
+    /* 统一宽度变量 */
+    :root {
+      --content-width: min(900px, 94vw);
+    }
+
     /* 导航栏 */
     .nav-fixed {
       position: fixed;
@@ -121,17 +126,24 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 100;
-      width: min(800px, 90vw);
+      width: var(--content-width);
     }
 
     .nav-link {
       transition: all 0.3s ease;
       cursor: pointer;
+      font-size: 1rem;
+      letter-spacing: 0.03em;
     }
 
     .nav-link.active {
       color: #5a9eff !important;
       text-shadow: 0 0 8px rgba(90, 158, 255, 0.6);
+    }
+
+    /* 内容框统一宽度 */
+    .content-card {
+      width: var(--content-width);
     }
 
     /* 页面指示器 */
@@ -220,6 +232,9 @@
         width: 8px;
         height: 8px;
       }
+      .nav-link {
+        font-size: 0.85rem;
+      }
     }
   </style>
 </head>
@@ -238,8 +253,8 @@
 
   <!-- 固定导航 -->
   <div class="nav-fixed">
-    <nav class="glass rounded-full py-3 px-6">
-      <div class="flex justify-center gap-8 md:gap-16 text-base md:text-lg">
+    <nav class="glass rounded-full py-2.5 px-8">
+      <div class="flex justify-center gap-10 md:gap-16">
         <span class="nav-link active text-white" data-page="0">首页</span>
         <span class="nav-link text-white" data-page="1">关于</span>
         <span class="nav-link text-white" data-page="2">随笔日记</span>
@@ -251,9 +266,9 @@
   <!-- 整页滚动内容 -->
   <div class="fullpage-wrapper" id="fullpage">
     
-    <!-- 第1页：首页 -->
+    <!-- 第1页：首页 - 与导航齐宽 -->
     <div class="section" data-index="0">
-      <div class="glass rounded-2xl p-8 md:p-10 max-w-xl mx-4 text-center hover-float relative overflow-hidden">
+      <div class="content-card glass rounded-2xl p-10 md:p-12 text-center hover-float relative overflow-hidden">
         <!-- 海浪图标 - 白色 -->
         <svg class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-6 wave-glow" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M2 12c3-4 7-4 10 0s7 4 10 0"></path>
@@ -275,9 +290,9 @@
       </div>
     </div>
 
-    <!-- 第2页：关于 -->
+    <!-- 第2页：关于 - 与导航齐宽 -->
     <div class="section" data-index="1">
-      <div class="glass rounded-2xl p-8 max-w-2xl mx-4 hover-float">
+      <div class="content-card glass rounded-2xl p-10 md:p-12 hover-float">
         <h2 class="text-xl mb-4 flex items-center gap-2" style="color: #5a9eff;">
           <i class="fa fa-info-circle"></i> 关于本站
         </h2>
@@ -292,20 +307,20 @@
       </div>
     </div>
 
-    <!-- 第3页：随笔日记 -->
+    <!-- 第3页：随笔日记 - 与导航齐宽 -->
     <div class="section" data-index="2">
-      <div class="w-full max-w-4xl mx-4">
+      <div class="content-card">
         <h2 class="text-xl mb-6 text-center flex items-center justify-center gap-2" style="color: #5a9eff;">
           <i class="fa fa-pencil"></i> 随笔日记
         </h2>
-        <div class="grid md:grid-cols-2 gap-4 md:gap-6" id="diaryGrid">
-          <div class="glass rounded-xl p-5 md:p-6 hover-float diary-card cursor-pointer" data-date="2026-07-31">
+        <div class="grid md:grid-cols-2 gap-5 md:gap-6" id="diaryGrid">
+          <div class="glass rounded-xl p-6 md:p-7 hover-float diary-card cursor-pointer" data-date="2026-07-31">
             <div class="text-xs text-slate-300 mb-2 flex items-center gap-2">
               <i class="fa fa-calendar"></i> 2026-07-31
             </div>
             <p class="text-slate-100">海浪无声，日子慢慢向前。</p>
           </div>
-          <div class="glass rounded-xl p-5 md:p-6 hover-float diary-card cursor-pointer" data-date="2026-07-28">
+          <div class="glass rounded-xl p-6 md:p-7 hover-float diary-card cursor-pointer" data-date="2026-07-28">
             <div class="text-xs text-slate-300 mb-2 flex items-center gap-2">
               <i class="fa fa-calendar"></i> 2026-07-28
             </div>
@@ -320,9 +335,9 @@
       </div>
     </div>
 
-    <!-- 第4页：链接 -->
+    <!-- 第4页：链接 - 与导航齐宽 -->
     <div class="section" data-index="3">
-      <div class="glass rounded-2xl p-8 hover-float text-center">
+      <div class="content-card glass rounded-2xl p-10 md:p-12 hover-float text-center">
         <h2 class="text-xl mb-6" style="color: #5a9eff;">联系 & 入口</h2>
         <div class="flex gap-6 justify-center text-2xl">
           <a href="#" class="text-white hover:text-ocean-glow transition-colors duration-300 transform hover:scale-110 inline-block"><i class="fa fa-github"></i></a>
@@ -581,7 +596,7 @@
         const grid = document.getElementById('diaryGrid');
         const today = new Date().toISOString().slice(0, 10);
         const card = document.createElement('div');
-        card.className = 'glass rounded-xl p-5 md:p-6 hover-float diary-card cursor-pointer';
+        card.className = 'glass rounded-xl p-6 md:p-7 hover-float diary-card cursor-pointer';
         card.setAttribute('data-date', today);
         card.innerHTML = `
           <div class="text-xs text-slate-300 mb-2 flex items-center gap-2">
@@ -596,7 +611,7 @@
         card.scrollIntoView({ behavior: 'smooth', block: 'center' });
       });
 
-      console.log('🌊 海城 · 白色海浪已就绪');
+      console.log('🌊 海城 · 统一宽度布局已就绪');
     })();
   </script>
 </body>
