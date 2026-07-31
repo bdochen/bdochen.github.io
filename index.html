@@ -1,218 +1,603 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>海城 · 个人主页</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        ocean: {
-          klein: '#002FA7',
-          glow: '#2856d8'
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>海城 · 静候潮汐</title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ocean: {
+              klein: '#002FA7',
+              glow: '#5a9eff',
+              soft: '#a3c6ff'
+            }
+          },
+          fontFamily: {
+            sans: ['system-ui', 'sans-serif'],
+          },
         }
-      },
-      fontFamily: {
-        sans: ['system-ui', 'sans-serif'],
-      },
+      }
     }
-  }
-</script>
-<style>
-*{scroll-behavior: smooth;}
-body {
-  background: linear-gradient(-45deg, #002480, #002FA7, #0438b3, #002894);
-  background-size: 300% 300%;
-  animation: oceanFlow 22s ease infinite;
-  min-height: 100vh;
-}
-@keyframes oceanFlow {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-.glass {
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(130, 175, 255, 0.25);
-}
-.glass:hover {
-  background: rgba(255,255,255,0.14);
-  border-color:rgba(80,145,255,0.5);
-}
-.nav-wrap{
-  width: min(880px, 92vw);
-}
-#particles-canvas {
-  position: fixed;
-  top:0;left:0;z-index:0;
-  width:100vw;height:100vh;
-  pointer-events:none;
-}
-.content-wrap {position:relative;z-index:1;}
-.text-glow{
-  text-shadow: 0 0 10px rgba(90,160,255,0.35);
-}
-.icon-glow{
-  filter: drop-shadow(0 0 8px rgba(90,160,255,0.4));
-}
-.hover-float{
-  transition: transform 0.25s ease;
-}
-.hover-float:hover{
-  transform: translateY(-4px);
-}
-</style>
-</head>
-<body class="text-slate-100 overflow-x-hidden">
-<canvas id="particles-canvas"></canvas>
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<div class="content-wrap px-4">
-  <!-- 非固定导航｜宽长条玻璃布局 -->
-  <div class="flex justify-center pt-8 pb-16">
-    <nav class="glass rounded-full nav-wrap py-4">
-      <div class="flex justify-center gap-16 text-xl">
-        <a href="#home" class="hover:text-ocean-glow transition-colors">首页</a>
-        <a href="#about" class="hover:text-ocean-glow transition-colors">关于</a>
-        <a href="#logs" class="hover:text-ocean-glow transition-colors">随笔日记</a>
-        <a href="#links" class="hover:text-ocean-glow transition-colors">链接</a>
+    body {
+      background: linear-gradient(-45deg, #002480, #002FA7, #0438b3, #002894);
+      background-size: 300% 300%;
+      animation: oceanFlow 22s ease infinite;
+      font-family: system-ui, sans-serif;
+      overflow: hidden;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    @keyframes oceanFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* 粒子画布 */
+    #particles-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    /* 整页滚动容器 */
+    .fullpage-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .section {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* 玻璃效果 */
+    .glass {
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(130, 175, 255, 0.22);
+      box-shadow: 0 8px 32px rgba(0, 20, 80, 0.25);
+      transition: all 0.3s ease;
+    }
+
+    .glass:hover {
+      background: rgba(255, 255, 255, 0.13);
+      border-color: rgba(90, 158, 255, 0.55);
+      box-shadow: 0 12px 40px rgba(0, 40, 120, 0.4);
+    }
+
+    .hover-float {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-float:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 35px rgba(0, 30, 100, 0.5);
+    }
+
+    .text-glow {
+      text-shadow: 0 0 12px rgba(90, 158, 255, 0.45);
+    }
+
+    /* 海浪图标白色发光 */
+    .wave-glow {
+      filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+    }
+
+    /* 导航栏 */
+    .nav-fixed {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      width: min(800px, 90vw);
+    }
+
+    .nav-link {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .nav-link.active {
+      color: #5a9eff !important;
+      text-shadow: 0 0 8px rgba(90, 158, 255, 0.6);
+    }
+
+    /* 页面指示器 */
+    .page-dots {
+      position: fixed;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(130, 175, 255, 0.5);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .dot.active {
+      background: #5a9eff;
+      box-shadow: 0 0 12px rgba(90, 158, 255, 0.8);
+      transform: scale(1.3);
+    }
+
+    /* 波纹效果 */
+    .ripple {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(0);
+      animation: rippleEffect 0.6s ease-out;
+      pointer-events: none;
+    }
+
+    @keyframes rippleEffect {
+      to {
+        transform: scale(4);
+        opacity: 0;
+      }
+    }
+
+    /* 打字机光标 */
+    .cursor {
+      display: inline-block;
+      width: 2px;
+      height: 1.2em;
+      background: #ffffff;
+      margin-left: 2px;
+      vertical-align: text-bottom;
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    /* 向下箭头动画 */
+    .scroll-arrow {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: bounce 2s infinite;
+      opacity: 0.6;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+      40% { transform: translateX(-50%) translateY(-10px); }
+      60% { transform: translateX(-50%) translateY(-5px); }
+    }
+
+    @media (max-width: 768px) {
+      .page-dots {
+        right: 10px;
+        gap: 10px;
+      }
+      .dot {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 粒子背景 -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- 页面指示器 -->
+  <div class="page-dots" id="dots">
+    <div class="dot active" data-page="0"></div>
+    <div class="dot" data-page="1"></div>
+    <div class="dot" data-page="2"></div>
+    <div class="dot" data-page="3"></div>
+  </div>
+
+  <!-- 固定导航 -->
+  <div class="nav-fixed">
+    <nav class="glass rounded-full py-3 px-6">
+      <div class="flex justify-center gap-8 md:gap-16 text-base md:text-lg">
+        <span class="nav-link active text-white" data-page="0">首页</span>
+        <span class="nav-link text-white" data-page="1">关于</span>
+        <span class="nav-link text-white" data-page="2">随笔日记</span>
+        <span class="nav-link text-white" data-page="3">链接</span>
       </div>
     </nav>
   </div>
 
-  <!-- Hero 首屏（新增海浪SVG图标） -->
-  <section id="home" class="min-h-[70vh] flex flex-col justify-center items-center px-6">
-    <div class="glass rounded-2xl p-10 max-w-xl text-center hover-float">
-      <!-- 海浪图标 -->
-      <svg class="w-20 h-20 mx-auto mb-6 icon-glow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M2 12c3-4 7-4 10 0s7 4 10 0"></path>
-        <path d="M2 18c3-4 7-4 10 0s7 4 10 0"></path>
-        <path d="M2 6c3-4 7-4 10 0s7 4 10 0"></path>
-      </svg>
-      <h1 class="text-[clamp(2rem,5vw,3rem)] font-light text-glow mb-4">海城</h1>
-      <p class="text-slate-200 leading-relaxed">
-        静候潮汐，记录日常<br>
-        存放思绪与随笔的自留地
-      </p>
-      <div class="mt-8">
-        <a href="#logs" class="inline-block px-6 py-2 rounded-full border border-ocean-glow/55 hover:bg-ocean-glow/18 transition-all">
-          <i class="fa fa-book mr-2"></i>查看日记
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 关于区域 -->
-  <section id="about" class="py-20 px-6 flex justify-center">
-    <div class="glass rounded-2xl p-8 max-w-2xl hover-float">
-      <h2 class="text-xl mb-4 text-ocean-glow">关于本站</h2>
-      <p class="text-slate-200 leading-loose">
-        这是一个极简自留站点，用于随手记录生活碎片、感想与随笔。
-        所有内容本地存储，安静、轻量化，没有繁杂功能。
-        适合长期部署在 Github Pages。
-      </p>
-    </div>
-  </section>
-
-  <!-- 日记模块 -->
-  <section id="logs" class="py-20 px-6">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-xl mb-8 text-ocean-glow text-center">随笔日记</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="glass rounded-xl p-6 hover-float">
-          <div class="text-xs text-slate-300 mb-2">2026-07-31</div>
-          <p class="text-slate-100">海浪无声，日子慢慢向前。</p>
-        </div>
-        <div class="glass rounded-xl p-6 hover-float">
-          <div class="text-xs text-slate-300 mb-2">2026-07-28</div>
-          <p class="text-slate-100">保持耐心，等待一切慢慢明朗。</p>
+  <!-- 整页滚动内容 -->
+  <div class="fullpage-wrapper" id="fullpage">
+    
+    <!-- 第1页：首页 -->
+    <div class="section" data-index="0">
+      <div class="glass rounded-2xl p-8 md:p-10 max-w-xl mx-4 text-center hover-float relative overflow-hidden">
+        <!-- 海浪图标 - 白色 -->
+        <svg class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-6 wave-glow" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 12c3-4 7-4 10 0s7 4 10 0"></path>
+          <path d="M2 18c3-4 7-4 10 0s7 4 10 0"></path>
+          <path d="M2 6c3-4 7-4 10 0s7 4 10 0"></path>
+        </svg>
+        <h1 class="text-3xl md:text-4xl font-light text-glow mb-4 text-white">海城</h1>
+        <p class="text-slate-200 leading-relaxed text-base md:text-lg">
+          <span id="typedText"></span><span class="cursor"></span>
+        </p>
+        <div class="mt-8">
+          <button class="px-6 py-2 rounded-full border border-ocean-glow/55 text-white hover:bg-ocean-glow/18 transition-all duration-300" onclick="goToSlide(2)">
+            <i class="fa fa-book mr-2"></i>查看日记
+          </button>
         </div>
       </div>
-      <div class="text-center mt-10">
-        <button class="px-6 py-2 rounded-full border border-slate-300/55 hover:border-ocean-glow transition-all">
-          撰写新记录
-        </button>
+      <div class="scroll-arrow text-sm">
+        <i class="fa fa-chevron-down"></i> 向下滑动
       </div>
     </div>
-  </section>
 
-  <!-- 社交链接 -->
-  <section id="links" class="py-20 px-6 flex justify-center">
-    <div class="glass rounded-2xl p-8 hover-float">
-      <h2 class="text-xl mb-6 text-ocean-glow text-center">联系 & 入口</h2>
-      <div class="flex gap-5 justify-center text-xl">
-        <a href="#" class="hover:text-ocean-glow transition-colors"><i class="fa fa-github"></i></a>
-        <a href="#" class="hover:text-ocean-glow transition-colors"><i class="fa fa-envelope"></i></a>
-        <a href="#" class="hover:text-ocean-glow transition-colors"><i class="fa fa-link"></i></a>
+    <!-- 第2页：关于 -->
+    <div class="section" data-index="1">
+      <div class="glass rounded-2xl p-8 max-w-2xl mx-4 hover-float">
+        <h2 class="text-xl mb-4 flex items-center gap-2" style="color: #5a9eff;">
+          <i class="fa fa-info-circle"></i> 关于本站
+        </h2>
+        <p class="text-slate-200 leading-loose text-base">
+          这是一个极简自留站点，用于随手记录生活碎片、感想与随笔。
+          所有内容本地存储，安静、轻量化，没有繁杂功能。
+          适合长期部署在 Github Pages。潮汐起伏，文字留痕。
+        </p>
+        <div class="mt-6 text-xs text-slate-300 flex items-center gap-2">
+          <i class="fa fa-clock-o"></i> <span id="liveTime"></span>
+        </div>
       </div>
     </div>
-  </section>
 
-  <footer class="py-10 text-center text-slate-400 text-sm">
-    <p>© 2026 Haicheng | Deploy on Github Pages</p>
-  </footer>
-</div>
+    <!-- 第3页：随笔日记 -->
+    <div class="section" data-index="2">
+      <div class="w-full max-w-4xl mx-4">
+        <h2 class="text-xl mb-6 text-center flex items-center justify-center gap-2" style="color: #5a9eff;">
+          <i class="fa fa-pencil"></i> 随笔日记
+        </h2>
+        <div class="grid md:grid-cols-2 gap-4 md:gap-6" id="diaryGrid">
+          <div class="glass rounded-xl p-5 md:p-6 hover-float diary-card cursor-pointer" data-date="2026-07-31">
+            <div class="text-xs text-slate-300 mb-2 flex items-center gap-2">
+              <i class="fa fa-calendar"></i> 2026-07-31
+            </div>
+            <p class="text-slate-100">海浪无声，日子慢慢向前。</p>
+          </div>
+          <div class="glass rounded-xl p-5 md:p-6 hover-float diary-card cursor-pointer" data-date="2026-07-28">
+            <div class="text-xs text-slate-300 mb-2 flex items-center gap-2">
+              <i class="fa fa-calendar"></i> 2026-07-28
+            </div>
+            <p class="text-slate-100">保持耐心，等待一切慢慢明朗。</p>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <button id="newRecordBtn" class="px-6 py-2 rounded-full border border-slate-300/55 text-white hover:border-ocean-glow transition-all duration-300 glass">
+            <i class="fa fa-plus-circle mr-2"></i>撰写新记录
+          </button>
+        </div>
+      </div>
+    </div>
 
-<script>
-const canvas = document.getElementById('particles-canvas');
-const ctx = canvas.getContext('2d');
-let w, h;
-let particles = [];
-let isVisible = true;
+    <!-- 第4页：链接 -->
+    <div class="section" data-index="3">
+      <div class="glass rounded-2xl p-8 hover-float text-center">
+        <h2 class="text-xl mb-6" style="color: #5a9eff;">联系 & 入口</h2>
+        <div class="flex gap-6 justify-center text-2xl">
+          <a href="#" class="text-white hover:text-ocean-glow transition-colors duration-300 transform hover:scale-110 inline-block"><i class="fa fa-github"></i></a>
+          <a href="#" class="text-white hover:text-ocean-glow transition-colors duration-300 transform hover:scale-110 inline-block"><i class="fa fa-envelope"></i></a>
+          <a href="#" class="text-white hover:text-ocean-glow transition-colors duration-300 transform hover:scale-110 inline-block"><i class="fa fa-link"></i></a>
+        </div>
+      </div>
+    </div>
 
-document.addEventListener('visibilitychange', ()=>{
-  isVisible = !document.hidden;
-});
+  </div>
 
-function resizeCanvas(){
-  w = canvas.width = window.innerWidth;
-  h = canvas.height = window.innerHeight;
-}
-resizeCanvas();
-window.addEventListener('resize',resizeCanvas);
+  <script>
+    (function() {
+      // ========== 粒子背景 ==========
+      const canvas = document.getElementById('particles-canvas');
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
 
-class Particle{
-  constructor(){
-    this.x = Math.random()*w;
-    this.y = Math.random()*h;
-    this.radius = Math.random()*1.1+0.2;
-    this.speedX = (Math.random()-0.5)*0.3;
-    this.speedY = (Math.random()-0.5)*0.3;
-    this.alpha = Math.random()*0.4+0.12;
-  }
-  update(){
-    this.x += this.speedX;
-    this.y += this.speedY;
-    if(this.x<0||this.x>w) this.speedX *= -1;
-    if(this.y<0||this.y>h) this.speedY *= -1;
-  }
-  draw(){
-    ctx.beginPath();
-    ctx.arc(this.x,this.y,this.radius,0,Math.PI*2);
-    ctx.fillStyle=`rgba(110,165,255,${this.alpha})`;
-    ctx.fill();
-  }
-}
-for(let i=0;i<60;i++) particles.push(new Particle());
+      class Particle {
+        constructor() {
+          this.reset();
+        }
+        reset() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.radius = Math.random() * 1.5 + 0.3;
+          this.speedX = (Math.random() - 0.5) * 0.4;
+          this.speedY = (Math.random() - 0.5) * 0.4;
+          this.alpha = Math.random() * 0.5 + 0.15;
+        }
+        update() {
+          this.x += this.speedX;
+          this.y += this.speedY;
+          if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(130, 175, 255, ${this.alpha})`;
+          ctx.fill();
+        }
+      }
 
-function animate(){
-  if(!isVisible){
-    requestAnimationFrame(animate);
-    return;
-  }
-  ctx.clearRect(0,0,w,h);
-  particles.forEach(p=>{
-    p.update();
-    p.draw();
-  })
-  requestAnimationFrame(animate);
-}
-animate();
-</script>
+      for (let i = 0; i < 60; i++) {
+        particles.push(new Particle());
+      }
+
+      function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.update();
+          p.draw();
+        });
+        requestAnimationFrame(animateParticles);
+      }
+      animateParticles();
+
+      // ========== 整页滚动 ==========
+      const fullpage = document.getElementById('fullpage');
+      const sections = document.querySelectorAll('.section');
+      const totalSlides = sections.length;
+      let currentSlide = 0;
+      let isAnimating = false;
+      let touchStartY = 0;
+
+      // 更新UI
+      function updateUI(index) {
+        // 导航高亮
+        document.querySelectorAll('.nav-link').forEach(link => {
+          const page = parseInt(link.getAttribute('data-page'));
+          link.classList.toggle('active', page === index);
+        });
+        
+        // 指示器高亮
+        document.querySelectorAll('.dot').forEach(dot => {
+          const page = parseInt(dot.getAttribute('data-page'));
+          dot.classList.toggle('active', page === index);
+        });
+
+        // 控制首页箭头显示
+        const arrow = document.querySelector('.scroll-arrow');
+        if (arrow) {
+          arrow.style.display = index === 0 ? 'block' : 'none';
+        }
+      }
+
+      // 跳转到指定页
+      window.goToSlide = function(index) {
+        if (index < 0 || index >= totalSlides || isAnimating) return;
+        
+        isAnimating = true;
+        currentSlide = index;
+        fullpage.style.transform = `translateY(-${currentSlide * 100}vh)`;
+        updateUI(currentSlide);
+        
+        setTimeout(() => {
+          isAnimating = false;
+        }, 800);
+      };
+
+      // 鼠标滚轮
+      window.addEventListener('wheel', function(e) {
+        e.preventDefault();
+        if (isAnimating) return;
+        
+        if (e.deltaY > 20) {
+          goToSlide(currentSlide + 1);
+        } else if (e.deltaY < -20) {
+          goToSlide(currentSlide - 1);
+        }
+      }, { passive: false });
+
+      // 触摸事件
+      window.addEventListener('touchstart', function(e) {
+        touchStartY = e.touches[0].clientY;
+      }, { passive: true });
+
+      window.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+      }, { passive: false });
+
+      window.addEventListener('touchend', function(e) {
+        if (isAnimating) return;
+        const deltaY = e.changedTouches[0].clientY - touchStartY;
+        
+        if (deltaY < -50) {
+          goToSlide(currentSlide + 1);
+        } else if (deltaY > 50) {
+          goToSlide(currentSlide - 1);
+        }
+      });
+
+      // 键盘事件
+      window.addEventListener('keydown', function(e) {
+        if (isAnimating) return;
+        
+        switch(e.key) {
+          case 'ArrowDown':
+          case 'PageDown':
+            e.preventDefault();
+            goToSlide(currentSlide + 1);
+            break;
+          case 'ArrowUp':
+          case 'PageUp':
+            e.preventDefault();
+            goToSlide(currentSlide - 1);
+            break;
+          case 'Home':
+            e.preventDefault();
+            goToSlide(0);
+            break;
+          case 'End':
+            e.preventDefault();
+            goToSlide(totalSlides - 1);
+            break;
+        }
+      });
+
+      // 导航点击
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+          const page = parseInt(this.getAttribute('data-page'));
+          goToSlide(page);
+        });
+      });
+
+      // 指示器点击
+      document.querySelectorAll('.dot').forEach(dot => {
+        dot.addEventListener('click', function() {
+          const page = parseInt(this.getAttribute('data-page'));
+          goToSlide(page);
+        });
+      });
+
+      // 窗口大小调整
+      window.addEventListener('resize', function() {
+        fullpage.style.transform = `translateY(-${currentSlide * 100}vh)`;
+      });
+
+      // 初始化
+      updateUI(0);
+
+      // ========== 打字机效果 ==========
+      const typedSpan = document.getElementById('typedText');
+      const textToType = '静候潮汐，记录日常。存放思绪与随笔的自留地。';
+      let charIndex = 0;
+
+      function typeWriter() {
+        if (typedSpan && charIndex < textToType.length) {
+          typedSpan.textContent += textToType.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeWriter, 70);
+        }
+      }
+      
+      if (typedSpan) {
+        typedSpan.textContent = '';
+        setTimeout(typeWriter, 300);
+      }
+
+      // ========== 波纹效果 ==========
+      document.addEventListener('click', function(e) {
+        const target = e.target.closest('.glass, button, .hover-float');
+        if (!target) return;
+        
+        const ripple = document.createElement('span');
+        ripple.className = 'ripple';
+        const rect = target.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        ripple.style.width = ripple.style.height = size + 'px';
+        ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+        ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+        target.style.position = target.style.position || 'relative';
+        target.style.overflow = 'hidden';
+        target.appendChild(ripple);
+        
+        ripple.addEventListener('animationend', () => ripple.remove());
+      });
+
+      // ========== 实时时间 ==========
+      function updateTime() {
+        const el = document.getElementById('liveTime');
+        if (el) {
+          el.textContent = new Date().toLocaleString('zh-CN', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+          });
+        }
+      }
+      updateTime();
+      setInterval(updateTime, 1000);
+
+      // ========== 日记卡片点击 ==========
+      document.querySelectorAll('.diary-card').forEach(card => {
+        card.addEventListener('click', function() {
+          const date = this.getAttribute('data-date');
+          const text = this.querySelector('p').textContent;
+          alert(`📖 ${date}\n${text}`);
+        });
+      });
+
+      // ========== 新记录按钮 ==========
+      document.getElementById('newRecordBtn').addEventListener('click', function() {
+        const grid = document.getElementById('diaryGrid');
+        const today = new Date().toISOString().slice(0, 10);
+        const card = document.createElement('div');
+        card.className = 'glass rounded-xl p-5 md:p-6 hover-float diary-card cursor-pointer';
+        card.setAttribute('data-date', today);
+        card.innerHTML = `
+          <div class="text-xs text-slate-300 mb-2 flex items-center gap-2">
+            <i class="fa fa-calendar"></i> ${today}
+          </div>
+          <p class="text-slate-100">✨ 新思绪，随潮汐而来。</p>
+        `;
+        card.addEventListener('click', function() {
+          alert(`📖 ${today}\n✨ 新思绪，随潮汐而来。`);
+        });
+        grid.appendChild(card);
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+
+      console.log('🌊 海城 · 白色海浪已就绪');
+    })();
+  </script>
 </body>
 </html>
