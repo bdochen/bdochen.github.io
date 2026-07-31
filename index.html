@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>海城 · 静候潮汐</title>
+  
+  <!-- 网站图标 Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect width='32' height='24' rx='4' fill='%23002FA7'/><path d='M4 12c4-5 9-5 14 0s9 5 14 0'/><path d='M4 18c4-5 9-5 14 0s9 5 14 0'/><path d='M4 6c4-5 9-5 14 0s9 5 14 0'/></svg>">
+  
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
   <script>
     tailwind.config = {
       theme: {
@@ -133,7 +138,7 @@
       transition: all 0.3s ease;
       cursor: pointer;
       font-size: 1rem;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.08em;
     }
 
     .nav-link.active {
@@ -206,23 +211,6 @@
       50% { opacity: 0; }
     }
 
-    /* 向下箭头动画 */
-    .scroll-arrow {
-      position: absolute;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      animation: bounce 2s infinite;
-      opacity: 0.6;
-      color: rgba(255, 255, 255, 0.7);
-    }
-
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-      40% { transform: translateX(-50%) translateY(-10px); }
-      60% { transform: translateX(-50%) translateY(-5px); }
-    }
-
     @media (max-width: 768px) {
       .page-dots {
         right: 10px;
@@ -234,6 +222,7 @@
       }
       .nav-link {
         font-size: 0.85rem;
+        letter-spacing: 0.06em;
       }
     }
   </style>
@@ -251,98 +240,118 @@
     <div class="dot" data-page="3"></div>
   </div>
 
-  <!-- 固定导航 -->
+  <!-- 固定导航 - 顺序：首页、随笔、关于、链接 -->
   <div class="nav-fixed">
     <nav class="glass rounded-full py-2.5 px-8">
-      <div class="flex justify-center gap-10 md:gap-16">
-        <span class="nav-link active text-white" data-page="0">首页</span>
-        <span class="nav-link text-white" data-page="1">关于</span>
-        <span class="nav-link text-white" data-page="2">随笔日记</span>
-        <span class="nav-link text-white" data-page="3">链接</span>
+      <div class="flex justify-center gap-12 md:gap-20">
+        <span class="nav-link active text-white" data-page="0">首 页</span>
+        <span class="nav-link text-white" data-page="1">随 笔</span>
+        <span class="nav-link text-white" data-page="2">关 于</span>
+        <span class="nav-link text-white" data-page="3">链 接</span>
       </div>
     </nav>
   </div>
 
-  <!-- 整页滚动内容 -->
+  <!-- 整页滚动内容 - 顺序：首页、随笔、关于、链接 -->
   <div class="fullpage-wrapper" id="fullpage">
     
-    <!-- 第1页：首页 - 与导航齐宽 -->
+    <!-- 第1页：首页 (index 0) -->
     <div class="section" data-index="0">
       <div class="content-card glass rounded-2xl p-10 md:p-12 text-center hover-float relative overflow-hidden">
-        <!-- 海浪图标 - 白色 -->
-        <svg class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-6 wave-glow" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M2 12c3-4 7-4 10 0s7 4 10 0"></path>
-          <path d="M2 18c3-4 7-4 10 0s7 4 10 0"></path>
-          <path d="M2 6c3-4 7-4 10 0s7 4 10 0"></path>
+        <!-- 海浪图标 - 白色，加宽 -->
+        <svg class="w-24 h-20 md:w-28 md:h-24 mx-auto mb-6 wave-glow" viewBox="0 0 32 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 12c4-5 9-5 14 0s9 5 14 0"></path>
+          <path d="M2 18c4-5 9-5 14 0s9 5 14 0"></path>
+          <path d="M2 6c4-5 9-5 14 0s9 5 14 0"></path>
         </svg>
         <h1 class="text-3xl md:text-4xl font-light text-glow mb-4 text-white">海城</h1>
         <p class="text-slate-200 leading-relaxed text-base md:text-lg">
           <span id="typedText"></span><span class="cursor"></span>
         </p>
         <div class="mt-8">
-          <button class="px-6 py-2 rounded-full border border-ocean-glow/55 text-white hover:bg-ocean-glow/18 transition-all duration-300" onclick="goToSlide(2)">
-            <i class="fa fa-book mr-2"></i>查看日记
+          <button class="px-6 py-2 rounded-full border border-ocean-glow/55 text-white hover:bg-ocean-glow/18 transition-all duration-300" onclick="goToSlide(1)">
+            <i class="ri-book-read-line mr-2"></i>查看随笔
           </button>
         </div>
       </div>
-      <div class="scroll-arrow text-sm">
-        <i class="fa fa-chevron-down"></i> 向下滑动
-      </div>
     </div>
 
-    <!-- 第2页：关于 - 与导航齐宽 -->
+    <!-- 第2页：随笔日记 (index 1) -->
     <div class="section" data-index="1">
-      <div class="content-card glass rounded-2xl p-10 md:p-12 hover-float">
-        <h2 class="text-xl mb-4 flex items-center gap-2" style="color: #5a9eff;">
-          <i class="fa fa-info-circle"></i> 关于本站
-        </h2>
-        <p class="text-slate-200 leading-loose text-base">
-          这是一个极简自留站点，用于随手记录生活碎片、感想与随笔。
-          所有内容本地存储，安静、轻量化，没有繁杂功能。
-          适合长期部署在 Github Pages。潮汐起伏，文字留痕。
-        </p>
-        <div class="mt-6 text-xs text-slate-300 flex items-center gap-2">
-          <i class="fa fa-clock-o"></i> <span id="liveTime"></span>
-        </div>
-      </div>
-    </div>
-
-    <!-- 第3页：随笔日记 - 与导航齐宽 -->
-    <div class="section" data-index="2">
       <div class="content-card">
         <h2 class="text-xl mb-6 text-center flex items-center justify-center gap-2" style="color: #5a9eff;">
-          <i class="fa fa-pencil"></i> 随笔日记
+          <i class="ri-book-open-line"></i> 随笔日记
         </h2>
         <div class="grid md:grid-cols-2 gap-5 md:gap-6" id="diaryGrid">
           <div class="glass rounded-xl p-6 md:p-7 hover-float diary-card cursor-pointer" data-date="2026-07-31">
             <div class="text-xs text-slate-300 mb-2 flex items-center gap-2">
-              <i class="fa fa-calendar"></i> 2026-07-31
+              <i class="ri-calendar-line"></i> 2026-07-31
             </div>
             <p class="text-slate-100">海浪无声，日子慢慢向前。</p>
+            <div class="mt-3 flex items-center gap-2 text-xs text-slate-400">
+              <i class="ri-sun-line"></i> 晴 · 微风
+            </div>
           </div>
           <div class="glass rounded-xl p-6 md:p-7 hover-float diary-card cursor-pointer" data-date="2026-07-28">
             <div class="text-xs text-slate-300 mb-2 flex items-center gap-2">
-              <i class="fa fa-calendar"></i> 2026-07-28
+              <i class="ri-calendar-line"></i> 2026-07-28
             </div>
             <p class="text-slate-100">保持耐心，等待一切慢慢明朗。</p>
+            <div class="mt-3 flex items-center gap-2 text-xs text-slate-400">
+              <i class="ri-cloud-line"></i> 阴 · 思绪万千
+            </div>
           </div>
         </div>
         <div class="text-center mt-8">
           <button id="newRecordBtn" class="px-6 py-2 rounded-full border border-slate-300/55 text-white hover:border-ocean-glow transition-all duration-300 glass">
-            <i class="fa fa-plus-circle mr-2"></i>撰写新记录
+            <i class="ri-add-circle-line mr-2"></i>撰写新记录
           </button>
         </div>
       </div>
     </div>
 
-    <!-- 第4页：链接 - 与导航齐宽 -->
+    <!-- 第3页：关于 (index 2) -->
+    <div class="section" data-index="2">
+      <div class="content-card glass rounded-2xl p-10 md:p-12 hover-float">
+        <h2 class="text-xl mb-4 flex items-center gap-2" style="color: #5a9eff;">
+          <i class="ri-information-line"></i> 关于本站
+        </h2>
+        <p class="text-slate-200 leading-loose text-base">
+          这是一个极简自留站点，用于随手记录生活碎片、感想与随笔。
+          所有内容本地存储，安静、轻量化，没有繁杂功能。
+          潮汐起伏，文字留痕。
+        </p>
+        <div class="mt-6 text-xs text-slate-300 flex items-center gap-2">
+          <i class="ri-time-line"></i> <span id="liveTime"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第4页：链接 (index 3) -->
     <div class="section" data-index="3">
       <div class="content-card glass rounded-2xl p-10 md:p-12 hover-float text-center">
-        <h2 class="text-xl mb-6" style="color: #5a9eff;">联系 & 入口</h2>
-        <div class="flex gap-6 justify-center text-2xl">
-          <a href="#" class="text-white hover:text-ocean-glow transition-colors duration-300 transform hover:scale-110 inline-block"><i class="fa fa-github"></i></a>
-          <a href="#" class="text-white hover:text-ocean-glow transition-colors duration-300 transform hover:scale-110 inline-block"><i class="fa fa-envelope"></i></a>
-          <a href="#" class="text-white hover:text-ocean-glow transition-colors duration-300 transform hover:scale-110 inline-block"><i class="fa fa-link"></i></a>
+        <h2 class="text-xl mb-6" style="color: #5a9eff;">
+          <i class="ri-share-line mr-2"></i>联系 & 入口
+        </h2>
+        <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+          欢迎通过以下方式找到我
+        </p>
+        <div class="flex gap-8 justify-center text-2xl">
+          <a href="#" class="text-white hover:text-ocean-glow transition-colors duration-300 transform hover:scale-110 inline-block" title="GitHub">
+            <i class="ri-github-fill"></i>
+          </a>
+          <a href="#" class="text-white hover:text-ocean-glow transition-colors duration-300 transform hover:scale-110 inline-block" title="邮箱">
+            <i class="ri-mail-line"></i>
+          </a>
+          <a href="#" class="text-white hover:text-ocean-glow transition-colors duration-300 transform hover:scale-110 inline-block" title="链接">
+            <i class="ri-external-link-line"></i>
+          </a>
+          <a href="#" class="text-white hover:text-ocean-glow transition-colors duration-300 transform hover:scale-110 inline-block" title="RSS">
+            <i class="ri-rss-line"></i>
+          </a>
+        </div>
+        <div class="mt-8 text-xs text-slate-400">
+          <p><i class="ri-copyright-line"></i> 2026 Haicheng | Deploy on SZ</p>
         </div>
       </div>
     </div>
@@ -413,7 +422,7 @@
 
       // 更新UI
       function updateUI(index) {
-        // 导航高亮
+        // 导航高亮 - 匹配 data-index
         document.querySelectorAll('.nav-link').forEach(link => {
           const page = parseInt(link.getAttribute('data-page'));
           link.classList.toggle('active', page === index);
@@ -424,12 +433,6 @@
           const page = parseInt(dot.getAttribute('data-page'));
           dot.classList.toggle('active', page === index);
         });
-
-        // 控制首页箭头显示
-        const arrow = document.querySelector('.scroll-arrow');
-        if (arrow) {
-          arrow.style.display = index === 0 ? 'block' : 'none';
-        }
       }
 
       // 跳转到指定页
@@ -600,9 +603,12 @@
         card.setAttribute('data-date', today);
         card.innerHTML = `
           <div class="text-xs text-slate-300 mb-2 flex items-center gap-2">
-            <i class="fa fa-calendar"></i> ${today}
+            <i class="ri-calendar-line"></i> ${today}
           </div>
           <p class="text-slate-100">✨ 新思绪，随潮汐而来。</p>
+          <div class="mt-3 flex items-center gap-2 text-xs text-slate-400">
+            <i class="ri-edit-line"></i> 今日 · 记录
+          </div>
         `;
         card.addEventListener('click', function() {
           alert(`📖 ${today}\n✨ 新思绪，随潮汐而来。`);
@@ -611,7 +617,7 @@
         card.scrollIntoView({ behavior: 'smooth', block: 'center' });
       });
 
-      console.log('🌊 海城 · 统一宽度布局已就绪');
+      console.log('🌊 海城 · 向下滑动已隐藏');
     })();
   </script>
 </body>
