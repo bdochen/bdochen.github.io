@@ -1,6 +1,212 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>海城 · 个人主页</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ocean: {
+          klein: '#002FA7',    // 标准克莱因蓝
+          glow: '#2856d8'      // 提亮悬浮高亮色
+        }
+      },
+      fontFamily: {
+        sans: ['system-ui', 'sans-serif'],
+      },
+    }
+  }
+}
+</script>
+<style>
+*{scroll-behavior: smooth;}
+body {
+  /* 克莱因蓝为主渐变，层次柔和不刺眼 */
+  background: linear-gradient(-45deg, #002480, #002FA7, #0438b3, #002894);
+  background-size: 300% 300%;
+  animation: oceanFlow 22s ease infinite;
+  min-height: 100vh;
+}
+@keyframes oceanFlow {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+.glass {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(130, 175, 255, 0.25);
+}
+.glass:hover {
+  background: rgba(255,255,255,0.14);
+  border-color:rgba(80,145,255,0.5);
+}
+.nav-wrap{
+  width: min(880px, 92vw);
+}
+#particles-canvas {
+  position: fixed;
+  top:0;left:0;z-index:0;
+  width:100vw;height:100vh;
+  pointer-events:none;
+}
+.content-wrap {position:relative;z-index:1;}
+.text-glow{
+  text-shadow: 0 0 10px rgba(90,160,255,0.35);
+}
+.hover-float{
+  transition: transform 0.25s ease;
+}
+.hover-float:hover{
+  transform: translateY(-4px);
+}
+</style>
 </head>
-<body>test</body>
+<body class="text-slate-100 overflow-x-hidden">
+<canvas id="particles-canvas"></canvas>
+
+<div class="content-wrap px-4">
+  <!-- 非固定导航｜宽长条玻璃布局 -->
+  <div class="flex justify-center pt-8 pb-16">
+    <nav class="glass rounded-full nav-wrap py-4">
+      <div class="flex justify-center gap-16 text-xl">
+        <a href="#home" class="hover:text-ocean-glow transition-colors">首页</a>
+        <a href="#about" class="hover:text-ocean-glow transition-colors">关于</a>
+        <a href="#logs" class="hover:text-ocean-glow transition-colors">随笔日记</a>
+        <a href="#links" class="hover:text-ocean-glow transition-colors">链接</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero 首屏 -->
+  <section id="home" class="min-h-[70vh] flex flex-col justify-center items-center px-6">
+    <div class="glass rounded-2xl p-10 max-w-xl text-center hover-float">
+      <h1 class="text-[clamp(2rem,5vw,3rem)] font-light text-glow mb-4">海城</h1>
+      <p class="text-slate-200 leading-relaxed">
+        静候潮汐，记录日常<br>
+        存放思绪与随笔的自留地
+      </p>
+      <div class="mt-8">
+        <a href="#logs" class="inline-block px-6 py-2 rounded-full border border-ocean-glow/55 hover:bg-ocean-glow/18 transition-all">
+          <i class="fa fa-book mr-2"></i>查看日记
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于区域 -->
+  <section id="about" class="py-20 px-6 flex justify-center">
+    <div class="glass rounded-2xl p-8 max-w-2xl hover-float">
+      <h2 class="text-xl mb-4 text-ocean-glow">关于本站</h2>
+      <p class="text-slate-200 leading-loose">
+        这是一个极简自留站点，用于随手记录生活碎片、感想与随笔。
+        所有内容本地存储，安静、轻量化，没有繁杂功能。
+        适合长期部署在 Github Pages。
+      </p>
+    </div>
+  </section>
+
+  <!-- 日记模块 -->
+  <section id="logs" class="py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-xl mb-8 text-ocean-glow text-center">随笔日记</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="glass rounded-xl p-6 hover-float">
+          <div class="text-xs text-slate-300 mb-2">2026-07-31</div>
+          <p class="text-slate-100">海浪无声，日子慢慢向前。</p>
+        </div>
+        <div class="glass rounded-xl p-6 hover-float">
+          <div class="text-xs text-slate-300 mb-2">2026-07-28</div>
+          <p class="text-slate-100">保持耐心，等待一切慢慢明朗。</p>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <button class="px-6 py-2 rounded-full border border-slate-300/55 hover:border-ocean-glow transition-all">
+          撰写新记录
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 社交链接 -->
+  <section id="links" class="py-20 px-6 flex justify-center">
+    <div class="glass rounded-2xl p-8 hover-float">
+      <h2 class="text-xl mb-6 text-ocean-glow text-center">联系 & 入口</h2>
+      <div class="flex gap-5 justify-center text-xl">
+        <a href="#" class="hover:text-ocean-glow transition-colors"><i class="fa fa-github"></i></a>
+        <a href="#" class="hover:text-ocean-glow transition-colors"><i class="fa fa-envelope"></i></a>
+        <a href="#" class="hover:text-ocean-glow transition-colors"><i class="fa fa-link"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-slate-400 text-sm">
+    <p>© 2026 Haicheng | Deploy on Github Pages</p>
+  </footer>
+</div>
+
+<script>
+const canvas = document.getElementById('particles-canvas');
+const ctx = canvas.getContext('2d');
+let w, h;
+let particles = [];
+let isVisible = true;
+
+document.addEventListener('visibilitychange', ()=>{
+  isVisible = !document.hidden;
+});
+
+function resizeCanvas(){
+  w = canvas.width = window.innerWidth;
+  h = canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener('resize',resizeCanvas);
+
+class Particle{
+  constructor(){
+    this.x = Math.random()*w;
+    this.y = Math.random()*h;
+    this.radius = Math.random()*1.1+0.2;
+    this.speedX = (Math.random()-0.5)*0.3;
+    this.speedY = (Math.random()-0.5)*0.3;
+    this.alpha = Math.random()*0.4+0.12;
+  }
+  update(){
+    this.x += this.speedX;
+    this.y += this.speedY;
+    if(this.x<0||this.x>w) this.speedX *= -1;
+    if(this.y<0||this.y>h) this.speedY *= -1;
+  }
+  draw(){
+    ctx.beginPath();
+    ctx.arc(this.x,this.y,this.radius,0,Math.PI*2);
+    // 粒子使用浅蓝，和克莱因蓝背景呼应
+    ctx.fillStyle=`rgba(110,165,255,${this.alpha})`;
+    ctx.fill();
+  }
+}
+for(let i=0;i<60;i++) particles.push(new Particle());
+
+function animate(){
+  if(!isVisible){
+    requestAnimationFrame(animate);
+    return;
+  }
+  ctx.clearRect(0,0,w,h);
+  particles.forEach(p=>{
+    p.update();
+    p.draw();
+  })
+  requestAnimationFrame(animate);
+}
+animate();
+</script>
+</body>
 </html>
