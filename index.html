@@ -12,8 +12,8 @@ tailwind.config = {
     extend: {
       colors: {
         ocean: {
-          klein: '#002FA7',    // 标准克莱因蓝
-          glow: '#2856d8'      // 提亮悬浮高亮色
+          klein: '#002FA7',
+          glow: '#2856d8'
         }
       },
       fontFamily: {
@@ -21,12 +21,10 @@ tailwind.config = {
       },
     }
   }
-}
 </script>
 <style>
 *{scroll-behavior: smooth;}
 body {
-  /* 克莱因蓝为主渐变，层次柔和不刺眼 */
   background: linear-gradient(-45deg, #002480, #002FA7, #0438b3, #002894);
   background-size: 300% 300%;
   animation: oceanFlow 22s ease infinite;
@@ -60,6 +58,9 @@ body {
 .text-glow{
   text-shadow: 0 0 10px rgba(90,160,255,0.35);
 }
+.icon-glow{
+  filter: drop-shadow(0 0 8px rgba(90,160,255,0.4));
+}
 .hover-float{
   transition: transform 0.25s ease;
 }
@@ -84,9 +85,15 @@ body {
     </nav>
   </div>
 
-  <!-- Hero 首屏 -->
+  <!-- Hero 首屏（新增海浪SVG图标） -->
   <section id="home" class="min-h-[70vh] flex flex-col justify-center items-center px-6">
     <div class="glass rounded-2xl p-10 max-w-xl text-center hover-float">
+      <!-- 海浪图标 -->
+      <svg class="w-20 h-20 mx-auto mb-6 icon-glow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 12c3-4 7-4 10 0s7 4 10 0"></path>
+        <path d="M2 18c3-4 7-4 10 0s7 4 10 0"></path>
+        <path d="M2 6c3-4 7-4 10 0s7 4 10 0"></path>
+      </svg>
       <h1 class="text-[clamp(2rem,5vw,3rem)] font-light text-glow mb-4">海城</h1>
       <p class="text-slate-200 leading-relaxed">
         静候潮汐，记录日常<br>
@@ -187,7 +194,6 @@ class Particle{
   draw(){
     ctx.beginPath();
     ctx.arc(this.x,this.y,this.radius,0,Math.PI*2);
-    // 粒子使用浅蓝，和克莱因蓝背景呼应
     ctx.fillStyle=`rgba(110,165,255,${this.alpha})`;
     ctx.fill();
   }
