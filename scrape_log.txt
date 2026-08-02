@@ -1,37 +1,55 @@
-=== IPTV Scrape Log - 2026-08-02 06:24:54 ===
+=== IPTV Scrape Log - 2026-08-02 11:09:45 ===
 Trigger event: schedule
 =========================================
 
-[2026-08-02 06:24:54] [INFO] Start probing host list for iptv.bin
-[2026-08-02 06:24:54] [INFO] Probing host: 124.135.134.159:9003 (using root path)
-[2026-08-02 06:24:59] [WARN] Host 124.135.134.159:9003 invalid response (HTTP 000), try next
-[2026-08-02 06:24:59] [DEBUG] curl verbose output for 124.135.134.159:9003:
-[2026-08-02 06:24:59] [INFO] Probing host: 106.57.6.77:3000 (using root path)
-[2026-08-02 06:25:01] [WARN] Host 106.57.6.77:3000 invalid response (HTTP 000), try next
-[2026-08-02 06:25:01] [DEBUG] curl verbose output for 106.57.6.77:3000:
-[2026-08-02 06:25:01] [INFO] Probing host: 115.194.171.196:1234 (using root path)
-[2026-08-02 06:25:06] [WARN] Host 115.194.171.196:1234 invalid response (HTTP 000), try next
-[2026-08-02 06:25:06] [DEBUG] curl verbose output for 115.194.171.196:1234:
-[2026-08-02 06:25:06] [INFO] Probing host: 116.168.160.134:3000 (using root path)
-[2026-08-02 06:25:11] [WARN] Host 116.168.160.134:3000 invalid response (HTTP 000), try next
-[2026-08-02 06:25:11] [DEBUG] curl verbose output for 116.168.160.134:3000:
-[2026-08-02 06:25:11] [INFO] Probing host: 123.149.76.28:7788 (using root path)
-[2026-08-02 06:25:12] [INFO] Host 123.149.76.28:7788 available (HTTP 200), selected for scraping
-[2026-08-02 06:25:12] [DEBUG] curl verbose output for 123.149.76.28:7788:
-[2026-08-02 06:25:12] [INFO] Fetching primary source from http://123.149.76.28:7788/
-[2026-08-02 06:25:14] [INFO] Primary source fetched successfully, size: 128K
-[2026-08-02 06:25:14] [INFO] Host scraping task finished
+[2026-08-02 11:09:45] [INFO] Start probing host list for iptv.bin
+[2026-08-02 11:09:45] [INFO] Probing host: 124.135.134.159:9003 (using root path)
+[2026-08-02 11:09:50] [WARN] Host 124.135.134.159:9003 invalid response (HTTP 000), try next
+[2026-08-02 11:09:50] [DEBUG] curl verbose output for 124.135.134.159:9003:
+[2026-08-02 11:09:50] [INFO] Probing host: 106.57.6.77:3000 (using root path)
+[2026-08-02 11:09:50] [WARN] Host 106.57.6.77:3000 invalid response (HTTP 000), try next
+[2026-08-02 11:09:50] [DEBUG] curl verbose output for 106.57.6.77:3000:
+[2026-08-02 11:09:50] [INFO] Probing host: 115.194.171.196:1234 (using root path)
+[2026-08-02 11:09:55] [WARN] Host 115.194.171.196:1234 invalid response (HTTP 000), try next
+[2026-08-02 11:09:55] [DEBUG] curl verbose output for 115.194.171.196:1234:
+[2026-08-02 11:09:55] [INFO] Probing host: 116.168.160.134:3000 (using root path)
+[2026-08-02 11:10:00] [WARN] Host 116.168.160.134:3000 invalid response (HTTP 000), try next
+[2026-08-02 11:10:00] [DEBUG] curl verbose output for 116.168.160.134:3000:
+[2026-08-02 11:10:00] [INFO] Probing host: 123.149.76.28:7788 (using root path)
+[2026-08-02 11:10:05] [WARN] Host 123.149.76.28:7788 invalid response (HTTP 000), try next
+[2026-08-02 11:10:05] [DEBUG] curl verbose output for 123.149.76.28:7788:
+[2026-08-02 11:10:05] [INFO] Probing host: 182.122.164.229:3000 (using root path)
+[2026-08-02 11:10:10] [WARN] Host 182.122.164.229:3000 invalid response (HTTP 000), try next
+[2026-08-02 11:10:10] [DEBUG] curl verbose output for 182.122.164.229:3000:
+[2026-08-02 11:10:10] [INFO] Probing host: 106.118.123.15:1234 (using root path)
+[2026-08-02 11:10:15] [WARN] Host 106.118.123.15:1234 invalid response (HTTP 000), try next
+[2026-08-02 11:10:15] [DEBUG] curl verbose output for 106.118.123.15:1234:
+[2026-08-02 11:10:15] [INFO] Probing host: 106.57.6.77:3000 (using root path)
+[2026-08-02 11:10:15] [WARN] Host 106.57.6.77:3000 invalid response (HTTP 000), try next
+[2026-08-02 11:10:15] [DEBUG] curl verbose output for 106.57.6.77:3000:
+[2026-08-02 11:10:15] [INFO] Probing host: 113.232.17.82:1234 (using root path)
+[2026-08-02 11:10:20] [WARN] Host 113.232.17.82:1234 invalid response (HTTP 000), try next
+[2026-08-02 11:10:20] [DEBUG] curl verbose output for 113.232.17.82:1234:
+[2026-08-02 11:10:20] [INFO] Probing host: 113.88.79.48:5007 (using root path)
+[2026-08-02 11:10:21] [WARN] Host 113.88.79.48:5007 invalid response (HTTP 000), try next
+[2026-08-02 11:10:21] [DEBUG] curl verbose output for 113.88.79.48:5007:
+[2026-08-02 11:10:21] [INFO] Probing host: 114.230.79.148:8088 (using root path)
+[2026-08-02 11:10:22] [INFO] Host 114.230.79.148:8088 available (HTTP 200), selected for scraping
+[2026-08-02 11:10:22] [DEBUG] curl verbose output for 114.230.79.148:8088:
+[2026-08-02 11:10:22] [INFO] Fetching primary source from http://114.230.79.148:8088/
+[2026-08-02 11:10:23] [INFO] Primary source fetched successfully, size: 40K
+[2026-08-02 11:10:23] [INFO] Host scraping task finished
 
-[2026-08-02 06:25:14] [INFO] Start fetch and convert secondary source to ipcenter.bin
-[2026-08-02 06:25:17] [INFO] raw.txt fetched successfully
-[2026-08-02 06:25:17] [INFO] ipcenter.bin generated, size: 36K
-[2026-08-02 06:25:17] [INFO] Secondary source convert task finished
+[2026-08-02 11:10:23] [INFO] Start fetch and convert secondary source to ipcenter.bin
+[2026-08-02 11:10:24] [INFO] raw.txt fetched successfully
+[2026-08-02 11:10:24] [INFO] ipcenter.bin generated, size: 32K
+[2026-08-02 11:10:24] [INFO] Secondary source convert task finished
 
-[2026-08-02 06:25:17] [INFO] Start merging files
-[2026-08-02 06:25:17] [INFO] iptv.bin size before merge: 128K
-[2026-08-02 06:25:17] [INFO] Merge ipcenter.bin into iptv.bin
-[2026-08-02 06:25:17] [INFO] iptv.bin size after merge: 164K
-[2026-08-02 06:25:17] [INFO] Merge summary: merged, primary source included
-[2026-08-02 06:25:17] [INFO] Merge task finished
+[2026-08-02 11:10:24] [INFO] Start merging files
+[2026-08-02 11:10:24] [INFO] iptv.bin size before merge: 40K
+[2026-08-02 11:10:24] [INFO] Merge ipcenter.bin into iptv.bin
+[2026-08-02 11:10:24] [INFO] iptv.bin size after merge: 68K
+[2026-08-02 11:10:24] [INFO] Merge summary: merged, primary source included
+[2026-08-02 11:10:24] [INFO] Merge task finished
 
-[2026-08-02 06:25:17] [INFO] Start commit and push
+[2026-08-02 11:10:25] [INFO] Start commit and push
