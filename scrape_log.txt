@@ -1,52 +1,52 @@
-=== IPTV Scrape Log - 2026-08-04 11:53:17 ===
+=== IPTV Scrape Log - 2026-08-04 17:27:22 ===
 Trigger event: schedule
 =========================================
 
-[2026-08-04 11:53:17] [INFO] Start probing host list for iptv.bin
-[2026-08-04 11:53:17] [INFO] Probing host: 124.135.134.159:9003 (using root path)
-[2026-08-04 11:53:22] [WARN] Host 124.135.134.159:9003 invalid response (HTTP 000), try next
-[2026-08-04 11:53:22] [DEBUG] curl verbose output for 124.135.134.159:9003:
-[2026-08-04 11:53:22] [INFO] Probing host: 106.57.6.77:3000 (using root path)
-[2026-08-04 11:53:22] [WARN] Host 106.57.6.77:3000 invalid response (HTTP 000), try next
-[2026-08-04 11:53:22] [DEBUG] curl verbose output for 106.57.6.77:3000:
-[2026-08-04 11:53:22] [INFO] Probing host: 115.194.171.196:1234 (using root path)
-[2026-08-04 11:53:27] [WARN] Host 115.194.171.196:1234 invalid response (HTTP 000), try next
-[2026-08-04 11:53:27] [DEBUG] curl verbose output for 115.194.171.196:1234:
-[2026-08-04 11:53:27] [INFO] Probing host: 116.168.160.134:3000 (using root path)
-[2026-08-04 11:53:32] [WARN] Host 116.168.160.134:3000 invalid response (HTTP 000), try next
-[2026-08-04 11:53:32] [DEBUG] curl verbose output for 116.168.160.134:3000:
-[2026-08-04 11:53:32] [INFO] Probing host: 123.149.76.28:7788 (using root path)
-[2026-08-04 11:53:33] [WARN] Host 123.149.76.28:7788 invalid response (HTTP 000), try next
-[2026-08-04 11:53:33] [DEBUG] curl verbose output for 123.149.76.28:7788:
-[2026-08-04 11:53:33] [INFO] Probing host: 182.122.164.229:3000 (using root path)
-[2026-08-04 11:53:38] [WARN] Host 182.122.164.229:3000 invalid response (HTTP 000), try next
-[2026-08-04 11:53:38] [DEBUG] curl verbose output for 182.122.164.229:3000:
-[2026-08-04 11:53:38] [INFO] Probing host: 106.118.123.15:1234 (using root path)
-[2026-08-04 11:53:43] [WARN] Host 106.118.123.15:1234 invalid response (HTTP 000), try next
-[2026-08-04 11:53:43] [DEBUG] curl verbose output for 106.118.123.15:1234:
-[2026-08-04 11:53:43] [INFO] Probing host: 106.57.6.77:3000 (using root path)
-[2026-08-04 11:53:43] [WARN] Host 106.57.6.77:3000 invalid response (HTTP 000), try next
-[2026-08-04 11:53:43] [DEBUG] curl verbose output for 106.57.6.77:3000:
-[2026-08-04 11:53:43] [INFO] Probing host: 113.232.17.82:1234 (using root path)
-[2026-08-04 11:53:48] [WARN] Host 113.232.17.82:1234 invalid response (HTTP 000), try next
-[2026-08-04 11:53:48] [DEBUG] curl verbose output for 113.232.17.82:1234:
-[2026-08-04 11:53:48] [INFO] Probing host: 113.88.79.48:5007 (using root path)
-[2026-08-04 11:53:49] [INFO] Host 113.88.79.48:5007 available (HTTP 200), selected for scraping
-[2026-08-04 11:53:49] [DEBUG] curl verbose output for 113.88.79.48:5007:
-[2026-08-04 11:53:49] [INFO] Fetching primary source from http://113.88.79.48:5007/
-[2026-08-04 11:53:50] [INFO] Primary source fetched successfully, size: 80K
-[2026-08-04 11:53:50] [INFO] Host scraping task finished
+[2026-08-04 17:27:22] [INFO] Start probing host list for iptv.bin
+[2026-08-04 17:27:22] [INFO] Probing host: 124.135.134.159:9003 (using root path)
+[2026-08-04 17:27:27] [WARN] Host 124.135.134.159:9003 invalid response (HTTP 000), try next
+[2026-08-04 17:27:27] [DEBUG] curl verbose output for 124.135.134.159:9003:
+[2026-08-04 17:27:27] [INFO] Probing host: 106.57.6.77:3000 (using root path)
+[2026-08-04 17:27:27] [WARN] Host 106.57.6.77:3000 invalid response (HTTP 000), try next
+[2026-08-04 17:27:27] [DEBUG] curl verbose output for 106.57.6.77:3000:
+[2026-08-04 17:27:27] [INFO] Probing host: 115.194.171.196:1234 (using root path)
+[2026-08-04 17:27:32] [WARN] Host 115.194.171.196:1234 invalid response (HTTP 000), try next
+[2026-08-04 17:27:32] [DEBUG] curl verbose output for 115.194.171.196:1234:
+[2026-08-04 17:27:32] [INFO] Probing host: 116.168.160.134:3000 (using root path)
+[2026-08-04 17:27:37] [WARN] Host 116.168.160.134:3000 invalid response (HTTP 000), try next
+[2026-08-04 17:27:37] [DEBUG] curl verbose output for 116.168.160.134:3000:
+[2026-08-04 17:27:37] [INFO] Probing host: 123.149.76.28:7788 (using root path)
+[2026-08-04 17:27:42] [WARN] Host 123.149.76.28:7788 invalid response (HTTP 000), try next
+[2026-08-04 17:27:42] [DEBUG] curl verbose output for 123.149.76.28:7788:
+[2026-08-04 17:27:42] [INFO] Probing host: 182.122.164.229:3000 (using root path)
+[2026-08-04 17:27:47] [WARN] Host 182.122.164.229:3000 invalid response (HTTP 000), try next
+[2026-08-04 17:27:47] [DEBUG] curl verbose output for 182.122.164.229:3000:
+[2026-08-04 17:27:48] [INFO] Probing host: 106.118.123.15:1234 (using root path)
+[2026-08-04 17:27:53] [WARN] Host 106.118.123.15:1234 invalid response (HTTP 000), try next
+[2026-08-04 17:27:53] [DEBUG] curl verbose output for 106.118.123.15:1234:
+[2026-08-04 17:27:53] [INFO] Probing host: 106.57.6.77:3000 (using root path)
+[2026-08-04 17:27:53] [WARN] Host 106.57.6.77:3000 invalid response (HTTP 000), try next
+[2026-08-04 17:27:53] [DEBUG] curl verbose output for 106.57.6.77:3000:
+[2026-08-04 17:27:53] [INFO] Probing host: 113.232.17.82:1234 (using root path)
+[2026-08-04 17:27:58] [WARN] Host 113.232.17.82:1234 invalid response (HTTP 000), try next
+[2026-08-04 17:27:58] [DEBUG] curl verbose output for 113.232.17.82:1234:
+[2026-08-04 17:27:58] [INFO] Probing host: 113.88.79.48:5007 (using root path)
+[2026-08-04 17:27:59] [INFO] Host 113.88.79.48:5007 available (HTTP 200), selected for scraping
+[2026-08-04 17:27:59] [DEBUG] curl verbose output for 113.88.79.48:5007:
+[2026-08-04 17:27:59] [INFO] Fetching primary source from http://113.88.79.48:5007/
+[2026-08-04 17:27:59] [INFO] Primary source fetched successfully, size: 88K
+[2026-08-04 17:27:59] [INFO] Host scraping task finished
 
-[2026-08-04 11:53:50] [INFO] Start fetch and convert secondary source to ipcenter.bin
-[2026-08-04 11:53:51] [INFO] raw.txt fetched successfully
-[2026-08-04 11:53:51] [INFO] ipcenter.bin generated, size: 20K
-[2026-08-04 11:53:51] [INFO] Secondary source convert task finished
+[2026-08-04 17:27:59] [INFO] Start fetch and convert secondary source to ipcenter.bin
+[2026-08-04 17:28:00] [INFO] raw.txt fetched successfully
+[2026-08-04 17:28:00] [INFO] ipcenter.bin generated, size: 32K
+[2026-08-04 17:28:00] [INFO] Secondary source convert task finished
 
-[2026-08-04 11:53:51] [INFO] Start merging files
-[2026-08-04 11:53:51] [INFO] iptv.bin size before merge: 80K
-[2026-08-04 11:53:51] [INFO] Merge ipcenter.bin into iptv.bin
-[2026-08-04 11:53:51] [INFO] iptv.bin size after merge: 96K
-[2026-08-04 11:53:51] [INFO] Merge summary: merged, primary source included
-[2026-08-04 11:53:51] [INFO] Merge task finished
+[2026-08-04 17:28:00] [INFO] Start merging files
+[2026-08-04 17:28:00] [INFO] iptv.bin size before merge: 88K
+[2026-08-04 17:28:00] [INFO] Merge ipcenter.bin into iptv.bin
+[2026-08-04 17:28:00] [INFO] iptv.bin size after merge: 116K
+[2026-08-04 17:28:00] [INFO] Merge summary: merged, primary source included
+[2026-08-04 17:28:00] [INFO] Merge task finished
 
-[2026-08-04 11:53:51] [INFO] Start commit and push
+[2026-08-04 17:28:00] [INFO] Start commit and push
