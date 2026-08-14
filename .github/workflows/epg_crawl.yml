@@ -17,8 +17,8 @@ jobs:
       - name: toplay.xml
         run: |
           # 定义变量
-          MAIN_HOST="182.85.163.168:5678"
-          BACKUP_HOST="www.jqhome.top:5678"
+          MAIN_HOST="111.76.18.39:1234"
+          BACKUP_HOST="113.111.201.200:3003"
           CHECK_URL="http://${MAIN_HOST}/608807420"
           MAIN_URL="http://${MAIN_HOST}/playback.xml"
           BACKUP_URL="http://${BACKUP_HOST}/playback.xml"
