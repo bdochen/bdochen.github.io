@@ -47,28 +47,23 @@ jobs:
             "82.156.245.233:30008"
           )
 
-          # Define common User-Agent
           UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
           SELECTED_HOST=""
           for HOST in "${HOST_LIST[@]}"; do
-            # Probe with root path (more likely to succeed) and follow redirects
             CHECK_URL="http://${HOST}/"
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Probing host: ${HOST} (using root path)" | tee -a scrape_log.txt
 
-            # Use -v to capture redirect chain, store in temp file
             TMP_ERR=$(mktemp)
             HTTP_CODE=$(curl -s -L -A "$UA" --connect-timeout 5 --max-time 8 --max-redirs 20 -o /dev/null -w "%{http_code}" "$CHECK_URL" 2>"$TMP_ERR") || HTTP_CODE="000"
             if [[ "$HTTP_CODE" =~ ^2 ]]; then
               SELECTED_HOST="${HOST}"
               echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Host ${HOST} available (HTTP ${HTTP_CODE}), selected for scraping" | tee -a scrape_log.txt
-              # Save debug info
               echo "[$(date '+%Y-%m-%d %H:%M:%S')] [DEBUG] curl verbose output for ${HOST}:" >> scrape_log.txt
               cat "$TMP_ERR" >> scrape_log.txt
               rm -f "$TMP_ERR"
               break
             else
-              # Log failure details
               echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WARN] Host ${HOST} invalid response (HTTP ${HTTP_CODE}), try next" | tee -a scrape_log.txt
               echo "[$(date '+%Y-%m-%d %H:%M:%S')] [DEBUG] curl verbose output for ${HOST}:" >> scrape_log.txt
               cat "$TMP_ERR" >> scrape_log.txt
@@ -81,7 +76,6 @@ jobs:
             SOURCE_URL="http://${SELECTED_HOST}/"
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Fetching primary source from ${SOURCE_URL}" | tee -a scrape_log.txt
 
-            # Download with browser UA and verbose logging
             TMP_ERR=$(mktemp)
             HTTP_CODE=$(curl -s -L -A "$UA" --connect-timeout 10 --max-time 30 --max-redirs 20 -o iptv.bin -w "%{http_code}" "$SOURCE_URL" 2>"$TMP_ERR")
             CURL_EXIT=$?
@@ -143,6 +137,7 @@ jobs:
           echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Secondary source convert task finished" | tee -a scrape_log.txt
           echo "" >> scrape_log.txt
 
+      # ---------- 调整后的合并步骤 ----------
       - name: Merge source files
         run: |
           echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Start merging files" | tee -a scrape_log.txt
@@ -153,39 +148,53 @@ jobs:
             PRIMARY_SUCCESS="false"
           fi
 
+          # 备份原始 iptv.bin（主源）
           if [ -f "iptv.bin" ]; then
             PRE_SIZE=$(du -h iptv.bin | awk '{print $1}')
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] iptv.bin size before merge: ${PRE_SIZE}" | tee -a scrape_log.txt
+            mv iptv.bin iptv.bin.primary
           else
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WARN] iptv.bin not found, will create from ipcenter" | tee -a scrape_log.txt
-            > iptv.bin
+            > iptv.bin.primary  # 空文件
           fi
 
           MERGE_STATUS=""
           if [ -f "ipcenter.bin" ] && [ -s "ipcenter.bin" ]; then
-            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Merge ipcenter.bin into iptv.bin" | tee -a scrape_log.txt
-            echo -e "\n\n# Merge" >> iptv.bin
-            cat ipcenter.bin >> iptv.bin
-            MERGE_STATUS="merged"
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Using ipcenter.bin as base (group information first)" | tee -a scrape_log.txt
+            # 先写入 ipcenter.bin（包含 #EXTM3U）
+            cat ipcenter.bin > iptv.bin
+            # 再追加主源内容，但跳过其第一行（#EXTM3U），避免重复头部
+            if [ -s "iptv.bin.primary" ]; then
+              echo -e "\n\n# Merge from primary source" >> iptv.bin
+              tail -n +2 iptv.bin.primary >> iptv.bin
+              echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Primary source appended (header removed)" | tee -a scrape_log.txt
+            else
+              echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WARN] Primary source empty, skipping append" | tee -a scrape_log.txt
+            fi
+            MERGE_STATUS="merged (ipcenter first)"
           else
-            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WARN] ipcenter.bin not found or empty, skip merge" | tee -a scrape_log.txt
-            MERGE_STATUS="skipped"
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WARN] ipcenter.bin not found or empty, keeping primary only" | tee -a scrape_log.txt
+            # 无 ipcenter，直接使用主源备份
+            if [ -s "iptv.bin.primary" ]; then
+              mv iptv.bin.primary iptv.bin
+            else
+              # 两者都空，创建最小文件
+              echo "#EXTM3U" > iptv.bin
+            fi
+            MERGE_STATUS="skipped (only primary)"
           fi
+
+          # 清理临时文件
+          rm -f iptv.bin.primary ipcenter.bin primary_status.txt
 
           if [ -f "iptv.bin" ]; then
             POST_SIZE=$(du -h iptv.bin | awk '{print $1}')
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] iptv.bin size after merge: ${POST_SIZE}" | tee -a scrape_log.txt
-            if [ "${PRIMARY_SUCCESS}" = "true" ]; then
-              PRIMARY_MSG="primary source included"
-            else
-              PRIMARY_MSG="primary source NOT included (failed)"
-            fi
-            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Merge summary: ${MERGE_STATUS}, ${PRIMARY_MSG}" | tee -a scrape_log.txt
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Merge summary: ${MERGE_STATUS}" | tee -a scrape_log.txt
           else
             echo "[$(date '+%Y-%m-%d %H:%M:%S')] [ERROR] iptv.bin missing after merge" | tee -a scrape_log.txt
           fi
 
-          rm -f ipcenter.bin primary_status.txt
           echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Merge task finished" | tee -a scrape_log.txt
           echo "" >> scrape_log.txt
 
