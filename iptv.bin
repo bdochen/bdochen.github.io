@@ -1,33 +1,30 @@
 #EXTM3U
 #EXTINF:-1 group-title="IPTV",CCTV1
-http://112.30.73.119:229/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
+http://218.1.138.153:9003/hls/1/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV1
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000152
 
 #EXTINF:-1 group-title="IPTV",CCTV1
 http://112.30.73.119:9901/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",CCTV1
-http://183.6.80.98:9901/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",CCTV1
-http://192.168.102.1/hls/1/index.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV2
+http://218.1.138.153:9003/hls/2/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV2
-http://112.30.73.119:229/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000477
 
 #EXTINF:-1 group-title="IPTV",CCTV2
 http://112.30.73.119:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",CCTV2
-http://183.6.80.98:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",CCTV2
-http://192.168.102.1/hls/81/index.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV3
+http://218.1.138.153:9003/hls/3/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV3
-http://112.30.73.119:229/tsfile/live/0003_2.m3u8?key=txiptv&playlive=0&authid=0
+http://112.27.145.212:9902/tsfile/live/1502_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV3
-http://112.30.73.119:229/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0
+http://10.60.198.15:8114/AHBKLIVE/00000001000000050000000000000487?FvSeid=74e0d480b7c98f9d&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1419188&Fsv_chan_hls_se_idx=28&Fsv_TBt=8799728&Fsv_ShiftEnable=1&Fsv_ShiftTsp=120&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=00000001000000050000000000000487&Fsv_CMSID=AHBK
 
 #EXTINF:-1 group-title="IPTV",CCTV3
 http://112.30.73.119:9901/tsfile/live/0003_2.m3u8?key=txiptv&playlive=0&authid=0
@@ -35,29 +32,23 @@ http://112.30.73.119:9901/tsfile/live/0003_2.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="IPTV",CCTV3
 http://112.30.73.119:9901/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",CCTV3
-http://183.6.80.98:9901/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",CCTV3
-http://192.168.102.1/hls/3/index.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV4
+http://218.1.138.153:9003/hls/4/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV4
-http://112.30.73.119:229/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000573
 
 #EXTINF:-1 group-title="IPTV",CCTV4
 http://112.30.73.119:9901/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",CCTV4
-http://183.6.80.98:9901/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",CCTV4
-http://192.168.102.1/hls/4/index.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV5
+http://218.1.138.153:9003/hls/5/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV5
-http://112.30.73.119:229/tsfile/live/0005_2.m3u8?key=txiptv&playlive=0&authid=0
+http://112.27.145.212:9902/tsfile/live/1504_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV5
-http://112.30.73.119:229/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0
+http://10.60.198.2:8114/AHBKLIVE/00000001000000050000000000000481?FvSeid=73d3ea6a7117103e&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1332716&Fsv_chan_hls_se_idx=20&Fsv_TBt=8800912&Fsv_ShiftEnable=1&Fsv_ShiftTsp=120&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=00000001000000050000000000000481&Fsv_CMSID=AHBK
 
 #EXTINF:-1 group-title="IPTV",CCTV5
 http://112.30.73.119:9901/tsfile/live/0005_2.m3u8?key=txiptv&playlive=0&authid=0
@@ -65,20 +56,17 @@ http://112.30.73.119:9901/tsfile/live/0005_2.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="IPTV",CCTV5
 http://112.30.73.119:9901/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",CCTV5
-http://183.6.80.98:9901/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",CCTV5
-http://192.168.102.1/hls/5/index.m3u8
-
 #EXTINF:-1 group-title="IPTV",CCTV5+
-http://192.168.102.1/hls/18/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000153
 
 #EXTINF:-1 group-title="IPTV",CCTV6
-http://112.30.73.119:229/tsfile/live/0006_2.m3u8?key=txiptv&playlive=0&authid=0
+http://218.1.138.153:9003/hls/6/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV6
-http://112.30.73.119:229/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
+http://112.27.145.212:9902/tsfile/live/1505_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",CCTV6
+http://10.60.198.31:8114/AHBKLIVE/11111120220816000000000000000005?FvSeid=74e0de22dfa1afac&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1418788&Fsv_chan_hls_se_idx=8&Fsv_TBt=8802576&Fsv_ShiftEnable=1&Fsv_ShiftTsp=3&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=11111120220816000000000000000005&Fsv_CMSID=AHBK
 
 #EXTINF:-1 group-title="IPTV",CCTV6
 http://112.30.73.119:9901/tsfile/live/0006_2.m3u8?key=txiptv&playlive=0&authid=0
@@ -86,23 +74,17 @@ http://112.30.73.119:9901/tsfile/live/0006_2.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="IPTV",CCTV6
 http://112.30.73.119:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",CCTV6
-http://183.6.80.98:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",CCTV6
-http://192.168.102.1/hls/6/index.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV7
+http://218.1.138.153:9003/hls/7/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV7
-http://183.6.80.98:9901/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",CCTV7
-http://192.168.102.1/hls/7/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000485
 
 #EXTINF:-1 group-title="IPTV",CCTV8
-http://112.30.73.119:229/tsfile/live/0008_2.m3u8?key=txiptv&playlive=0&authid=0
+http://218.1.138.153:9003/hls/8/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV8
-http://112.30.73.119:229/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
+http://10.60.198.28:8114/AHBKLIVE/00000001000000050000000000000476?FvSeid=74e0df72254d6a88&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1419240&Fsv_chan_hls_se_idx=35&Fsv_TBt=8801248&Fsv_ShiftEnable=1&Fsv_ShiftTsp=120&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=00000001000000050000000000000476&Fsv_CMSID=AHBK
 
 #EXTINF:-1 group-title="IPTV",CCTV8
 http://112.30.73.119:9901/tsfile/live/0008_2.m3u8?key=txiptv&playlive=0&authid=0
@@ -110,215 +92,242 @@ http://112.30.73.119:9901/tsfile/live/0008_2.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="IPTV",CCTV8
 http://112.30.73.119:9901/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",CCTV8
-http://183.6.80.98:9901/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",CCTV8
-http://192.168.102.1/hls/8/index.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV9
+http://218.1.138.153:9003/hls/9/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV9
-http://112.30.73.119:229/tsfile/live/0009_1.m3u8?key=txiptv&playlive=1&authid=0
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000478
 
 #EXTINF:-1 group-title="IPTV",CCTV9
 http://112.30.73.119:9901/tsfile/live/0009_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",CCTV9
-http://183.6.80.98:9901/tsfile/live/0009_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",CCTV9
-http://192.168.102.1/hls/9/index.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV10
+http://218.1.138.153:9003/hls/10/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV10
-http://112.30.73.119:229/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000480
 
 #EXTINF:-1 group-title="IPTV",CCTV10
 http://112.30.73.119:9901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",CCTV10
-http://183.6.80.98:9901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",CCTV10
-http://192.168.102.1/hls/10/index.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV11
+http://218.1.138.153:9003/hls/11/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV11
-http://112.30.73.119:229/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000583
 
 #EXTINF:-1 group-title="IPTV",CCTV11
 http://112.30.73.119:9901/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",CCTV11
-http://183.6.80.98:9901/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",CCTV12
+http://218.1.138.153:9003/hls/12/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV12
-http://112.30.73.119:229/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000482
 
 #EXTINF:-1 group-title="IPTV",CCTV12
 http://112.30.73.119:9901/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",CCTV12
-http://183.6.80.98:9901/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",CCTV12
-http://192.168.102.1/hls/12/index.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV13
+http://218.1.138.153:9003/hls/13/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV13
-http://112.30.73.119:229/tsfile/live/0013_1.m3u8?key=txiptv&playlive=1&authid=0
+http://10.60.198.30:8114/AHBKLIVE/00000001000000050000000000000602?FvSeid=74e0dffd8a23d587&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1418928&Fsv_chan_hls_se_idx=23&Fsv_TBt=8801480&Fsv_ShiftEnable=1&Fsv_ShiftTsp=3&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=00000001000000050000000000000602&Fsv_CMSID=AHBK
 
 #EXTINF:-1 group-title="IPTV",CCTV13
 http://112.30.73.119:9901/tsfile/live/0013_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",CCTV13
-http://183.6.80.98:9901/tsfile/live/0013_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",CCTV13
-http://192.168.102.1/hls/13/index.m3u8
-
 #EXTINF:-1 group-title="IPTV",CCTV14
-http://112.30.73.119:229/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000483
 
 #EXTINF:-1 group-title="IPTV",CCTV14
 http://112.30.73.119:9901/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",CCTV14
-http://183.6.80.98:9901/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",CCTV14
-http://192.168.102.1/hls/14/index.m3u8
-
 #EXTINF:-1 group-title="IPTV",CCTV15
-http://112.30.73.119:229/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0
+http://10.60.198.25:8114/AHBKLIVE/00000001000000050000000000000587?FvSeid=74e0e235da060120&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1418823&Fsv_chan_hls_se_idx=22&Fsv_TBt=8801056&Fsv_ShiftEnable=1&Fsv_ShiftTsp=60&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=00000001000000050000000000000587&Fsv_CMSID=AHBK
 
 #EXTINF:-1 group-title="IPTV",CCTV15
 http://112.30.73.119:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",CCTV15
-http://183.6.80.98:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",CCTV15
-http://192.168.102.1/hls/15/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV16
-http://192.168.102.1/hls/16/index.m3u8
-
 #EXTINF:-1 group-title="IPTV",CCTV17
-http://192.168.102.1/hls/17/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000580
+
+#EXTINF:-1 group-title="IPTV",三沙卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000589
 
 #EXTINF:-1 group-title="IPTV",东南卫视
-http://192.168.102.1/hls/37/index.m3u8
+http://218.1.138.153:9003/hls/36/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",东南卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000588
+
+#EXTINF:-1 group-title="IPTV",东南卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000075
 
 #EXTINF:-1 group-title="IPTV",东方卫视
-http://192.168.102.1/hls/27/index.m3u8
+http://218.1.138.153:9003/hls/14/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",云南卫视
-http://192.168.102.1/hls/49/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000060
 
 #EXTINF:-1 group-title="IPTV",兵团卫视
-http://192.168.102.1/hls/58/index.m3u8
+http://222.71.55.147:9901/tsfile/live/0115_1.m3u8?key=txiptv&playlive=0&authid=0
+
+#EXTINF:-1 group-title="IPTV",兵团卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000462
 
 #EXTINF:-1 group-title="IPTV",内蒙古卫视
-http://192.168.102.1/hls/53/index.m3u8
+http://222.71.55.147:9901/tsfile/live/0109_1.m3u8?key=txiptv&playlive=0&authid=0
+
+#EXTINF:-1 group-title="IPTV",内蒙古卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000098
 
 #EXTINF:-1 group-title="IPTV",北京卫视
-http://192.168.102.1/hls/29/index.m3u8
+http://218.1.138.153:9003/hls/20/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",南方卫视
-http://192.168.102.1/hls/32/index.m3u8
+#EXTINF:-1 group-title="IPTV",北京卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000194
 
 #EXTINF:-1 group-title="IPTV",厦门卫视
-http://192.168.102.1/hls/57/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00005000000000000000000000000244
 
 #EXTINF:-1 group-title="IPTV",吉林卫视
-http://192.168.102.1/hls/51/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000091
 
 #EXTINF:-1 group-title="IPTV",四川卫视
-http://192.168.102.1/hls/39/index.m3u8
+http://218.1.138.153:9003/hls/22/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",四川卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000069
 
 #EXTINF:-1 group-title="IPTV",天津卫视
-http://192.168.102.1/hls/26/index.m3u8
+http://218.1.138.153:9003/hls/23/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",天津卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000266
 
 #EXTINF:-1 group-title="IPTV",宁夏卫视
-http://192.168.102.1/hls/52/index.m3u8
+http://222.71.55.147:9901/tsfile/live/0112_1.m3u8?key=txiptv&playlive=0&authid=0
 
-#EXTINF:-1 group-title="IPTV",安多卫视
-http://192.168.102.1/hls/61/index.m3u8
+#EXTINF:-1 group-title="IPTV",宁夏卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000082
 
 #EXTINF:-1 group-title="IPTV",安徽卫视
-http://192.168.102.1/hls/36/index.m3u8
+http://218.1.138.153:9003/hls/24/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",安徽卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000039
 
 #EXTINF:-1 group-title="IPTV",山东卫视
-http://192.168.102.1/hls/34/index.m3u8
+http://218.1.138.153:9003/hls/25/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",山东卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000470
 
 #EXTINF:-1 group-title="IPTV",山西卫视
-http://192.168.102.1/hls/48/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000099
 
 #EXTINF:-1 group-title="IPTV",广东卫视
-http://183.6.80.98:9901/tsfile/live/0016_1.m3u8?key=txiptv&playlive=1&authid=0
+http://218.1.138.153:9003/hls/26/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东卫视
-http://192.168.102.1/hls/30/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000445
 
 #EXTINF:-1 group-title="IPTV",广西卫视
-http://192.168.102.1/hls/19/index.m3u8
+http://218.1.138.153:9003/hls/27/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",康巴卫视
-http://192.168.102.1/hls/59/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",延边卫视
-http://192.168.102.1/hls/60/index.m3u8
+#EXTINF:-1 group-title="IPTV",广西卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000086
 
 #EXTINF:-1 group-title="IPTV",新疆卫视
-http://192.168.102.1/hls/54/index.m3u8
+http://222.71.55.147:9901/tsfile/live/0110_1.m3u8?key=txiptv&playlive=0&authid=0
+
+#EXTINF:-1 group-title="IPTV",新疆卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000097
 
 #EXTINF:-1 group-title="IPTV",江苏卫视
-http://192.168.102.1/hls/28/index.m3u8
+http://218.1.138.153:9003/hls/28/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",江苏卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000198
 
 #EXTINF:-1 group-title="IPTV",江西卫视
-http://192.168.102.1/hls/38/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000065
 
 #EXTINF:-1 group-title="IPTV",河北卫视
-http://192.168.102.1/hls/43/index.m3u8
+http://218.1.138.153:9003/hls/30/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",河北卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000575
 
 #EXTINF:-1 group-title="IPTV",河南卫视
-http://111.59.139.85:11888/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
+http://218.1.138.153:9003/hls/31/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",河南卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000085
 
 #EXTINF:-1 group-title="IPTV",浙江卫视
-http://192.168.102.1/hls/25/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000265
 
 #EXTINF:-1 group-title="IPTV",海南卫视
-http://192.168.102.1/hls/42/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000088
 
 #EXTINF:-1 group-title="IPTV",深圳卫视
-http://192.168.102.1/hls/33/index.m3u8
+http://218.1.138.153:9003/hls/33/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",深圳卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000197
 
 #EXTINF:-1 group-title="IPTV",湖北卫视
-http://192.168.102.1/hls/35/index.m3u8
+http://218.1.138.153:9003/hls/34/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",湖北卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000267
 
 #EXTINF:-1 group-title="IPTV",湖南卫视
-http://192.168.102.1/hls/24/index.m3u8
+http://218.1.138.153:9003/hls/21/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",湖南卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000195
 
 #EXTINF:-1 group-title="IPTV",甘肃卫视
-http://192.168.102.1/hls/46/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000094
 
 #EXTINF:-1 group-title="IPTV",西藏卫视
-http://192.168.102.1/hls/55/index.m3u8
+http://222.71.55.147:9901/tsfile/live/0111_1.m3u8?key=txiptv&playlive=0&authid=0
+
+#EXTINF:-1 group-title="IPTV",西藏卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000100
 
 #EXTINF:-1 group-title="IPTV",贵州卫视
-http://192.168.102.1/hls/40/index.m3u8
+http://218.1.138.153:9003/hls/37/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",贵州卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000577
 
 #EXTINF:-1 group-title="IPTV",辽宁卫视
-http://192.168.102.1/hls/44/index.m3u8
+http://218.1.138.153:9003/hls/38/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",辽宁卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000472
 
 #EXTINF:-1 group-title="IPTV",重庆卫视
-http://192.168.102.1/hls/41/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000083
 
 #EXTINF:-1 group-title="IPTV",陕西卫视
-http://192.168.102.1/hls/50/index.m3u8
+http://222.71.55.147:9901/tsfile/live/0136_1.m3u8?key=txiptv&playlive=0&authid=0
+
+#EXTINF:-1 group-title="IPTV",陕西卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000090
 
 #EXTINF:-1 group-title="IPTV",青海卫视
-http://192.168.102.1/hls/47/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000096
 
 #EXTINF:-1 group-title="IPTV",黑龙江卫视
-http://192.168.102.1/hls/45/index.m3u8
+http://218.1.138.153:9003/hls/40/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",黑龙江卫视
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000196
 
 #EXTINF:-1 group-title="IPTV",3
 http://120.209.208.163:9003/hls/3/index.m3u8
@@ -326,173 +335,158 @@ http://120.209.208.163:9003/hls/3/index.m3u8
 #EXTINF:-1 group-title="IPTV",4
 http://120.209.208.163:9003/hls/4/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",4K电影
-http://111.59.139.85:11888/tsfile/live/1098_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",CETV1
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000463
 
-#EXTINF:-1 group-title="IPTV",中国教育1
-http://192.168.100.1/hls/67/index.m3u8
+#EXTINF:-1 group-title="IPTV",CETV2
+http://10.255.126.3:8006/AHBKLIVE/00005000000000000000000000000251
 
-#EXTINF:-1 group-title="IPTV",中国教育2
-http://192.168.100.1/hls/68/index.m3u8
+#EXTINF:-1 group-title="IPTV",CETV4
+http://10.255.126.3:8006/AHBKLIVE/00005000000000000000000000000252
 
-#EXTINF:-1 group-title="IPTV",中国教育4
-http://192.168.100.1/hls/69/index.m3u8
+#EXTINF:-1 group-title="IPTV",上海新闻
+http://218.1.138.153:9003/hls/18/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",优漫卡通
-http://192.168.102.1/hls/66/index.m3u8
+#EXTINF:-1 group-title="IPTV",东方财经
+http://218.1.138.153:9003/hls/17/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",军事评论
-http://192.168.102.1/hls/85/index.m3u8
+#EXTINF:-1 group-title="IPTV",五星体育
+http://218.1.138.153:9003/hls/16/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",光影
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000516
+
+#EXTINF:-1 group-title="IPTV",军事
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000507
 
 #EXTINF:-1 group-title="IPTV",军旅剧场
-http://192.168.102.1/hls/84/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000500
 
-#EXTINF:-1 group-title="IPTV",农业致富
-http://192.168.102.1/hls/86/index.m3u8
+#EXTINF:-1 group-title="IPTV",动作影院
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000525
 
-#EXTINF:-1 group-title="IPTV",动作电影
-http://111.59.139.85:11888/tsfile/live/1059_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",动画
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000512
 
-#EXTINF:-1 group-title="IPTV",动作电影
-http://192.168.102.1/hls/83/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",北京纪实
-http://192.168.100.1/hls/56/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",卡酷少儿
-http://192.168.102.1/hls/65/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",卡酷少儿
-http://111.59.139.85:11888/tsfile/live/1056_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",卡酷动画
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000150
 
 #EXTINF:-1 group-title="IPTV",古装剧场
-http://192.168.102.1/hls/82/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000501
+
+#EXTINF:-1 group-title="IPTV",台球
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000518
+
+#EXTINF:-1 group-title="IPTV",喜剧影院
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000524
 
 #EXTINF:-1 group-title="IPTV",嘉佳卡通
-http://192.168.102.1/hls/64/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000448
+
+#EXTINF:-1 group-title="IPTV",国学
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000509
+
+#EXTINF:-1 group-title="IPTV",地理
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000498
+
+#EXTINF:-1 group-title="IPTV",墨宝
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000515
+
+#EXTINF:-1 group-title="IPTV",好学生
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000513
+
+#EXTINF:-1 group-title="IPTV",安徽公共
+http://10.60.198.27:8114/AHBKLIVE/11111100000000000000000000000009?FvSeid=74e0e700aecd6294&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1419077&Fsv_chan_hls_se_idx=31&Fsv_TBt=2800888&Fsv_ShiftEnable=1&Fsv_ShiftTsp=3&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=11111100000000000000000000000009&Fsv_CMSID=AHBK
+
+#EXTINF:-1 group-title="IPTV",安徽影视
+http://10.60.198.27:8114/AHBKLIVE/11111100000000000000000000000007?FvSeid=74e0e45f2a0b6bdb&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1419063&Fsv_chan_hls_se_idx=30&Fsv_TBt=2700736&Fsv_ShiftEnable=1&Fsv_ShiftTsp=3&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=11111100000000000000000000000007&Fsv_CMSID=AHBK
+
+#EXTINF:-1 group-title="IPTV",安徽科教
+http://10.60.198.31:8114/AHBKLIVE/11111100000000000000000000000013?FvSeid=74e0e514768ddba7&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1419050&Fsv_chan_hls_se_idx=28&Fsv_TBt=2701576&Fsv_ShiftEnable=1&Fsv_ShiftTsp=3&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=11111100000000000000000000000013&Fsv_CMSID=AHBK
+
+#EXTINF:-1 group-title="IPTV",安徽经济
+http://10.60.198.30:8114/AHBKLIVE/11111100000000000000000000000005?FvSeid=73d3ef7419317c86&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1332702&Fsv_chan_hls_se_idx=15&Fsv_TBt=2700440&Fsv_ShiftEnable=1&Fsv_ShiftTsp=3&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=11111100000000000000000000000005&Fsv_CMSID=AHBK
+
+#EXTINF:-1 group-title="IPTV",安徽综艺
+http://10.60.198.28:8114/AHBKLIVE/11111100000000000000000000000011?FvSeid=74e0e5b3355f6831&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1419036&Fsv_chan_hls_se_idx=28&Fsv_TBt=2700920&Fsv_ShiftEnable=1&Fsv_ShiftTsp=3&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=11111100000000000000000000000011&Fsv_CMSID=AHBK
 
 #EXTINF:-1 group-title="IPTV",家庭影院
-http://111.59.139.85:11888/tsfile/live/1058_1.m3u8?key=txiptv&playlive=1&authid=0
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000526
 
 #EXTINF:-1 group-title="IPTV",山东教育
-http://192.168.102.1/hls/70/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00005000000000000000000000000248
 
-#EXTINF:-1 group-title="IPTV",广西综艺
-http://111.59.139.85:11888/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",快乐垂钓
+http://10.60.198.27:8114/AHBKLIVE/4d0ec3c7a7cf41458ce3c7e241f7ed7a?FvSeid=73d3f90a9d9d6509&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1332786&Fsv_chan_hls_se_idx=33&Fsv_TBt=8001168&Fsv_ShiftEnable=1&Fsv_ShiftTsp=60&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=4d0ec3c7a7cf41458ce3c7e241f7ed7a&Fsv_CMSID=AHBK
 
-#EXTINF:-1 group-title="IPTV",怡伴健康
-http://192.168.102.1/hls/89/index.m3u8
+#EXTINF:-1 group-title="IPTV",怀旧剧场
+http://10.60.198.22:8114/AHBKLIVE/11111120210421000000000000000043?FvSeid=73d3f7d5417b9546&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1332661&Fsv_chan_hls_se_idx=1&Fsv_TBt=8001152&Fsv_ShiftEnable=1&Fsv_ShiftTsp=60&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=11111120210421000000000000000043&Fsv_CMSID=AHBK
 
-#EXTINF:-1 group-title="IPTV",新动漫
-http://111.59.139.85:11888/tsfile/live/1017_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",戏曲
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000510
 
-#EXTINF:-1 group-title="IPTV",测试01
-http://111.59.139.85:11888/tsfile/live/1201_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",收视指南
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000110
 
-#EXTINF:-1 group-title="IPTV",测试02
-http://111.59.139.85:11888/tsfile/live/1202_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",早教
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000511
 
-#EXTINF:-1 group-title="IPTV",测试03
-http://111.59.139.85:11888/tsfile/live/1203_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",武侠剧场
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000523
 
-#EXTINF:-1 group-title="IPTV",测试04
-http://111.59.139.85:11888/tsfile/live/1204_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",武术
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000520
 
-#EXTINF:-1 group-title="IPTV",测试05
-http://111.59.139.85:11888/tsfile/live/1205_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",法治天地
+http://218.1.138.153:9003/hls/19/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",测试06
-http://111.59.139.85:11888/tsfile/live/1206_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",热播剧场
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000108
 
-#EXTINF:-1 group-title="IPTV",测试07
-http://111.59.139.85:11888/tsfile/live/1207_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",爱生活
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000519
 
-#EXTINF:-1 group-title="IPTV",测试08
-http://111.59.139.85:11888/tsfile/live/1208_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",第一剧场
+http://10.60.198.21:8114/AHBKLIVE/11111120210421000000000000000039?FvSeid=74e0e88d4563815c&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1418796&Fsv_chan_hls_se_idx=13&Fsv_TBt=8805176&Fsv_ShiftEnable=1&Fsv_ShiftTsp=60&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=11111120210421000000000000000039&Fsv_CMSID=AHBK
 
-#EXTINF:-1 group-title="IPTV",测试09
-http://111.59.139.85:11888/tsfile/live/1209_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",第一财经
+http://218.1.138.153:9003/hls/15/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",测试10
-http://111.59.139.85:11888/tsfile/live/1210_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",精选剧场
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000505
 
-#EXTINF:-1 group-title="IPTV",测试11
-http://111.59.139.85:11888/tsfile/live/1211_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",经典电影
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000109
 
-#EXTINF:-1 group-title="IPTV",测试12
-http://111.59.139.85:11888/tsfile/live/1212_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",美人
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000504
 
-#EXTINF:-1 group-title="IPTV",测试13
-http://111.59.139.85:11888/tsfile/live/1213_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",财富天下
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000183
 
-#EXTINF:-1 group-title="IPTV",测试14
-http://111.59.139.85:11888/tsfile/live/1214_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",财富天下
+http://10.60.198.24:8114/AHBKLIVE/00000001000000050000000000000183?FvSeid=73d3f65678e58004&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1332735&Fsv_chan_hls_se_idx=34&Fsv_TBt=3000640&Fsv_ShiftEnable=1&Fsv_ShiftTsp=60&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=00000001000000050000000000000183&Fsv_CMSID=AHBK
 
-#EXTINF:-1 group-title="IPTV",测试15
-http://111.59.139.85:11888/tsfile/live/1215_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",测试16
-http://111.59.139.85:11888/tsfile/live/1216_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",测试17
-http://111.59.139.85:11888/tsfile/live/1217_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",测试18
-http://111.59.139.85:11888/tsfile/live/1218_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",测试19
-http://111.59.139.85:11888/tsfile/live/1219_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",测试20
-http://111.59.139.85:11888/tsfile/live/1220_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",测试21
-http://111.59.139.85:11888/tsfile/live/1221_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",测试22
-http://111.59.139.85:11888/tsfile/live/1222_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",测试23
-http://111.59.139.85:11888/tsfile/live/1223_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",测试24
-http://111.59.139.85:11888/tsfile/live/1224_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",热播精选
-http://192.168.102.1/hls/75/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",爱情喜剧
-http://192.168.102.1/hls/77/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",玉林新闻
-http://111.59.139.85:11888/tsfile/live/1037_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",珠江
-http://192.168.102.1/hls/31/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",电影
-http://111.59.139.85:11888/tsfile/live/1060_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",精品体育
-http://192.168.100.1/hls/90/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",精品大剧
-http://192.168.102.1/hls/78/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",精品纪录
-http://192.168.102.1/hls/87/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",金牌综艺
-http://192.168.102.1/hls/80/index.m3u8
+#EXTINF:-1 group-title="IPTV",都市剧场
+http://10.255.126.3:8006/AHBKLIVE/00005000000000000000000000000230
 
 #EXTINF:-1 group-title="IPTV",金鹰卡通
-http://192.168.102.1/hls/63/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000151
 
 #EXTINF:-1 group-title="IPTV",金鹰纪实
-http://192.168.102.1/hls/62/index.m3u8
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000569
 
-#EXTINF:-1 group-title="IPTV",黑莓动画
-http://192.168.102.1/hls/74/index.m3u8
+#EXTINF:-1 group-title="IPTV",金鹰纪实
+http://10.60.198.25:8114/AHBKLIVE/00000001000000050000000000000569?FvSeid=73d3f51da9c7af3f&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1332747&Fsv_chan_hls_se_idx=37&Fsv_TBt=8800416&Fsv_ShiftEnable=1&Fsv_ShiftTsp=60&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=00000001000000050000000000000569&Fsv_CMSID=AHBK
+
+#EXTINF:-1 group-title="IPTV",鉴赏
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000514
+
+#EXTINF:-1 group-title="IPTV",音乐现场
+http://10.255.126.3:8006/AHBKLIVE/00000001000000050000000000000502
+
+#EXTINF:-1 group-title="IPTV",风云剧场
+http://10.60.198.31:8114/AHBKLIVE/11111120210421000000000000000041?FvSeid=73d3f74421338d63&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=1332658&Fsv_chan_hls_se_idx=0&Fsv_TBt=8000592&Fsv_ShiftEnable=1&Fsv_ShiftTsp=60&Fsv_SV_PARAM1=0&Fsv_otype=0&Provider_id=AHBKLIVE&Pcontent_id=11111120210421000000000000000041&Fsv_CMSID=AHBK
 
 
 
@@ -843,6 +837,8 @@ http://106.14.71.211:1234/967486410
 http://106.14.71.211:1234/967487104
 #EXTINF:-1 tvg-id="中国VS法国" tvg-name="女篮世界杯 中国VS法国 全场回放（赛场原声） 20:20" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/9/4/100000001527106ab529.png" group-title="体育-昨天09-10",女篮世界杯 中国VS法国 全场回放（赛场原声） 20:20
 http://106.14.71.211:1234/967487034
+#EXTINF:-1 tvg-id="孙心然成功晋级青少年四强" tvg-name="美国网球公开赛 孙心然成功晋级青少年四强 2026美国网球公开赛全残单打1/4决赛回放：温策尔0-2施罗德（赛场原声） 07:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-昨天09-10",美国网球公开赛 孙心然成功晋级青少年四强 2026美国网球公开赛全残单打1/4决赛回放：温策尔0-2施罗德（赛场原声） 07:00
+http://106.14.71.211:1234/967501218
 #EXTINF:-1 tvg-id="孙心然成功晋级青少年四强" tvg-name="美国网球公开赛 孙心然成功晋级青少年四强 2026美国网球公开赛轮椅青少年女双半决赛回放：达扬/克拉拉0-2杰尔塞斯/希尔德（赛场原声） 07:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-昨天09-10",美国网球公开赛 孙心然成功晋级青少年四强 2026美国网球公开赛轮椅青少年女双半决赛回放：达扬/克拉拉0-2杰尔塞斯/希尔德（赛场原声） 07:00
 http://106.14.71.211:1234/967498255
 #EXTINF:-1 tvg-id="孙心然成功晋级青少年四强" tvg-name="美国网球公开赛 孙心然成功晋级青少年四强 【女单半决赛】高芙1-2莱巴金娜（詹俊、王蔷） 07:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-昨天09-10",美国网球公开赛 孙心然成功晋级青少年四强 【女单半决赛】高芙1-2莱巴金娜（詹俊、王蔷） 07:00
@@ -991,38 +987,36 @@ http://106.14.71.211:1234/967493781
 http://106.14.71.211:1234/967495506
 #EXTINF:-1 tvg-id="第四日热身区" tvg-name="WTT 第四日热身区 热身区 10:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 第四日热身区 热身区 10:00
 http://106.14.71.211:1234/967155587
-#EXTINF:-1 tvg-id="周启豪、陈熠晋级 陈垣宇2-3止步16强" tvg-name="WTT 周启豪、陈熠晋级 陈垣宇2-3止步16强 徐儒叶 11:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 周启豪、陈熠晋级 陈垣宇2-3止步16强 徐儒叶 11:00
-http://106.14.71.211:1234/967155568
-#EXTINF:-1 tvg-id="周启豪、陈熠晋级 陈垣宇2-3止步16强" tvg-name="WTT 周启豪、陈熠晋级 陈垣宇2-3止步16强 热身区 10:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 周启豪、陈熠晋级 陈垣宇2-3止步16强 热身区 10:00
-http://106.14.71.211:1234/967155587
-#EXTINF:-1 tvg-id="周启豪、陈熠晋级 陈垣宇2-3止步16强" tvg-name="WTT 周启豪、陈熠晋级 陈垣宇2-3止步16强 赛场原声 11:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 周启豪、陈熠晋级 陈垣宇2-3止步16强 赛场原声 11:00
-http://106.14.71.211:1234/967155537
-#EXTINF:-1 tvg-id="周启豪、陈熠晋级 陈垣宇2-3止步16强" tvg-name="WTT 周启豪、陈熠晋级 陈垣宇2-3止步16强 智能字幕 11:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 周启豪、陈熠晋级 陈垣宇2-3止步16强 智能字幕 11:00
-http://106.14.71.211:1234/967433758
-#EXTINF:-1 tvg-id="超三联赛 泸州大区赛 B档小组赛下午场" tvg-name="超三联赛 超三联赛 泸州大区赛 B档小组赛下午场 清流播出 13:55" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2022/8/4/1000000005511065bb48.jpg" group-title="体育-今天09-11",超三联赛 超三联赛 泸州大区赛 B档小组赛下午场 清流播出 13:55
-http://106.14.71.211:1234/967448677
-#EXTINF:-1 tvg-id="伊朗男排vs中国台北男排" tvg-name="亚洲男排锦标赛 伊朗男排vs中国台北男排 CCTV5 14:30" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/9/3/1000000015341066cc3b.png" group-title="体育-今天09-11",亚洲男排锦标赛 伊朗男排vs中国台北男排 CCTV5 14:30
-http://106.14.71.211:1234/967478179
-#EXTINF:-1 tvg-id="平野/木原冲半决赛 佐藤瞳出战" tvg-name="WTT 平野/木原冲半决赛 佐藤瞳出战 张铭哲 16:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 平野/木原冲半决赛 佐藤瞳出战 张铭哲 16:00
-http://106.14.71.211:1234/967161172
-#EXTINF:-1 tvg-id="平野/木原冲半决赛 佐藤瞳出战" tvg-name="WTT 平野/木原冲半决赛 佐藤瞳出战 1号桌 16:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 平野/木原冲半决赛 佐藤瞳出战 1号桌 16:00
-http://106.14.71.211:1234/967161080
-#EXTINF:-1 tvg-id="平野/木原冲半决赛 佐藤瞳出战" tvg-name="WTT 平野/木原冲半决赛 佐藤瞳出战 2号桌 16:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 平野/木原冲半决赛 佐藤瞳出战 2号桌 16:00
-http://106.14.71.211:1234/967161111
-#EXTINF:-1 tvg-id="平野/木原冲半决赛 佐藤瞳出战" tvg-name="WTT 平野/木原冲半决赛 佐藤瞳出战 3号桌 16:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 平野/木原冲半决赛 佐藤瞳出战 3号桌 16:00
-http://106.14.71.211:1234/967161151
-#EXTINF:-1 tvg-id="平野/木原冲半决赛 佐藤瞳出战" tvg-name="WTT 平野/木原冲半决赛 佐藤瞳出战 4号桌 16:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 平野/木原冲半决赛 佐藤瞳出战 4号桌 16:00
-http://106.14.71.211:1234/967161167
-#EXTINF:-1 tvg-id="澜跑北京越野跑挑战赛(海淀)DAY2" tvg-name="澜跑北京越野跑挑战赛 澜跑北京越野跑挑战赛(海淀)DAY2 海淀 16:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/9/8/1000000015361069e30b.png" group-title="体育-今天09-11",澜跑北京越野跑挑战赛 澜跑北京越野跑挑战赛(海淀)DAY2 海淀 16:00
-http://106.14.71.211:1234/967433674
-#EXTINF:-1 tvg-id="2026第三届天空之镜贵阳100越野赛" tvg-name="天空之镜贵阳100越野赛 2026第三届天空之镜贵阳100越野赛 解说 16:30" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/9/11/100000001540106ec4b7.png" group-title="体育-今天09-11",天空之镜贵阳100越野赛 2026第三届天空之镜贵阳100越野赛 解说 16:30
-http://106.14.71.211:1234/967497309
-#EXTINF:-1 tvg-id="NBA精彩重播：湖人vs活塞" tvg-name="NBA经典赛事 NBA精彩重播：湖人vs活塞 李天宇 陈正昊 王羽希 18:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/1/8/985164a0-1f05-4397-bf24-481207678231.png" group-title="体育-今天09-11",NBA经典赛事 NBA精彩重播：湖人vs活塞 李天宇 陈正昊 王羽希 18:00
-http://106.14.71.211:1234/966323935
-#EXTINF:-1 tvg-id="福州海侠VS厦门海豚" tvg-name="CPB中国棒球城市联赛 福州海侠VS厦门海豚 清流播出 18:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/8/10/100000001517106f3b81.png" group-title="体育-今天09-11",CPB中国棒球城市联赛 福州海侠VS厦门海豚 清流播出 18:00
-http://106.14.71.211:1234/967034572
-#EXTINF:-1 tvg-id="深圳蓝袜VS长沙旺旺" tvg-name="CPB中国棒球城市联赛 深圳蓝袜VS长沙旺旺 清流播出 18:30" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/8/10/100000001517106f3b81.png" group-title="体育-今天09-11",CPB中国棒球城市联赛 深圳蓝袜VS长沙旺旺 清流播出 18:30
-http://106.14.71.211:1234/967034583
+#EXTINF:-1 tvg-id="第十二届翼装飞行世界锦标赛" tvg-name="翼装飞行世锦赛 第十二届翼装飞行世界锦标赛 2026第十二届翼装飞行世界锦标赛全场回放（官方解说） 10:40" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/9/2/100000001324106fac0a.png" group-title="体育-今天09-11",翼装飞行世锦赛 第十二届翼装飞行世界锦标赛 2026第十二届翼装飞行世界锦标赛全场回放（官方解说） 10:40
+http://106.14.71.211:1234/967500748
+#EXTINF:-1 tvg-id="周启豪、陈熠晋级 陈垣宇2-3止步16强" tvg-name="WTT 周启豪、陈熠晋级 陈垣宇2-3止步16强 全场回放（徐儒叶） 11:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 周启豪、陈熠晋级 陈垣宇2-3止步16强 全场回放（徐儒叶） 11:00
+http://106.14.71.211:1234/967500551
+#EXTINF:-1 tvg-id="周启豪、陈熠晋级 陈垣宇2-3止步16强" tvg-name="WTT 周启豪、陈熠晋级 陈垣宇2-3止步16强 全场回放 11:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 周启豪、陈熠晋级 陈垣宇2-3止步16强 全场回放 11:00
+http://106.14.71.211:1234/967504682
+#EXTINF:-1 tvg-id="周启豪、陈熠晋级 陈垣宇2-3止步16强" tvg-name="WTT 周启豪、陈熠晋级 陈垣宇2-3止步16强 全场回放（英文解说智能字幕） 11:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 周启豪、陈熠晋级 陈垣宇2-3止步16强 全场回放（英文解说智能字幕） 11:00
+http://106.14.71.211:1234/967501133
+#EXTINF:-1 tvg-id="超三联赛 泸州大区赛 B档小组赛下午场" tvg-name="超三联赛 超三联赛 泸州大区赛 B档小组赛下午场 【回放】福州奇迹20:18江苏香江猛虎 13:55" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2022/8/4/1000000005511065bb48.jpg" group-title="体育-今天09-11",超三联赛 超三联赛 泸州大区赛 B档小组赛下午场 【回放】福州奇迹20:18江苏香江猛虎 13:55
+http://106.14.71.211:1234/967498512
+#EXTINF:-1 tvg-id="超三联赛 泸州大区赛 B档小组赛下午场" tvg-name="超三联赛 超三联赛 泸州大区赛 B档小组赛下午场 【回放】广东生涯12:21湖北江鲟 13:55" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2022/8/4/1000000005511065bb48.jpg" group-title="体育-今天09-11",超三联赛 超三联赛 泸州大区赛 B档小组赛下午场 【回放】广东生涯12:21湖北江鲟 13:55
+http://106.14.71.211:1234/967498982
+#EXTINF:-1 tvg-id="超三联赛 泸州大区赛 B档小组赛下午场" tvg-name="超三联赛 超三联赛 泸州大区赛 B档小组赛下午场 【回放】广东光正教育21:15福州奇迹 13:55" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2022/8/4/1000000005511065bb48.jpg" group-title="体育-今天09-11",超三联赛 超三联赛 泸州大区赛 B档小组赛下午场 【回放】广东光正教育21:15福州奇迹 13:55
+http://106.14.71.211:1234/967500030
+#EXTINF:-1 tvg-id="超三联赛 泸州大区赛 B档小组赛下午场" tvg-name="超三联赛 超三联赛 泸州大区赛 B档小组赛下午场 2026超三联赛泸州大区赛B档小组赛回放：成都和众21:11广东生涯 13:55" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2022/8/4/1000000005511065bb48.jpg" group-title="体育-今天09-11",超三联赛 超三联赛 泸州大区赛 B档小组赛下午场 2026超三联赛泸州大区赛B档小组赛回放：成都和众21:11广东生涯 13:55
+http://106.14.71.211:1234/967500278
+#EXTINF:-1 tvg-id="超三联赛 泸州大区赛 B档小组赛下午场" tvg-name="超三联赛 超三联赛 泸州大区赛 B档小组赛下午场 2026超三联赛泸州大区赛B档小组赛下午场全场回放（赛场原声） 13:55" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2022/8/4/1000000005511065bb48.jpg" group-title="体育-今天09-11",超三联赛 超三联赛 泸州大区赛 B档小组赛下午场 2026超三联赛泸州大区赛B档小组赛下午场全场回放（赛场原声） 13:55
+http://106.14.71.211:1234/967500910
+#EXTINF:-1 tvg-id="平野/木原晋级半决赛 佐藤瞳横扫进8强" tvg-name="WTT 平野/木原晋级半决赛 佐藤瞳横扫进8强 全场回放（张铭哲） 16:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 平野/木原晋级半决赛 佐藤瞳横扫进8强 全场回放（张铭哲） 16:00
+http://106.14.71.211:1234/967505844
+#EXTINF:-1 tvg-id="平野/木原晋级半决赛 佐藤瞳横扫进8强" tvg-name="WTT 平野/木原晋级半决赛 佐藤瞳横扫进8强 全场回放（一号桌） 16:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 平野/木原晋级半决赛 佐藤瞳横扫进8强 全场回放（一号桌） 16:00
+http://106.14.71.211:1234/967506789
+#EXTINF:-1 tvg-id="平野/木原晋级半决赛 佐藤瞳横扫进8强" tvg-name="WTT 平野/木原晋级半决赛 佐藤瞳横扫进8强 全场回放（三号桌） 16:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 平野/木原晋级半决赛 佐藤瞳横扫进8强 全场回放（三号桌） 16:00
+http://106.14.71.211:1234/967506309
+#EXTINF:-1 tvg-id="平野/木原晋级半决赛 佐藤瞳横扫进8强" tvg-name="WTT 平野/木原晋级半决赛 佐藤瞳横扫进8强 全场回放（四号桌） 16:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 平野/木原晋级半决赛 佐藤瞳横扫进8强 全场回放（四号桌） 16:00
+http://106.14.71.211:1234/967506019
+#EXTINF:-1 tvg-id="澜跑北京越野跑挑战赛(海淀)DAY2" tvg-name="澜跑北京越野跑挑战赛 澜跑北京越野跑挑战赛(海淀)DAY2 2026澜跑北京越野跑挑战赛（海淀）Day2全场回放（官方解说） 16:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/9/8/1000000015361069e30b.png" group-title="体育-今天09-11",澜跑北京越野跑挑战赛 澜跑北京越野跑挑战赛(海淀)DAY2 2026澜跑北京越野跑挑战赛（海淀）Day2全场回放（官方解说） 16:00
+http://106.14.71.211:1234/967504592
+#EXTINF:-1 tvg-id="NBA精彩重播：湖人vs活塞" tvg-name="NBA经典赛事 NBA精彩重播：湖人vs活塞 全场回放 18:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/1/8/985164a0-1f05-4397-bf24-481207678231.png" group-title="体育-今天09-11",NBA经典赛事 NBA精彩重播：湖人vs活塞 全场回放 18:00
+http://106.14.71.211:1234/963790280
 #EXTINF:-1 tvg-id="陈幸同PK汉娜·高达 小莫对阵户上" tvg-name="WTT 陈幸同PK汉娜·高达 小莫对阵户上 周冠达 刘国正 程靖淇 17:30" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 陈幸同PK汉娜·高达 小莫对阵户上 周冠达 刘国正 程靖淇 17:30
 http://106.14.71.211:1234/967155640
 #EXTINF:-1 tvg-id="陈幸同PK汉娜·高达 小莫对阵户上" tvg-name="WTT 陈幸同PK汉娜·高达 小莫对阵户上 热身区 10:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 陈幸同PK汉娜·高达 小莫对阵户上 热身区 10:00
@@ -1031,14 +1025,16 @@ http://106.14.71.211:1234/967155587
 http://106.14.71.211:1234/967155611
 #EXTINF:-1 tvg-id="陈幸同PK汉娜·高达 小莫对阵户上" tvg-name="WTT 陈幸同PK汉娜·高达 小莫对阵户上 智能字幕 18:30" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-今天09-11",WTT 陈幸同PK汉娜·高达 小莫对阵户上 智能字幕 18:30
 http://106.14.71.211:1234/967159013
-#EXTINF:-1 tvg-id="超三联赛 泸州大区赛 B档小组赛晚间场" tvg-name="超三联赛 超三联赛 泸州大区赛 B档小组赛晚间场 清流播出 18:55" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2022/8/4/1000000005511065bb48.jpg" group-title="体育-今天09-11",超三联赛 超三联赛 泸州大区赛 B档小组赛晚间场 清流播出 18:55
-http://106.14.71.211:1234/967448705
-#EXTINF:-1 tvg-id="昔日留洋故人 回望曼彻斯特浮沉" tvg-name="绿茵狂想：联赛季 昔日留洋故人 回望曼彻斯特浮沉 苏东 孙继海 董方卓 杨茗茗 19:00" tvg-logo="https://img.cmvideo.cn/publish/noms_wc/nomsworldcup/2026/08/21/77KVD4MV77K9.png" group-title="体育-今天09-11",绿茵狂想：联赛季 昔日留洋故人 回望曼彻斯特浮沉 苏东 孙继海 董方卓 杨茗茗 19:00
-http://106.14.71.211:1234/966891433
+#EXTINF:-1 tvg-id="超三联赛 泸州大区赛 B档小组赛晚间场" tvg-name="超三联赛 超三联赛 泸州大区赛 B档小组赛晚间场 【回放】广东光正教育21:15江苏香江猛虎 18:55" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2022/8/4/1000000005511065bb48.jpg" group-title="体育-今天09-11",超三联赛 超三联赛 泸州大区赛 B档小组赛晚间场 【回放】广东光正教育21:15江苏香江猛虎 18:55
+http://106.14.71.211:1234/967505423
+#EXTINF:-1 tvg-id="超三联赛 泸州大区赛 B档小组赛晚间场" tvg-name="超三联赛 超三联赛 泸州大区赛 B档小组赛晚间场 【回放】成都和众22:10湖北江鲟 18:55" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2022/8/4/1000000005511065bb48.jpg" group-title="体育-今天09-11",超三联赛 超三联赛 泸州大区赛 B档小组赛晚间场 【回放】成都和众22:10湖北江鲟 18:55
+http://106.14.71.211:1234/967505617
+#EXTINF:-1 tvg-id="超三联赛 泸州大区赛 B档小组赛晚间场" tvg-name="超三联赛 超三联赛 泸州大区赛 B档小组赛晚间场 【回放】福州奇迹21:16广东生涯 18:55" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2022/8/4/1000000005511065bb48.jpg" group-title="体育-今天09-11",超三联赛 超三联赛 泸州大区赛 B档小组赛晚间场 【回放】福州奇迹21:16广东生涯 18:55
+http://106.14.71.211:1234/967506476
+#EXTINF:-1 tvg-id="超三联赛 泸州大区赛 B档小组赛晚间场" tvg-name="超三联赛 超三联赛 泸州大区赛 B档小组赛晚间场 2026超三联赛泸州大区赛B档小组赛回放：湖北江鲟19:21江苏香江猛虎 18:55" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2022/8/4/1000000005511065bb48.jpg" group-title="体育-今天09-11",超三联赛 超三联赛 泸州大区赛 B档小组赛晚间场 2026超三联赛泸州大区赛B档小组赛回放：湖北江鲟19:21江苏香江猛虎 18:55
+http://106.14.71.211:1234/967506906
 #EXTINF:-1 tvg-id="沈阳VS长春" tvg-name="东北超 沈阳VS长春 赛场原声 19:07" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/4/13/1000000014401064d03a.png" group-title="体育-今天09-11",东北超 沈阳VS长春 赛场原声 19:07
 http://106.14.71.211:1234/966943479
-#EXTINF:-1 tvg-id="温州VS诸暨" tvg-name="浙BA 温州VS诸暨 赛场原声 19:30" tvg-logo="https://img.cmvideo.cn/publish/noms_wc/nomsworldcup/2026/09/02/77N92ACGBBVQ.png" group-title="体育-今天09-11",浙BA 温州VS诸暨 赛场原声 19:30
-http://106.14.71.211:1234/967156475
 #EXTINF:-1 tvg-id="株洲队VS益阳队" tvg-name="湘超 株洲队VS益阳队 赛场原声 19:38" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/7/22/100000001316106d1913.png" group-title="体育-今天09-11",湘超 株洲队VS益阳队 赛场原声 19:38
 http://106.14.71.211:1234/967381545
 #EXTINF:-1 tvg-id="郴州队VS邵阳队" tvg-name="湘超 郴州队VS邵阳队 赛场原声 19:38" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/7/22/100000001316106d1913.png" group-title="体育-今天09-11",湘超 郴州队VS邵阳队 赛场原声 19:38
@@ -1051,8 +1047,6 @@ http://106.14.71.211:1234/967497786
 http://106.14.71.211:1234/967298126
 #EXTINF:-1 tvg-id="丁俊晖PK凯伦·威尔逊 周跃龙战卡特" tvg-name="斯诺克 丁俊晖PK凯伦·威尔逊 周跃龙战卡特 原声二号桌 20:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2024/1/16/100000001001106678f6.jpg" group-title="体育-今天09-11",斯诺克 丁俊晖PK凯伦·威尔逊 周跃龙战卡特 原声二号桌 20:00
 http://106.14.71.211:1234/967298137
-#EXTINF:-1 tvg-id="《早安美网》第十二期" tvg-name="美国网球公开赛 《早安美网》第十二期 《早安美网》 20:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-今天09-11",美国网球公开赛 《早安美网》第十二期 《早安美网》 20:00
-http://106.14.71.211:1234/967052215
 #EXTINF:-1 tvg-id="ONE周五格斗夜170：育乐佩VS庞佩" tvg-name="ONE冠军赛 ONE周五格斗夜170：育乐佩VS庞佩 李威蓄 21:25" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/7/16/1000000015101065ca9b.png" group-title="体育-今天09-11",ONE冠军赛 ONE周五格斗夜170：育乐佩VS庞佩 李威蓄 21:25
 http://106.14.71.211:1234/967471021
 #EXTINF:-1 tvg-id="ONE周五格斗夜170：育乐佩VS庞佩" tvg-name="ONE冠军赛 ONE周五格斗夜170：育乐佩VS庞佩 英文原声 21:25" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/7/16/1000000015101065ca9b.png" group-title="体育-今天09-11",ONE冠军赛 ONE周五格斗夜170：育乐佩VS庞佩 英文原声 21:25
@@ -1065,33 +1059,31 @@ http://106.14.71.211:1234/967161199
 http://106.14.71.211:1234/967161231
 #EXTINF:-1 tvg-id="篮球公园丨中国女篮 柏林之路" tvg-name="CBA 篮球公园丨中国女篮 柏林之路 CCTV5 22:05" tvg-logo="https://img.cmvideo.cn/publish/noms_wc/nomsworldcup/2026/01/02/770HDE6N6HQ1.png" group-title="体育-今天09-11",CBA 篮球公园丨中国女篮 柏林之路 CCTV5 22:05
 http://106.14.71.211:1234/967478193
-#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 阿瑟・阿什球场 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-今天09-11",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 阿瑟・阿什球场 00:00
-http://106.14.71.211:1234/967049711
-#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 7号球场 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-今天09-11",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 7号球场 00:00
-http://106.14.71.211:1234/967049833
-#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 10号球场 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-今天09-11",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 10号球场 00:00
-http://106.14.71.211:1234/967049903
-#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 11号球场 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-今天09-11",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 11号球场 00:00
-http://106.14.71.211:1234/967049929
-#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 12号球场 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-今天09-11",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 12号球场 00:00
-http://106.14.71.211:1234/967050005
-#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 13号球场 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-今天09-11",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 13号球场 00:00
-http://106.14.71.211:1234/967050123
-#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 14号球场 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-今天09-11",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 14号球场 00:00
-http://106.14.71.211:1234/967050156
-#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 国际信号 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-今天09-11",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 国际信号 00:00
-http://106.14.71.211:1234/967049601
-#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 英文解说 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-今天09-11",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 英文解说 00:00
-http://106.14.71.211:1234/967049658
-#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 阿瑟・阿什球场 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-今天09-11",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 阿瑟・阿什球场 00:00
-http://106.14.71.211:1234/967499214
-#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 赛场原声 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-今天09-11",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 赛场原声 00:00
-http://106.14.71.211:1234/967499253
-#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 单文强 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-今天09-11",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 单文强 00:00
+#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 西尼亚科娃/汤森德 vs 克鲁格/蒙哥马利 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 西尼亚科娃/汤森德 vs 克鲁格/蒙哥马利 00:00
 http://106.14.71.211:1234/967499258
-#EXTINF:-1 tvg-id="特鲁姆普PK墨菲 威廉姆斯迎战戴维斯" tvg-name="斯诺克 特鲁姆普PK墨菲 威廉姆斯迎战戴维斯 卢正浩 02:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2024/1/16/100000001001106678f6.jpg" group-title="体育-明天09-12",斯诺克 特鲁姆普PK墨菲 威廉姆斯迎战戴维斯 卢正浩 02:00
+#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 阿瑟・阿什球场 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 阿瑟・阿什球场 00:00
+http://106.14.71.211:1234/967049711
+#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 阿瑟・阿什球场 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 阿瑟・阿什球场 00:00
+http://106.14.71.211:1234/967499214
+#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 7号球场 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 7号球场 00:00
+http://106.14.71.211:1234/967049833
+#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 10号球场 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 10号球场 00:00
+http://106.14.71.211:1234/967049903
+#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 11号球场 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 11号球场 00:00
+http://106.14.71.211:1234/967049929
+#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 12号球场 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 12号球场 00:00
+http://106.14.71.211:1234/967050005
+#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 13号球场 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 13号球场 00:00
+http://106.14.71.211:1234/967050123
+#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 14号球场 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 14号球场 00:00
+http://106.14.71.211:1234/967050156
+#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 英文解说 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 英文解说 00:00
+http://106.14.71.211:1234/967049658
+#EXTINF:-1 tvg-id="兹维列夫领衔冲决赛 孙心然青少年出战" tvg-name="美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 国际信号 00:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 兹维列夫领衔冲决赛 孙心然青少年出战 国际信号 00:00
+http://106.14.71.211:1234/967049601
+#EXTINF:-1 tvg-id="特鲁姆普PK墨菲 威廉姆斯迎战戴维斯" tvg-name="斯诺克 特鲁姆普PK墨菲 威廉姆斯迎战戴维斯 解说：卢正浩 02:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2024/1/16/100000001001106678f6.jpg" group-title="体育-明天09-12",斯诺克 特鲁姆普PK墨菲 威廉姆斯迎战戴维斯 解说：卢正浩 02:00
 http://106.14.71.211:1234/967497782
-#EXTINF:-1 tvg-id="特鲁姆普PK墨菲 威廉姆斯迎战戴维斯" tvg-name="斯诺克 特鲁姆普PK墨菲 威廉姆斯迎战戴维斯 杨江浩 02:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2024/1/16/100000001001106678f6.jpg" group-title="体育-明天09-12",斯诺克 特鲁姆普PK墨菲 威廉姆斯迎战戴维斯 杨江浩 02:00
+#EXTINF:-1 tvg-id="特鲁姆普PK墨菲 威廉姆斯迎战戴维斯" tvg-name="斯诺克 特鲁姆普PK墨菲 威廉姆斯迎战戴维斯 解说：杨江浩 02:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2024/1/16/100000001001106678f6.jpg" group-title="体育-明天09-12",斯诺克 特鲁姆普PK墨菲 威廉姆斯迎战戴维斯 解说：杨江浩 02:00
 http://106.14.71.211:1234/967497805
 #EXTINF:-1 tvg-id="特鲁姆普PK墨菲 威廉姆斯迎战戴维斯" tvg-name="斯诺克 特鲁姆普PK墨菲 威廉姆斯迎战戴维斯 原声1号桌 02:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2024/1/16/100000001001106678f6.jpg" group-title="体育-明天09-12",斯诺克 特鲁姆普PK墨菲 威廉姆斯迎战戴维斯 原声1号桌 02:00
 http://106.14.71.211:1234/967298160
@@ -1113,20 +1105,22 @@ http://106.14.71.211:1234/967472824
 http://106.14.71.211:1234/967475134
 #EXTINF:-1 tvg-id="塞维利亚VS瓦伦西亚" tvg-name="西甲 塞维利亚VS瓦伦西亚 赛场原声 02:45" tvg-logo="https://img.cmvideo.cn/publish/noms_wc/nomsworldcup/2026/04/21/779JJMOFB20H.png" group-title="体育-明天09-12",西甲 塞维利亚VS瓦伦西亚 赛场原声 02:45
 http://106.14.71.211:1234/967475129
-#EXTINF:-1 tvg-id="兹维列夫VS卡恰诺夫" tvg-name="美国网球公开赛 兹维列夫VS卡恰诺夫 赛场原声 03:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 兹维列夫VS卡恰诺夫 赛场原声 03:00
-http://106.14.71.211:1234/967499264
 #EXTINF:-1 tvg-id="兹维列夫VS卡恰诺夫" tvg-name="美国网球公开赛 兹维列夫VS卡恰诺夫 鸿昆 胡力涛 02:30" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 兹维列夫VS卡恰诺夫 鸿昆 胡力涛 02:30
 http://106.14.71.211:1234/967499288
+#EXTINF:-1 tvg-id="兹维列夫VS卡恰诺夫" tvg-name="美国网球公开赛 兹维列夫VS卡恰诺夫 赛场原声 03:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 兹维列夫VS卡恰诺夫 赛场原声 03:00
+http://106.14.71.211:1234/967499264
 #EXTINF:-1 tvg-id="2026第三届天空之镜贵阳100越野赛" tvg-name="天空之镜贵阳100越野赛 2026第三届天空之镜贵阳100越野赛 解说 04:30" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/9/11/100000001540106ec4b7.png" group-title="体育-明天09-12",天空之镜贵阳100越野赛 2026第三届天空之镜贵阳100越野赛 解说 04:30
 http://106.14.71.211:1234/967497327
-#EXTINF:-1 tvg-id="蒂亚福VS谢尔顿" tvg-name="美国网球公开赛 蒂亚福VS谢尔顿 赛场原声 07:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 蒂亚福VS谢尔顿 赛场原声 07:00
-http://106.14.71.211:1234/967499308
 #EXTINF:-1 tvg-id="蒂亚福VS谢尔顿" tvg-name="美国网球公开赛 蒂亚福VS谢尔顿 鸿昆 胡力涛 06:30" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 蒂亚福VS谢尔顿 鸿昆 胡力涛 06:30
 http://106.14.71.211:1234/967499346
+#EXTINF:-1 tvg-id="蒂亚福VS谢尔顿" tvg-name="美国网球公开赛 蒂亚福VS谢尔顿 赛场原声 07:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 蒂亚福VS谢尔顿 赛场原声 07:00
+http://106.14.71.211:1234/967499308
 #EXTINF:-1 tvg-id="澜跑北京越野跑挑战赛(海淀)DAY3" tvg-name="澜跑北京越野跑挑战赛 澜跑北京越野跑挑战赛(海淀)DAY3 海淀 07:20" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/9/8/1000000015361069e30b.png" group-title="体育-明天09-12",澜跑北京越野跑挑战赛 澜跑北京越野跑挑战赛(海淀)DAY3 海淀 07:20
 http://106.14.71.211:1234/967433691
 #EXTINF:-1 tvg-id="Zuffa拳击特别赛：赛前称重仪式" tvg-name="Zuffa拳击 Zuffa拳击特别赛：赛前称重仪式 陈瑞阳 07:55" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/3/31/10000000139810626c9f.png" group-title="体育-明天09-12",Zuffa拳击 Zuffa拳击特别赛：赛前称重仪式 陈瑞阳 07:55
 http://106.14.71.211:1234/967483338
+#EXTINF:-1 tvg-id="2026年全国海钓锦标赛（秦皇岛北戴河站）" tvg-name="全国海钓锦标赛 2026年全国海钓锦标赛（秦皇岛北戴河站） 秦皇岛北戴河站 08:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/9/11/1000000015411063984e.png" group-title="体育-明天09-12",全国海钓锦标赛 2026年全国海钓锦标赛（秦皇岛北戴河站） 秦皇岛北戴河站 08:00
+http://106.14.71.211:1234/967500420
 #EXTINF:-1 tvg-id="undefined" tvg-name="咪咕体育日报 undefined 咪咕体育日报 第178期 08:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2024/10/7/100000001233106a7b6e.png" group-title="体育-明天09-12",咪咕体育日报 undefined 咪咕体育日报 第178期 08:00
 http://106.14.71.211:1234/967157952
 #EXTINF:-1 tvg-id="2026第十四届环太湖国际公路自行车赛" tvg-name="中国自行车运动协会系列赛 2026第十四届环太湖国际公路自行车赛 解说 09:20" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/6/25/100000001499106b6db1.png" group-title="体育-明天09-12",中国自行车运动协会系列赛 2026第十四届环太湖国际公路自行车赛 解说 09:20
@@ -1137,13 +1131,13 @@ http://106.14.71.211:1234/967155755
 http://106.14.71.211:1234/967497004
 #EXTINF:-1 tvg-id="第十二届翼装飞行世界锦标赛" tvg-name="翼装飞行世锦赛 第十二届翼装飞行世界锦标赛 解说 10:40" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/9/2/100000001324106fac0a.png" group-title="体育-明天09-12",翼装飞行世锦赛 第十二届翼装飞行世界锦标赛 解说 10:40
 http://106.14.71.211:1234/967202942
-#EXTINF:-1 tvg-id="男女单打1/4决赛" tvg-name="WTT 男女单打1/4决赛 肖扬 11:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-明天09-12",WTT 男女单打1/4决赛 肖扬 11:00
+#EXTINF:-1 tvg-id="周启豪激战张本智和 陈熠冲四强" tvg-name="WTT 周启豪激战张本智和 陈熠冲四强 徐儒叶 11:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-明天09-12",WTT 周启豪激战张本智和 陈熠冲四强 徐儒叶 11:00
 http://106.14.71.211:1234/967155751
-#EXTINF:-1 tvg-id="男女单打1/4决赛" tvg-name="WTT 男女单打1/4决赛 热身区 10:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-明天09-12",WTT 男女单打1/4决赛 热身区 10:00
+#EXTINF:-1 tvg-id="周启豪激战张本智和 陈熠冲四强" tvg-name="WTT 周启豪激战张本智和 陈熠冲四强 热身区 10:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-明天09-12",WTT 周启豪激战张本智和 陈熠冲四强 热身区 10:00
 http://106.14.71.211:1234/967155755
-#EXTINF:-1 tvg-id="男女单打1/4决赛" tvg-name="WTT 男女单打1/4决赛 赛场原声 11:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-明天09-12",WTT 男女单打1/4决赛 赛场原声 11:00
+#EXTINF:-1 tvg-id="周启豪激战张本智和 陈熠冲四强" tvg-name="WTT 周启豪激战张本智和 陈熠冲四强 赛场原声 11:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-明天09-12",WTT 周启豪激战张本智和 陈熠冲四强 赛场原声 11:00
 http://106.14.71.211:1234/967155705
-#EXTINF:-1 tvg-id="男女单打1/4决赛" tvg-name="WTT 男女单打1/4决赛 智能字幕 11:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-明天09-12",WTT 男女单打1/4决赛 智能字幕 11:00
+#EXTINF:-1 tvg-id="周启豪激战张本智和 陈熠冲四强" tvg-name="WTT 周启豪激战张本智和 陈熠冲四强 智能字幕 11:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-明天09-12",WTT 周启豪激战张本智和 陈熠冲四强 智能字幕 11:00
 http://106.14.71.211:1234/967433757
 #EXTINF:-1 tvg-id="超三联赛 泸州大区赛 A档小组赛" tvg-name="超三联赛 超三联赛 泸州大区赛 A档小组赛 周赫 薛思佳 12:55" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2022/8/4/1000000005511065bb48.jpg" group-title="体育-明天09-12",超三联赛 超三联赛 泸州大区赛 A档小组赛 周赫 薛思佳 12:55
 http://106.14.71.211:1234/967448765
@@ -1183,13 +1177,13 @@ http://106.14.71.211:1234/967471567
 http://106.14.71.211:1234/967471450
 #EXTINF:-1 tvg-id="NBA精彩重播：骑士vs湖人" tvg-name="NBA经典赛事 NBA精彩重播：骑士vs湖人 杨健 苏群 曾令旭 18:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/1/8/985164a0-1f05-4397-bf24-481207678231.png" group-title="体育-明天09-12",NBA经典赛事 NBA精彩重播：骑士vs湖人 杨健 苏群 曾令旭 18:00
 http://106.14.71.211:1234/966323947
-#EXTINF:-1 tvg-id="男女单打1/4决赛" tvg-name="WTT 男女单打1/4决赛 周冠达 刘国正 程靖淇 17:30" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-明天09-12",WTT 男女单打1/4决赛 周冠达 刘国正 程靖淇 17:30
+#EXTINF:-1 tvg-id="硬碰硬！松岛对决雨果 张本美和争四强席" tvg-name="WTT 硬碰硬！松岛对决雨果 张本美和争四强席 周冠达 刘国正 程靖淇 17:30" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-明天09-12",WTT 硬碰硬！松岛对决雨果 张本美和争四强席 周冠达 刘国正 程靖淇 17:30
 http://106.14.71.211:1234/967155785
-#EXTINF:-1 tvg-id="男女单打1/4决赛" tvg-name="WTT 男女单打1/4决赛 热身区 10:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-明天09-12",WTT 男女单打1/4决赛 热身区 10:00
+#EXTINF:-1 tvg-id="硬碰硬！松岛对决雨果 张本美和争四强席" tvg-name="WTT 硬碰硬！松岛对决雨果 张本美和争四强席 热身区 10:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-明天09-12",WTT 硬碰硬！松岛对决雨果 张本美和争四强席 热身区 10:00
 http://106.14.71.211:1234/967155755
-#EXTINF:-1 tvg-id="男女单打1/4决赛" tvg-name="WTT 男女单打1/4决赛 赛场原声 18:30" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-明天09-12",WTT 男女单打1/4决赛 赛场原声 18:30
+#EXTINF:-1 tvg-id="硬碰硬！松岛对决雨果 张本美和争四强席" tvg-name="WTT 硬碰硬！松岛对决雨果 张本美和争四强席 赛场原声 18:30" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-明天09-12",WTT 硬碰硬！松岛对决雨果 张本美和争四强席 赛场原声 18:30
 http://106.14.71.211:1234/967155765
-#EXTINF:-1 tvg-id="男女单打1/4决赛" tvg-name="WTT 男女单打1/4决赛 智能字幕 18:30" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-明天09-12",WTT 男女单打1/4决赛 智能字幕 18:30
+#EXTINF:-1 tvg-id="硬碰硬！松岛对决雨果 张本美和争四强席" tvg-name="WTT 硬碰硬！松岛对决雨果 张本美和争四强席 智能字幕 18:30" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2025/9/28/1000000004041064e35e.png" group-title="体育-明天09-12",WTT 硬碰硬！松岛对决雨果 张本美和争四强席 智能字幕 18:30
 http://106.14.71.211:1234/967158980
 #EXTINF:-1 tvg-id="鄂尔多斯队VS包头队" tvg-name="蒙超联赛 鄂尔多斯队VS包头队 赛场原声 18:30" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/5/11/100000001463106bf9dd.png" group-title="体育-明天09-12",蒙超联赛 鄂尔多斯队VS包头队 赛场原声 18:30
 http://106.14.71.211:1234/967379253
@@ -1433,12 +1427,10 @@ http://106.14.71.211:1234/967474387
 http://106.14.71.211:1234/967473150
 #EXTINF:-1 tvg-id="利物浦VS富勒姆" tvg-name="英超 利物浦VS富勒姆 任锴 梁柏翘 21:45" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2021/3/3/51067f839.png" group-title="体育-明天09-12",英超 利物浦VS富勒姆 任锴 梁柏翘 21:45
 http://106.14.71.211:1234/967473161
-#EXTINF:-1 tvg-id="利物浦VS富勒姆" tvg-name="英超 利物浦VS富勒姆 赛场原声 21:45" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2021/3/3/51067f839.png" group-title="体育-明天09-12",英超 利物浦VS富勒姆 赛场原声 21:45
-http://106.14.71.211:1234/967473202
-#EXTINF:-1 tvg-id="利物浦VS富勒姆" tvg-name="英超 利物浦VS富勒姆 英文原声 21:45" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2021/3/3/51067f839.png" group-title="体育-明天09-12",英超 利物浦VS富勒姆 英文原声 21:45
-http://106.14.71.211:1234/967473169
 #EXTINF:-1 tvg-id="利物浦VS富勒姆" tvg-name="英超 利物浦VS富勒姆 4K赛场原声 21:45" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2021/3/3/51067f839.png" group-title="体育-明天09-12",英超 利物浦VS富勒姆 4K赛场原声 21:45
 http://106.14.71.211:1234/967482553
+#EXTINF:-1 tvg-id="利物浦VS富勒姆" tvg-name="英超 利物浦VS富勒姆 英文原声 21:45" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2021/3/3/51067f839.png" group-title="体育-明天09-12",英超 利物浦VS富勒姆 英文原声 21:45
+http://106.14.71.211:1234/967473169
 #EXTINF:-1 tvg-id="水晶宫VS伊普斯维奇" tvg-name="英超 水晶宫VS伊普斯维奇 林梦鸽 21:45" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2021/3/3/51067f839.png" group-title="体育-明天09-12",英超 水晶宫VS伊普斯维奇 林梦鸽 21:45
 http://106.14.71.211:1234/967473125
 #EXTINF:-1 tvg-id="水晶宫VS伊普斯维奇" tvg-name="英超 水晶宫VS伊普斯维奇 赛场原声 21:45" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2021/3/3/51067f839.png" group-title="体育-明天09-12",英超 水晶宫VS伊普斯维奇 赛场原声 21:45
@@ -1473,6 +1465,12 @@ http://106.14.71.211:1234/967161341
 http://106.14.71.211:1234/967475088
 #EXTINF:-1 tvg-id="奥萨苏纳VS西班牙人" tvg-name="西甲 奥萨苏纳VS西班牙人 赛场原声 22:00" tvg-logo="https://img.cmvideo.cn/publish/noms_wc/nomsworldcup/2026/04/21/779JJMOFB20H.png" group-title="体育-明天09-12",西甲 奥萨苏纳VS西班牙人 赛场原声 22:00
 http://106.14.71.211:1234/967475069
+#EXTINF:-1 tvg-id="法国VS德国" tvg-name="女篮世界杯 法国VS德国 蔡凯臣 孔德昕 22:20" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/9/4/100000001527106ab529.png" group-title="体育-明天09-12",女篮世界杯 法国VS德国 蔡凯臣 孔德昕 22:20
+http://106.14.71.211:1234/967499590
+#EXTINF:-1 tvg-id="法国VS德国" tvg-name="女篮世界杯 法国VS德国 英文解说 22:20" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/9/4/100000001527106ab529.png" group-title="体育-明天09-12",女篮世界杯 法国VS德国 英文解说 22:20
+http://106.14.71.211:1234/967499568
+#EXTINF:-1 tvg-id="法国VS德国" tvg-name="女篮世界杯 法国VS德国 赛场原声 22:20" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2026/9/4/100000001527106ab529.png" group-title="体育-明天09-12",女篮世界杯 法国VS德国 赛场原声 22:20
+http://106.14.71.211:1234/967499537
 #EXTINF:-1 tvg-id="男双决赛/女单决赛" tvg-name="美国网球公开赛 男双决赛/女单决赛 阿瑟・阿什球场 23:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 男双决赛/女单决赛 阿瑟・阿什球场 23:00
 http://106.14.71.211:1234/967050265
 #EXTINF:-1 tvg-id="男双决赛/女单决赛" tvg-name="美国网球公开赛 男双决赛/女单决赛 路易斯・阿姆斯特朗球场 23:00" tvg-logo="https://img.cmvideo.cn/sports/uploadImages/2020/9/3/100000000364106ba927.jpg" group-title="体育-明天09-12",美国网球公开赛 男双决赛/女单决赛 路易斯・阿姆斯特朗球场 23:00
