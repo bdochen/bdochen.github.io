@@ -1,29 +1,29 @@
-=== IPTV Scrape Log - 2026-09-14 16:01:21 ===
+=== IPTV Scrape Log - 2026-09-15 00:02:50 ===
 Trigger event: schedule
 =========================================
 
-[2026-09-14 16:01:21] [INFO] Start probing host list for iptv.bin
-[2026-09-14 16:01:21] [INFO] Probing host: 106.118.123.217:1234 (using root path)
-[2026-09-14 16:01:26] [WARN] Host 106.118.123.217:1234 invalid response (HTTP 000), try next
-[2026-09-14 16:01:26] [DEBUG] curl verbose output for 106.118.123.217:1234:
-[2026-09-14 16:01:26] [INFO] Probing host: 106.14.71.211:1234 (using root path)
-[2026-09-14 16:01:27] [INFO] Host 106.14.71.211:1234 available (HTTP 200), selected for scraping
-[2026-09-14 16:01:27] [DEBUG] curl verbose output for 106.14.71.211:1234:
-[2026-09-14 16:01:27] [INFO] Fetching primary source from http://106.14.71.211:1234/
-[2026-09-14 16:01:28] [INFO] Primary source fetched successfully, size: 120K
-[2026-09-14 16:01:28] [INFO] Host scraping task finished
+[2026-09-15 00:02:50] [INFO] Start probing host list for iptv.bin
+[2026-09-15 00:02:50] [INFO] Probing host: 106.118.123.217:1234 (using root path)
+[2026-09-15 00:02:55] [WARN] Host 106.118.123.217:1234 invalid response (HTTP 000), try next
+[2026-09-15 00:02:55] [DEBUG] curl verbose output for 106.118.123.217:1234:
+[2026-09-15 00:02:55] [INFO] Probing host: 106.14.71.211:1234 (using root path)
+[2026-09-15 00:02:55] [INFO] Host 106.14.71.211:1234 available (HTTP 200), selected for scraping
+[2026-09-15 00:02:55] [DEBUG] curl verbose output for 106.14.71.211:1234:
+[2026-09-15 00:02:55] [INFO] Fetching primary source from http://106.14.71.211:1234/
+[2026-09-15 00:02:56] [INFO] Primary source fetched successfully, size: 80K
+[2026-09-15 00:02:56] [INFO] Host scraping task finished
 
-[2026-09-14 16:01:28] [INFO] Start fetch and convert secondary source to ipcenter.bin
-[2026-09-14 16:01:28] [INFO] raw.txt fetched successfully
-[2026-09-14 16:01:28] [INFO] ipcenter.bin generated, size: 16K
-[2026-09-14 16:01:28] [INFO] Secondary source convert task finished
+[2026-09-15 00:02:56] [INFO] Start fetch and convert secondary source to ipcenter.bin
+[2026-09-15 00:03:26] [ERROR] Failed to fetch raw.txt
+[2026-09-15 00:03:26] [INFO] ipcenter.bin generated, size: 4.0K
+[2026-09-15 00:03:26] [INFO] Secondary source convert task finished
 
-[2026-09-14 16:01:28] [INFO] Start merging files
-[2026-09-14 16:01:28] [INFO] iptv.bin size before merge: 120K
-[2026-09-14 16:01:28] [INFO] Using ipcenter.bin as base (group information first)
-[2026-09-14 16:01:28] [INFO] Primary source appended (header removed)
-[2026-09-14 16:01:28] [INFO] iptv.bin size after merge: 132K
-[2026-09-14 16:01:28] [INFO] Merge summary: merged (ipcenter first)
-[2026-09-14 16:01:28] [INFO] Merge task finished
+[2026-09-15 00:03:26] [INFO] Start merging files
+[2026-09-15 00:03:26] [INFO] iptv.bin size before merge: 80K
+[2026-09-15 00:03:26] [INFO] Using ipcenter.bin as base (group information first)
+[2026-09-15 00:03:26] [INFO] Primary source appended (header removed)
+[2026-09-15 00:03:26] [INFO] iptv.bin size after merge: 80K
+[2026-09-15 00:03:26] [INFO] Merge summary: merged (ipcenter first)
+[2026-09-15 00:03:26] [INFO] Merge task finished
 
-[2026-09-14 16:01:28] [INFO] Start commit and push
+[2026-09-15 00:03:26] [INFO] Start commit and push
