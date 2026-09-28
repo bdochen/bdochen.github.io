@@ -254,12 +254,6 @@ http://8.137.162.154:5009/proxy/jstv-665.m3u8
 http://8.137.162.154:5009/proxy/jstv-667.m3u8
 #EXTINF:-1 tvg-id="江苏国际" tvg-name="江苏国际" tvg-logo="http://8.137.162.154:5009/logo-cache/eb5aa9aa8d3969dc6371.png?v=1790575610083&from=source" group-title="江苏",江苏国际
 http://8.137.162.154:5009/proxy/jstv-671.m3u8
-#EXTINF:-1 tvg-id="辽宁都市" tvg-name="辽宁都市" tvg-logo="http://8.137.162.154:5009/logo-pack/%E8%BE%BD%E5%AE%81%E9%83%BD%E5%B8%82.png?v=b81b74db48" group-title="辽宁",辽宁都市
-http://8.137.162.154:5009/proxy/beidou-liaoning-10d3de0d03c62e85a1a281bbde8b6952.m3u8
-#EXTINF:-1 tvg-id="辽宁生活" tvg-name="辽宁生活" tvg-logo="http://8.137.162.154:5009/logo-pack/%E8%BE%BD%E5%AE%81%E7%94%9F%E6%B4%BB.png?v=5fc205efdc" group-title="辽宁",辽宁生活
-http://8.137.162.154:5009/proxy/beidou-liaoning-078ce87dcf5384d51e4655cb962fda18.m3u8
-#EXTINF:-1 tvg-id="辽宁体育休闲" tvg-name="辽宁体育休闲" tvg-logo="http://8.137.162.154:5009/logo-pack/%E8%BE%BD%E5%AE%81%E4%BD%93%E8%82%B2%E4%BC%91%E9%97%B2.png?v=31dd4915dd" group-title="辽宁",辽宁体育休闲
-http://8.137.162.154:5009/proxy/beidou-liaoning-e0bb9a7fd9afa954658bc50d0681cd49.m3u8
 #EXTINF:-1 tvg-id="家庭理财" tvg-name="家庭理财" tvg-logo="http://8.137.162.154:5009/logo-cache/d20982fa32498971bf7f.jpg?v=1790575610083&from=source" group-title="辽宁",家庭理财
 http://8.137.162.154:5009/proxy/beidou-liaoning-7e29bde4f41ca08642b7fc3ce4eb1ae4.m3u8
 #EXTINF:-1 tvg-id="沈阳新闻综合" tvg-name="沈阳新闻综合" tvg-logo="http://8.137.162.154:5009/logo-cache/e205e09309242aa99dd1.jpg?v=1790575610083&from=source" group-title="辽宁",沈阳新闻综合
@@ -682,12 +676,10 @@ https://hls.nxhhy.cn/live/nxws1M.m3u8
 https://hls.nxhhy.cn/live/nxgg1M.m3u8
 #EXTINF:-1 tvg-id="宁夏文旅" tvg-name="宁夏文旅" tvg-logo="http://8.137.162.154:5009/logo-pack/%E5%AE%81%E5%A4%8F%E6%96%87%E6%97%85.png?v=7b887a2d8d" catchup="none" group-title="宁夏",宁夏文旅
 https://hls.nxhhy.cn/live/nxwl1M.m3u8
-#EXTINF:-1 tvg-id="更新时间: 2026-09-28 08:16:23" tvg-name="更新时间: 2026-09-28 08:16:23" tvg-logo="" group-title="Update",更新时间: 2026-09-28 08:16:23
+#EXTINF:-1 tvg-id="更新时间: 2026-09-29 02:21:31" tvg-name="更新时间: 2026-09-29 02:21:31" tvg-logo="" group-title="Update",更新时间: 2026-09-29 02:21:31
 http://127.0.0.1/
 #EXTINF:-1 tvg-id="澳门莲花卫视" tvg-name="澳门莲花卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/1242e84a70c624c85f42.png?v=1790575610083&from=source" catchup="none" group-title="澳门",澳门莲花卫视
 http://8.137.162.154:5009/relay/lotustv-live.m3u8
-#EXTINF:-1 tvg-id="正直播｜来《1800新闻现场》，聊聊四川新鲜事儿" tvg-name="正直播｜来《1800新闻现场》，聊聊四川新鲜事儿" tvg-logo="https://kscgc.scgchc.com/live/image/2026/09/28/1790562456151_p22QTxZs.jpg" catchup="none" group-title="四川",正直播｜来《1800新闻现场》，聊聊四川新鲜事儿
-http://8.137.162.154:5009/proxy/sichuan-live-2104397748465082369.m3u8
 #EXTINF:-1 tvg-id="山西卫视" tvg-name="山西卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/a76b48f163eb53e93e39.png?v=1790575610083&from=source" catchup="none" group-title="山西",山西卫视
 http://8.137.162.154:5009/relay/shanxi-satellite.m3u8
 #EXTINF:-1 tvg-id="黄河电视台" tvg-name="黄河电视台" tvg-logo="http://8.137.162.154:5009/logo-cache/d5c18260d83d3c165e73.png?v=1790575610083&from=source" catchup="none" group-title="山西",黄河电视台
