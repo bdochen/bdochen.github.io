@@ -1,26 +1,26 @@
-=== IPTV Scrape Log - 2026-09-28 21:26:25 ===
+=== IPTV Scrape Log - 2026-09-29 01:19:45 ===
 Trigger event: schedule
 =========================================
 
-[2026-09-28 21:26:25] [INFO] Start probing host list for iptv.bin
-[2026-09-28 21:26:25] [INFO] Probing host: 8.137.162.154:5009 (using root path)
-[2026-09-28 21:26:26] [INFO] Host 8.137.162.154:5009 available (HTTP 200), selected for scraping
-[2026-09-28 21:26:26] [DEBUG] curl verbose output for 8.137.162.154:5009:
-[2026-09-28 21:26:26] [INFO] Fetching primary source from http://8.137.162.154:5009/
-[2026-09-28 21:26:27] [INFO] Primary source fetched successfully, size: 92K
-[2026-09-28 21:26:27] [INFO] Host scraping task finished
+[2026-09-29 01:19:45] [INFO] Start probing host list for iptv.bin
+[2026-09-29 01:19:45] [INFO] Probing host: 8.137.162.154:5009 (using root path)
+[2026-09-29 01:19:46] [INFO] Host 8.137.162.154:5009 available (HTTP 200), selected for scraping
+[2026-09-29 01:19:46] [DEBUG] curl verbose output for 8.137.162.154:5009:
+[2026-09-29 01:19:46] [INFO] Fetching primary source from http://8.137.162.154:5009/
+[2026-09-29 01:19:47] [INFO] Primary source fetched successfully, size: 84K
+[2026-09-29 01:19:47] [INFO] Host scraping task finished
 
-[2026-09-28 21:26:27] [INFO] Start fetch and convert secondary source to ipcenter.bin
-[2026-09-28 21:26:37] [ERROR] Failed to fetch raw.txt
-[2026-09-28 21:26:37] [INFO] ipcenter.bin generated, size: 4.0K
-[2026-09-28 21:26:37] [INFO] Secondary source convert task finished
+[2026-09-29 01:19:47] [INFO] Start fetch and convert secondary source to ipcenter.bin
+[2026-09-29 01:19:48] [INFO] raw.txt fetched successfully
+[2026-09-29 01:19:48] [INFO] ipcenter.bin generated, size: 72K
+[2026-09-29 01:19:48] [INFO] Secondary source convert task finished
 
-[2026-09-28 21:26:37] [INFO] Start merging files
-[2026-09-28 21:26:37] [INFO] iptv.bin size before merge: 92K
-[2026-09-28 21:26:37] [INFO] Using ipcenter.bin as base (group information first)
-[2026-09-28 21:26:37] [INFO] Primary source appended (header removed)
-[2026-09-28 21:26:37] [INFO] iptv.bin size after merge: 92K
-[2026-09-28 21:26:37] [INFO] Merge summary: merged (ipcenter first)
-[2026-09-28 21:26:37] [INFO] Merge task finished
+[2026-09-29 01:19:48] [INFO] Start merging files
+[2026-09-29 01:19:48] [INFO] iptv.bin size before merge: 84K
+[2026-09-29 01:19:48] [INFO] Using ipcenter.bin as base (group information first)
+[2026-09-29 01:19:48] [INFO] Primary source appended (header removed)
+[2026-09-29 01:19:48] [INFO] iptv.bin size after merge: 152K
+[2026-09-29 01:19:48] [INFO] Merge summary: merged (ipcenter first)
+[2026-09-29 01:19:48] [INFO] Merge task finished
 
-[2026-09-28 21:26:37] [INFO] Start commit and push
+[2026-09-29 01:19:48] [INFO] Start commit and push
