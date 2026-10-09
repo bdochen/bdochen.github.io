@@ -1,13 +1,12 @@
-#EXTM3U x-tvg-url="http://8.137.162.154:5009/playback.xml" catchup="append" catchup-source="?playbackbegin=${(b)yyyyMMddHHmmss}&playbackend=${(e)yyyyMMddHHmmss}"
 央视,#genre#
 CCTV-1HD,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226736/1.m3u8
 CCTV-1HD,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226737/1.m3u8
 CCTV-1HD,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226823/1.m3u8
 CCTV-1HD,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226635/1.m3u8
-CCTV-2HD,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226739/1.m3u8
+CCTV-2财经,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226739/1.m3u8
 CCTV-3HD,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226720/1.m3u8
 CCTV-4HD,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226725/1.m3u8
-CCTV-5HD,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226731/1.m3u8
+CCTV-5体育,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226731/1.m3u8
 CCTV-6HD,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226699/1.m3u8
 CCTV-7HD,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226721/1.m3u8
 CCTV-8HD,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226715/1.m3u8
