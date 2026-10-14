@@ -2522,8 +2522,6 @@ http://8.137.162.154:5009/relay/ysp-cctvhjjc.m3u8
 http://8.137.162.154:5009/630287636
 #EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/6dc2d55ef0f2cb3a8ca1.webp?v=1791802963236&from=source" group-title="卫视",东方卫视
 http://8.137.162.154:5009/651632648
-#EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视" tvg-logo="http://8.137.162.154:5009/logo-pack/%E4%B8%9C%E6%96%B9%E5%8D%AB%E8%A7%86.png?v=d4a95ef7a6" group-title="卫视",东方卫视
-https://bp-resource-dfl.bestv.cn/148/3/video.m3u8
 #EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/6fc630f60798249ef3c4.png?v=1791802963236&from=source" catchup="none" group-title="卫视",东方卫视
 http://8.137.162.154:5009/relay/ysp-dfws.m3u8
 #EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/3bf1b3de42894fe223ad.png?v=1791802963236&from=source" group-title="卫视",东方卫视
@@ -2614,6 +2612,8 @@ http://8.137.162.154:5009/relay/gdtv-54.m3u8
 http://8.137.162.154:5009/proxy/sztv-7881.m3u8
 #EXTINF:-1 tvg-id="福建少儿" tvg-name="福建少儿" tvg-logo="http://8.137.162.154:5009/logo-cache/dff2559053d03bbe5c0b.png?v=1791802963236&from=source" group-title="少儿",福建少儿
 http://8.137.162.154:5009/relay/fjtv-province-665248553475870720.m3u8
+#EXTINF:-1 tvg-id="福州少儿" tvg-name="福州少儿" tvg-logo="http://8.137.162.154:5009/logo-cache/b0a740ca9074581f516e.jpg?v=1791802963236&from=source" group-title="少儿",福州少儿
+http://live.zohi.tv/video/s10001-fztv-4/index.m3u8
 #EXTINF:-1 tvg-id="江西少儿" tvg-name="江西少儿" tvg-logo="http://8.137.162.154:5009/logo-cache/b6e1a63b7a4ac885e59a.png?v=1791802963236&from=source" catchup="none" group-title="少儿",江西少儿
 http://8.137.162.154:5009/proxy/jxntv-kids.m3u8
 #EXTINF:-1 tvg-id="河北少儿科教" tvg-name="河北少儿科教" tvg-logo="http://8.137.162.154:5009/logo-cache/b8066eb66aa36e27b84a.png?v=1791802963236&from=source" group-title="少儿",河北少儿科教
@@ -2672,14 +2672,24 @@ http://8.137.162.154:5009/proxy/jstv-665.m3u8
 http://8.137.162.154:5009/proxy/jstv-667.m3u8
 #EXTINF:-1 tvg-id="江苏国际" tvg-name="江苏国际" tvg-logo="http://8.137.162.154:5009/logo-cache/eb5aa9aa8d3969dc6371.png?v=1791802963236&from=source" group-title="江苏",江苏国际
 http://8.137.162.154:5009/proxy/jstv-671.m3u8
+#EXTINF:-1 tvg-id="苏州新闻综合" tvg-name="苏州新闻综合" tvg-logo="" group-title="江苏",苏州新闻综合
+https://live-auth.51kandianshi.com/szgd/csztv1.m3u8
+#EXTINF:-1 tvg-id="苏州社会经济" tvg-name="苏州社会经济" tvg-logo="" group-title="江苏",苏州社会经济
+https://live-auth.51kandianshi.com/szgd/csztv2.m3u8
+#EXTINF:-1 tvg-id="苏州文化生活" tvg-name="苏州文化生活" tvg-logo="" group-title="江苏",苏州文化生活
+https://live-auth.51kandianshi.com/szgd/csztv3.m3u8
+#EXTINF:-1 tvg-id="苏州电影娱乐" tvg-name="苏州电影娱乐" tvg-logo="" group-title="江苏",苏州电影娱乐
+https://live-auth.51kandianshi.com/szgd/csztv4.m3u8
+#EXTINF:-1 tvg-id="苏州生活资讯" tvg-name="苏州生活资讯" tvg-logo="" group-title="江苏",苏州生活资讯
+https://live-auth.51kandianshi.com/szgd/csztv5.m3u8
+#EXTINF:-1 tvg-id="苏州4K" tvg-name="苏州4K" tvg-logo="" group-title="江苏",苏州4K
+https://live-auth.51kandianshi.com/szgd/csztv4k_4k.m3u8
 #EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/bd212357c7ec7e651875.png?v=1791802963236&from=source" catchup="none" group-title="江苏",江苏卫视
 http://8.137.162.154:5009/relay/ysp-jsws.m3u8
 #EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/4962b3488740bffe59c7.png?v=1791802963236&from=source" group-title="江苏",江苏卫视
 http://192.168.102.1/hls/28/index.m3u8
 #EXTINF:-1 tvg-id="辽宁卫视" tvg-name="辽宁卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/019c8976cc52a7e10d4d.png?v=1791802963236&from=source" catchup="none" group-title="辽宁",辽宁卫视
 http://8.137.162.154:5009/relay/ysp-lnws.m3u8
-#EXTINF:-1 tvg-id="辽宁都市" tvg-name="辽宁都市" tvg-logo="http://8.137.162.154:5009/logo-cache/3e9f8210a1ab404b8e28.jpg?v=1791284562338&from=source" group-title="辽宁",辽宁都市
-http://8.137.162.154:5009/proxy/beidou-liaoning-10d3de0d03c62e85a1a281bbde8b6952.m3u8
 #EXTINF:-1 tvg-id="家庭理财" tvg-name="家庭理财" tvg-logo="http://8.137.162.154:5009/logo-cache/d20982fa32498971bf7f.jpg?v=1791802963236&from=source" group-title="辽宁",家庭理财
 http://8.137.162.154:5009/proxy/beidou-liaoning-7e29bde4f41ca08642b7fc3ce4eb1ae4.m3u8
 #EXTINF:-1 tvg-id="沈阳新闻综合" tvg-name="沈阳新闻综合" tvg-logo="http://8.137.162.154:5009/logo-cache/e205e09309242aa99dd1.jpg?v=1791802963236&from=source" group-title="辽宁",沈阳新闻综合
@@ -2770,6 +2780,18 @@ http://8.137.162.154:5009/relay/fjtv-province-665248752898248704.m3u8
 http://8.137.162.154:5009/relay/fjtv-province-665248553475870720.m3u8
 #EXTINF:-1 tvg-id="海峡卫视" tvg-name="海峡卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/cd3c419e7ca8d1d8b576.jpg?v=1791802963236&from=source" group-title="福建",海峡卫视
 http://8.137.162.154:5009/relay/fjtv-province-665248523855695872.m3u8
+#EXTINF:-1 tvg-id="厦视一套" tvg-name="厦视一套" tvg-logo="http://8.137.162.154:5009/logo-cache/6e9a555580fb5322291e.png?v=1791802963236&from=source" group-title="福建",厦视一套
+http://8.137.162.154:5009/proxy/fjtv-xiamen-16.m3u8
+#EXTINF:-1 tvg-id="厦视二套" tvg-name="厦视二套" tvg-logo="http://8.137.162.154:5009/logo-cache/508b1974b5afe2743180.png?v=1791802963236&from=source" group-title="福建",厦视二套
+http://8.137.162.154:5009/proxy/fjtv-xiamen-17.m3u8
+#EXTINF:-1 tvg-id="厦视三套" tvg-name="厦视三套" tvg-logo="http://8.137.162.154:5009/logo-cache/c0c82a68f2ff8da2df94.png?v=1791802963236&from=source" group-title="福建",厦视三套
+http://8.137.162.154:5009/proxy/fjtv-xiamen-18.m3u8
+#EXTINF:-1 tvg-id="福州综合" tvg-name="福州综合" tvg-logo="http://8.137.162.154:5009/logo-cache/f8334b029e52cb829e67.jpg?v=1791802963236&from=source" group-title="福建",福州综合
+http://live.zohi.tv/video/s10001-fztv-1/index.m3u8
+#EXTINF:-1 tvg-id="福州生活" tvg-name="福州生活" tvg-logo="http://8.137.162.154:5009/logo-cache/2e7decb97543c5cd9ea5.jpg?v=1791802963236&from=source" group-title="福建",福州生活
+http://live.zohi.tv/video/s10001-fztv-3/index.m3u8
+#EXTINF:-1 tvg-id="福州少儿" tvg-name="福州少儿" tvg-logo="http://8.137.162.154:5009/logo-cache/b0a740ca9074581f516e.jpg?v=1791802963236&from=source" group-title="福建",福州少儿
+http://live.zohi.tv/video/s10001-fztv-4/index.m3u8
 #EXTINF:-1 tvg-id="泉州新闻综合" tvg-name="泉州新闻综合" tvg-logo="http://8.137.162.154:5009/logo-cache/33f3595e54bb29198114.jpg?v=1791918168814&from=source" catchup="none" group-title="福建",泉州新闻综合
 http://8.137.162.154:5009/proxy/quanzhou-news-tv.m3u8
 #EXTINF:-1 tvg-id="泉州闽南语" tvg-name="泉州闽南语" tvg-logo="http://8.137.162.154:5009/logo-cache/9f643d30362fbf92ae55.jpg?v=1791802963236&from=source" catchup="none" group-title="福建",泉州闽南语
@@ -2778,6 +2800,8 @@ http://8.137.162.154:5009/proxy/quanzhou-minnan-tv.m3u8
 https://live.ijjnews.com/jjtv/sd/live.m3u8
 #EXTINF:-1 tvg-id="石狮新闻综合" tvg-name="石狮新闻综合" tvg-logo="http://8.137.162.154:5009/logo-pack/%E7%9F%B3%E7%8B%AE%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png?v=f8f73a7e25" catchup="none" group-title="福建",石狮新闻综合
 https://live-new.chinashishi.net/SSTV/sd/live.m3u8
+#EXTINF:-1 tvg-id="德化电视台" tvg-name="德化电视台" tvg-logo="" group-title="福建",德化电视台
+https://play.cmptp.fjgdwl.com/live/63a563ec75764af588f3215b0afa2588.m3u8
 #EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/e3562c142c21014ad83c.png?v=1791802963236&from=source" catchup="none" group-title="河北",河北卫视
 http://8.137.162.154:5009/relay/ysp-hbws2.m3u8
 #EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/b8066eb66aa36e27b84a.png?v=1791802963236&from=source" group-title="河北",河北卫视
@@ -2856,11 +2880,11 @@ http://8.137.162.154:5009/hntv-156
 http://8.137.162.154:5009/hntv-157
 #EXTINF:-1 tvg-id="国学频道" tvg-name="国学频道" tvg-logo="http://8.137.162.154:5009/logo-cache/3bf58650e7a17c502b8c.png?v=1791802963236&from=source" group-title="河南",国学频道
 http://8.137.162.154:5009/hntv-194
-#EXTINF:-1 tvg-id="浙江卫视4K" tvg-name="浙江卫视4K" tvg-logo="http://8.137.162.154:5009/logo-pack/%E6%B5%99%E6%B1%9F%E5%8D%AB%E8%A7%86.png?v=0aaa78a90a" group-title="浙江",浙江卫视4K
+#EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="http://8.137.162.154:5009/logo-pack/%E6%B5%99%E6%B1%9F%E5%8D%AB%E8%A7%86.png?v=0aaa78a90a" group-title="浙江",浙江卫视
 http://ali-xwl.cztv.com/live/channel4k2160p.m3u8
-#EXTINF:-1 tvg-id="浙江卫视4K" tvg-name="浙江卫视4K" tvg-logo="http://8.137.162.154:5009/logo-cache/6b4097b43495e6611e67.png?v=1791802963236&from=source" catchup="none" group-title="浙江",浙江卫视4K
+#EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/6b4097b43495e6611e67.png?v=1791802963236&from=source" catchup="none" group-title="浙江",浙江卫视
 http://8.137.162.154:5009/relay/ysp-zjws.m3u8
-#EXTINF:-1 tvg-id="浙江卫视4K" tvg-name="浙江卫视4K" tvg-logo="http://8.137.162.154:5009/logo-cache/2e45331fb7a42be91a35.png?v=1791802963236&from=source" group-title="浙江",浙江卫视4K
+#EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/2e45331fb7a42be91a35.png?v=1791802963236&from=source" group-title="浙江",浙江卫视
 http://8.137.162.154:5009/relay/cztv-101.m3u8
 #EXTINF:-1 tvg-id="钱江都市" tvg-name="钱江都市" tvg-logo="http://8.137.162.154:5009/logo-cache/0b060483a003ad8d8589.png?v=1791802963236&from=source" group-title="浙江",钱江都市
 http://8.137.162.154:5009/relay/cztv-102.m3u8
@@ -2884,7 +2908,7 @@ http://8.137.162.154:5009/relay/jiaxing-news.m3u8
 http://8.137.162.154:5009/relay/jiaxing-culture.m3u8
 #EXTINF:-1 tvg-id="嘉兴公共频道" tvg-name="嘉兴公共频道" tvg-logo="http://8.137.162.154:5009/logo-pack/%E5%98%89%E5%85%B4%E5%85%AC%E5%85%B1%E9%A2%91%E9%81%93.png?v=27a59f1120" catchup="none" group-title="浙江",嘉兴公共频道
 http://8.137.162.154:5009/relay/jiaxing-public.m3u8
-#EXTINF:-1 tvg-id="浙江卫视4K" tvg-name="浙江卫视4K" tvg-logo="http://8.137.162.154:5009/logo-cache/d10022838da63de7863a.png?v=1791802963236&from=source" group-title="浙江",浙江卫视4K
+#EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/d10022838da63de7863a.png?v=1791802963236&from=source" group-title="浙江",浙江卫视
 http://192.168.102.1/hls/25/index.m3u8
 #EXTINF:-1 tvg-id="山东卫视" tvg-name="山东卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/8c7ed13dd0f6c22c5e27.png?v=1791802963236&from=source" catchup="none" group-title="山东",山东卫视
 http://8.137.162.154:5009/relay/ysp-sdws.m3u8
@@ -3104,7 +3128,7 @@ http://8.137.162.154:5009/relay/shanxi-jincheng-news.m3u8
 http://8.137.162.154:5009/relay/shanxi-linfen-1.m3u8
 #EXTINF:-1 tvg-id="运城-1" tvg-name="运城-1" tvg-logo="http://8.137.162.154:5009/logo-cache/b86216904890cfb040c6.jpg?v=1791802963236&from=source" catchup="none" group-title="山西",运城-1
 http://8.137.162.154:5009/relay/shanxi-yuncheng-1.m3u8
-#EXTINF:-1 tvg-id="【预告】17点BFX VS KT 德玛西亚杯淘汰赛" tvg-name="【预告】17点BFX VS KT 德玛西亚杯淘汰赛" tvg-logo="http://8.137.162.154:5009/logo-cache/3717404f6ea4e64d11f5.jpg?v=1791918168814&from=source" group-title="虎牙",【预告】17点BFX VS KT 德玛西亚杯淘汰赛
+#EXTINF:-1 tvg-id="【预告】17点WE vs BRO 德玛西亚杯淘汰赛" tvg-name="【预告】17点WE vs BRO 德玛西亚杯淘汰赛" tvg-logo="http://8.137.162.154:5009/logo-cache/59dad77af35e7a9d6c56.jpg?v=1792004490068&from=source" group-title="虎牙",【预告】17点WE vs BRO 德玛西亚杯淘汰赛
 http://8.137.162.154:5009/relay/huya-660000.m3u8
 #EXTINF:-1 tvg-id="广西卫视" tvg-name="广西卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/78021cbc932f56433df6.png?v=1791802963236&from=source" catchup="none" group-title="广西",广西卫视
 http://8.137.162.154:5009/relay/ysp-gxws.m3u8
@@ -3138,9 +3162,9 @@ https://idclive.hljtv.com:4430/live/hljgg_hd.m3u8
 http://8.137.162.154:5009/relay/ysp-scws.m3u8
 #EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/d5a812137a0089c3d701.png?v=1791802963236&from=source" group-title="四川",四川卫视
 http://192.168.102.1/hls/39/index.m3u8
-#EXTINF:-1 tvg-id="湖南卫视4K" tvg-name="湖南卫视4K" tvg-logo="http://8.137.162.154:5009/logo-pack/%E6%B9%96%E5%8D%97%E5%8D%AB%E8%A7%86.png?v=4ef167dc0d" group-title="湖南",湖南卫视4K
+#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="http://8.137.162.154:5009/logo-pack/%E6%B9%96%E5%8D%97%E5%8D%AB%E8%A7%86.png?v=4ef167dc0d" group-title="湖南",湖南卫视
 http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
-#EXTINF:-1 tvg-id="湖南卫视4K" tvg-name="湖南卫视4K" tvg-logo="http://8.137.162.154:5009/logo-cache/60c1c4eb0e589d2970f0.png?v=1791802963236&from=source" catchup="none" group-title="湖南",湖南卫视4K
+#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/60c1c4eb0e589d2970f0.png?v=1791802963236&from=source" catchup="none" group-title="湖南",湖南卫视
 http://8.137.162.154:5009/relay/ysp-hnws.m3u8
 #EXTINF:-1 tvg-id="湖南经视" tvg-name="湖南经视" tvg-logo="http://8.137.162.154:5009/logo-cache/488112d00dd4e257c914.jpg?v=1791802963236&from=source" group-title="湖南",湖南经视
 http://8.137.162.154:5009/proxy/mgtv-280.m3u8
@@ -3160,7 +3184,7 @@ http://8.137.162.154:5009/proxy/mgtv-218.m3u8
 http://8.137.162.154:5009/proxy/mgtv-269.m3u8
 #EXTINF:-1 tvg-id="长沙政法" tvg-name="长沙政法" tvg-logo="http://8.137.162.154:5009/logo-cache/71c901ad68d094fa1fc8.png?v=1791802963236&from=source" group-title="湖南",长沙政法
 http://8.137.162.154:5009/proxy/mgtv-254.m3u8
-#EXTINF:-1 tvg-id="湖南卫视4K" tvg-name="湖南卫视4K" tvg-logo="http://8.137.162.154:5009/logo-cache/32200483d780592d8dc9.png?v=1791802963236&from=source" group-title="湖南",湖南卫视4K
+#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/32200483d780592d8dc9.png?v=1791802963236&from=source" group-title="湖南",湖南卫视
 http://192.168.102.1/hls/24/index.m3u8
 #EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/0aeaf0aae8c670a8629e.png?v=1791802963236&from=source" catchup="none" group-title="北京",北京卫视
 http://8.137.162.154:5009/relay/ysp-bjws.m3u8
@@ -3262,11 +3286,11 @@ http://112.123.243.37:50085/tsfile/live/1001_1.m3u8?key=txiptv&playlive=0&authid
 http://218.13.139.26:9901/tsfile/live/0132_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-id="湖北卫视" tvg-name="湖北卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/638f69304bd78c0aba17.png?v=1791802963236&from=source" group-title="未分组",湖北卫视
 http://36.136.38.87:9901/tsfile/live/0132_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-id="湖南卫视4K" tvg-name="湖南卫视4K" tvg-logo="http://8.137.162.154:5009/logo-cache/32200483d780592d8dc9.png?v=1791802963236&from=source" group-title="未分组",湖南卫视4K
+#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/32200483d780592d8dc9.png?v=1791802963236&from=source" group-title="未分组",湖南卫视
 http://112.123.243.37:50085/tsfile/live/1002_1.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 tvg-id="湖南卫视4K" tvg-name="湖南卫视4K" tvg-logo="http://8.137.162.154:5009/logo-cache/32200483d780592d8dc9.png?v=1791802963236&from=source" group-title="未分组",湖南卫视4K
+#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/32200483d780592d8dc9.png?v=1791802963236&from=source" group-title="未分组",湖南卫视
 http://218.13.139.26:9901/tsfile/live/0128_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-id="湖南卫视4K" tvg-name="湖南卫视4K" tvg-logo="http://8.137.162.154:5009/logo-cache/32200483d780592d8dc9.png?v=1791802963236&from=source" group-title="未分组",湖南卫视4K
+#EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/32200483d780592d8dc9.png?v=1791802963236&from=source" group-title="未分组",湖南卫视
 http://36.136.38.87:9901/tsfile/live/0128_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-id="吉林卫视" tvg-name="吉林卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/07792396dce8b9dfc964.png?v=1791802963236&from=source" group-title="未分组",吉林卫视
 http://112.123.243.37:50085/tsfile/live/0116_1.m3u8?key=txiptv&playlive=0&authid=0
@@ -3374,11 +3398,11 @@ http://192.168.102.1/hls/66/index.m3u8
 http://112.123.243.37:50085/tsfile/live/0117_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 tvg-id="云南卫视" tvg-name="云南卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/054223f46979bba502bf.png?v=1791802963236&from=source" group-title="未分组",云南卫视
 http://36.136.38.87:9901/tsfile/live/0119_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-id="浙江卫视4K" tvg-name="浙江卫视4K" tvg-logo="http://8.137.162.154:5009/logo-cache/d10022838da63de7863a.png?v=1791802963236&from=source" group-title="未分组",浙江卫视4K
+#EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/d10022838da63de7863a.png?v=1791802963236&from=source" group-title="未分组",浙江卫视
 http://112.123.243.37:50085/tsfile/live/0019_1.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 tvg-id="浙江卫视4K" tvg-name="浙江卫视4K" tvg-logo="http://8.137.162.154:5009/logo-cache/d10022838da63de7863a.png?v=1791802963236&from=source" group-title="未分组",浙江卫视4K
+#EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/d10022838da63de7863a.png?v=1791802963236&from=source" group-title="未分组",浙江卫视
 http://218.13.139.26:9901/tsfile/live/1015_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-id="浙江卫视4K" tvg-name="浙江卫视4K" tvg-logo="http://8.137.162.154:5009/logo-cache/d10022838da63de7863a.png?v=1791802963236&from=source" group-title="未分组",浙江卫视4K
+#EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" tvg-logo="http://8.137.162.154:5009/logo-cache/d10022838da63de7863a.png?v=1791802963236&from=source" group-title="未分组",浙江卫视
 http://36.136.38.87:9901/tsfile/live/0124_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-id="中国教育1" tvg-name="中国教育1" tvg-logo="" group-title="未分组",中国教育1
 http://192.168.100.1/hls/67/index.m3u8
