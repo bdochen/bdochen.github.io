@@ -1,3 +1,7 @@
+下面已整理为 **TVBox TXT 直播源格式**：同一频道多行表示多线路，已按“央视频道 / 教育频道 / 卫视频道 / 地方与少儿”分组。保存为 `tvbox_live.txt` 后在 TVBox 直播源中引用即可。
+
+```txt
+央视频道,#genre#
 CCTV1综合,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226635/1.m3u8
 CCTV1综合,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226705/1.m3u8
 CCTV1综合,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226736/1.m3u8
@@ -27,11 +31,16 @@ CCTV16奥林匹克,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226825/1.m3u8
 CCTV17农业农村,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226660/1.m3u8
 CCTV17农业农村,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226727/1.m3u8
 CGTN,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226666/1.m3u8
+
+教育频道,#genre#
 CETV1中教1台,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226673/1.m3u8
 CETV1中教1台,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226712/1.m3u8
 CETV2中教2台,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226718/1.m3u8
 CETV3中教3台,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226722/1.m3u8
 CETV4中教4台,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226724/1.m3u8
+山东教育,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226701/1.m3u8
+
+卫视频道,#genre#
 北京卫视,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226719/1.m3u8
 东方卫视,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226734/1.m3u8
 天津卫视,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226686/1.m3u8
@@ -73,11 +82,13 @@ CETV4中教4台,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226724/1.m3u8
 西藏卫视,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226710/1.m3u8
 海南卫视,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226679/1.m3u8
 海南卫视,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226683/1.m3u8
+
+地方与少儿,#genre#
 北京纪实科教,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226656/1.m3u8
 北京纪实科教,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226658/1.m3u8
 北京纪实科教,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226730/1.m3u8
 卡酷少儿,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226677/1.m3u8
 哈哈炫动,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226703/1.m3u8
-山东教育,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226701/1.m3u8
 金鹰纪实,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226667/1.m3u8
 金鹰卡通,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226674/1.m3u8
+```
