@@ -1,6 +1,3 @@
-下面已整理为 **TVBox TXT 直播源格式**：同一频道多行表示多线路，已按“央视频道 / 教育频道 / 卫视频道 / 地方与少儿”分组。保存为 `tvbox_live.txt` 后在 TVBox 直播源中引用即可。
-
-```txt
 央视频道,#genre#
 CCTV1综合,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226635/1.m3u8
 CCTV1综合,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226705/1.m3u8
@@ -91,4 +88,3 @@ CETV4中教4台,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226724/1.m3u8
 哈哈炫动,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226703/1.m3u8
 金鹰纪实,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226667/1.m3u8
 金鹰卡通,http://rrs01.hw.gmcc.net:8088/PLTV/81/224/3221226674/1.m3u8
-```
