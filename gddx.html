@@ -1,0 +1,630 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>广东电信 - 业务推荐中心</title>
+    <meta name="keywords"
+        content="广东电信,宽带,5G套餐,流量,业务办理">
+    <meta name="description"
+        content="广东电信业务推荐平台，提供宽带报装、套餐办理、话费查询等业务入口">
+    <style>
+        :root {
+            --primary: #0288d1;
+            --primary-dark: #0277bd;
+            --primary-light: #e3f2fd;
+            --text: #1f2937;
+            --text-secondary: #6b7280;
+            --bg: #f4f7fa;
+            --card: #ffffff;
+            --line: #eef2f6;
+            --radius: 14px;
+            --shadow: 0 1px 3px rgba(15, 40, 70, 0.06), 0 8px 24px rgba(15, 40, 70, 0.06);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: var(--bg);
+            background-image: radial-gradient(1000px 400px at 50% -100px, rgba(2, 136, 209, 0.10), transparent);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 2rem 1.25rem 3rem;
+        }
+
+        /* ---------- 头部横幅 ---------- */
+        .hero {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(120deg, #0277bd 0%, #0288d1 45%, #29b6f6 100%);
+            border-radius: 18px;
+            padding: 1.75rem;
+            margin-bottom: 1.5rem;
+            color: #fff;
+            box-shadow: 0 10px 30px rgba(2, 119, 189, 0.28);
+        }
+
+        .hero::before,
+        .hero::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.10);
+        }
+
+        .hero::before {
+            width: 180px;
+            height: 180px;
+            top: -70px;
+            right: -40px;
+        }
+
+        .hero::after {
+            width: 120px;
+            height: 120px;
+            bottom: -55px;
+            right: 90px;
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        .hero .brand {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .hero .brand__mark {
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(4px);
+            box-shadow: none;
+        }
+
+        .hero .brand__flag {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.18);
+        }
+
+        .hero__sub {
+            position: relative;
+            margin-top: 0.5rem;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.9rem;
+            letter-spacing: 0.04em;
+        }
+
+        /* ---------- 运营商互跳入口（横幅下方独立卡片） ---------- */
+        .cta-card {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            padding: 0.85rem 1.1rem;
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .cta-card:hover {
+            border-color: #b3dcf5;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(2, 136, 209, 0.16);
+        }
+
+        .cta-card__icon {
+            width: 38px;
+            height: 38px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #0277bd, #29b6f6);
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cta-card__text {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.35;
+        }
+
+        .cta-card__title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .cta-card__desc {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+        }
+
+        .cta-card__tag {
+            margin-left: 0.5rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--primary);
+            background: var(--primary-light);
+            border-radius: 999px;
+            padding: 0.1rem 0.5rem;
+            vertical-align: 2px;
+        }
+
+        .cta-card__arrow {
+            margin-left: auto;
+            color: var(--primary);
+            font-size: 1.25rem;
+            line-height: 1;
+            transition: transform 0.2s ease;
+        }
+
+        .cta-card:hover .cta-card__arrow {
+            transform: translateX(4px);
+        }
+
+        .brand__mark {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #0288d1, #03a9f4);
+            color: #fff;
+            font-size: 1.35rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(2, 136, 209, 0.35);
+        }
+
+        .brand__title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            color: #fff;
+        }
+
+        .brand__flag {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary);
+            background: var(--primary-light);
+            padding: 0.2rem 0.6rem;
+            border-radius: 999px;
+            transform: translateY(2px);
+        }
+
+        /* ---------- 卡片区块 ---------- */
+        .section {
+            background: var(--card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+        }
+
+        .section__header {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--line);
+            background: linear-gradient(180deg, #fbfdfe, #f6f9fc);
+        }
+
+        .section__header::before {
+            content: "";
+            width: 4px;
+            height: 18px;
+            border-radius: 2px;
+            background: var(--primary);
+        }
+
+        .section__title {
+            font-size: 1.05rem;
+            font-weight: 700;
+        }
+
+        .section__header .section__note {
+            margin-left: auto;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .section__body {
+            padding: 0.25rem 1.5rem;
+        }
+
+        /* ---------- 业务条目 ---------- */
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1rem 0.75rem;
+            margin: 0 -0.75rem;
+            border-bottom: 1px solid var(--line);
+            border-radius: 10px;
+            transition: background 0.15s ease;
+        }
+
+        .item:hover {
+            background: #f8fafc;
+        }
+
+        .item:last-child {
+            border-bottom: none;
+        }
+
+        .item__info {
+            min-width: 0;
+            flex: 1;
+        }
+
+        .item__name {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .item__desc {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            margin-top: 0.15rem;
+        }
+
+        .item__tag {
+            display: inline-block;
+            font-size: 0.72rem;
+            color: var(--primary);
+            background: var(--primary-light);
+            border-radius: 999px;
+            padding: 0.1rem 0.5rem;
+            margin-left: 0.4rem;
+            transform: translateY(-1px);
+        }
+
+        .action-group {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            flex-shrink: 0;
+        }
+
+        .action-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.4rem 1.1rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            background: linear-gradient(135deg, #0288d1, #29b6f6);
+            color: #fff;
+            border-radius: 999px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+            box-shadow: 0 2px 6px rgba(2, 136, 209, 0.22);
+        }
+
+        .action-btn:hover {
+            background: linear-gradient(135deg, #0277bd, #03a9f4);
+            transform: translateY(-1px);
+            box-shadow: 0 5px 14px rgba(2, 136, 209, 0.32);
+        }
+
+        .action-btn--ghost {
+            background: var(--primary-light);
+            color: var(--primary);
+        }
+
+        .action-btn--ghost:hover {
+            background: #d0e9fb;
+            color: var(--primary-dark);
+            box-shadow: none;
+        }
+
+        /* ---------- 快捷服务网格 ---------- */
+        .quick-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.9rem;
+            padding: 1.25rem 1.5rem;
+        }
+
+        .quick-card {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1rem 1.1rem;
+            background: #f8fafc;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .quick-card:hover {
+            background: #fff;
+            border-color: #b3dcf5;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(2, 136, 209, 0.12);
+        }
+
+        .quick-card__icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .quick-card__icon svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .quick-card__icon--blue {
+            background: #e3f2fd;
+            color: #0288d1;
+        }
+
+        .quick-card__icon--red {
+            background: #fdecea;
+            color: #e53935;
+        }
+
+        .quick-card__icon--green {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .quick-card__icon--purple {
+            background: #f3e5f5;
+            color: #8e24aa;
+        }
+
+        .quick-card__name {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        .quick-card__arrow {
+            margin-left: auto;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            line-height: 1;
+            transition: transform 0.2s ease;
+        }
+
+        .quick-card:hover .quick-card__arrow {
+            transform: translateX(3px);
+            color: var(--primary);
+        }
+
+        /* ---------- 空状态 ---------- */
+        .empty {
+            padding: 3rem 0;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            letter-spacing: 0.04em;
+        }
+
+        /* ---------- 免责声明 ---------- */
+        .disclaimer {
+            padding: 1.25rem 1.5rem 1.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .disclaimer strong {
+            color: var(--text);
+        }
+
+        /* ---------- 响应式 ---------- */
+        @media (max-width: 640px) {
+            .container {
+                padding: 1rem 0.9rem 2.5rem;
+            }
+
+            .hero {
+                padding: 1.4rem 1.2rem 1.3rem;
+            }
+
+            .cta-card {
+                gap: 0.6rem;
+                padding: 0.75rem 0.9rem;
+                margin-bottom: 1.1rem;
+            }
+
+            .cta-card__icon {
+                width: 34px;
+                height: 34px;
+            }
+
+            .cta-card__title {
+                font-size: 0.9rem;
+            }
+
+            .cta-card__desc {
+                font-size: 0.72rem;
+            }
+
+            .section__header,
+            .disclaimer {
+                padding-left: 1.1rem;
+                padding-right: 1.1rem;
+            }
+
+            .section__body {
+                padding: 0.15rem 1.1rem;
+            }
+
+            .quick-grid {
+                padding: 1rem 1.1rem;
+                gap: 0.7rem;
+            }
+
+            .item {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.6rem;
+            }
+
+            .action-group {
+                justify-content: flex-start;
+            }
+
+            .action-btn {
+                flex: 1;
+                justify-content: center;
+            }
+
+            .brand__title {
+                font-size: 1.35rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="brand">
+                <span class="brand__mark">电</span>
+                <span
+                    class="brand__title">广东电信</span>
+                <span
+                    class="brand__flag">活动专区</span>
+            </div>
+            <p class="hero__sub">宽带报装 · 套餐办理 ·
+                话费查询</p>
+        </header>
+
+        <a class="cta-card" href="./index.html">
+            <span class="cta-card__icon">移</span>
+            <span class="cta-card__text">
+                <span
+                    class="cta-card__title">广西移动<span
+                        class="cta-card__tag">返回</span></span>
+                <span
+                    class="cta-card__desc">回到广西移动业务推荐页</span>
+            </span>
+            <span class="cta-card__arrow">›</span>
+        </a>
+
+        <section class="section">
+            <div class="section__header">
+                <span
+                    class="section__title">业务推荐</span>
+            </div>
+            <div class="section__body">
+                <div class="item">
+                    <div class="item__info">
+                        <div class="item__name">
+                            9.9元权益包（12个月）
+                        </div>
+                        <div class="item__desc">
+                            电表倒转，兑换支付宝5元*3张或者160权益币。
+                        </div>
+                    </div>
+                    
+                    <div class="action-group">
+                        <a class="action-btn"
+                            target="_blank"
+                            href="https://gd.189.cn/plus/h5/2022/cyb/index.html#/szwebHome">点击跳转</a>
+                    </div>
+
+            </div>
+             <div class="item">
+                    <div class="item__info">
+                        <div class="item__name">
+                            9.9元升5G+流量权益（12个月）
+                        </div>
+                        <div class="item__desc">
+                            电表倒转，兑换支付宝5元*3张或者160权益币。
+                        </div>
+                    </div>
+                    
+                    <div class="action-group">
+                        <a class="action-btn"
+                            target="_blank"
+                            href="https://gd.189.cn/plus/h5/2022/cybv2/index.html#/goup5gv1?cmpid=qyxs-xcx-qyzq-tj-5G1gbqyb-xhy2">点击跳转</a>
+                    </div>
+
+            </div>
+             <div class="item">
+                    <div class="item__info">
+                        <div class="item__name">
+                            9.9元权益包（24个月）
+                        </div>
+                        <div class="item__desc">
+                            电表倒转，兑换支付宝5元*3张或者160权益币。
+                        </div>
+                    </div>
+                    
+                    <div class="action-group">
+                        <a class="action-btn"
+                            target="_blank"
+                            href="https://gd.189.cn/plus/h5/2022/cyb/index.html#/cyxy">点击跳转</a>
+                    </div>
+
+            </div>
+             <div class="item">
+                    <div class="item__info">
+                        <div class="item__name">
+                             9.9元优惠权益包（12个月） 
+                        </div>
+                        <div class="item__desc">
+                            电表倒转，兑换支付宝5元*3张或者160权益币。
+                        </div>
+                    </div>
+                    
+                    <div class="action-group">
+                        <a class="action-btn"
+                            target="_blank"
+                            href="https://gd.189.cn/plus/h5/2022/cyb/index.html#/newuser?cmpid=qyxs-kstg">点击跳转</a>
+                    </div>
+
+            </div>
+            
+    </div>
+
+    </section>
+
+    <section class="section">
+        <div class="disclaimer">
+            <p>本页面内容筹备中，具体业务详情请以广东电信官方说明为准。</p>
+        </div>
+    </section>
+    </div>
+</body>
+
+</html>
