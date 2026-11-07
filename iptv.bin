@@ -1,60 +1,39 @@
 #EXTM3U
 #EXTINF:-1 group-title="IPTV",CCTV1
-http://113.205.165.1:8089/newlive/live/hls/1/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV1
-http://27.223.110.214:8009/newlive/live/hls/1/live.m3u8
+http://221.221.137.78:8000/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV1
 http://221.226.51.220:50081/newlive/live/hls/1/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV1
-http://221.221.137.78:8000/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
+http://221.221.137.78:9000/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV1
-http://110.72.77.228:808/hls/54/index.m3u8
+http://101.18.25.227:808/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV1
-http://110.72.77.228:808/hls/54/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV1
-http://110.72.78.29:808/hls/54/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV1
-http://110.72.78.29:808/hls/54/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV1
-http://110.72.85.1:808/hls/54/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV1
-http://110.72.85.1:808/hls/54/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV1
-http://110.72.84.243:808/hls/54/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV1
-http://110.72.84.243:808/hls/54/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV1
-http://110.72.59.198:808/hls/54/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV1
-http://110.72.59.198:808/hls/54/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV1
-http://113.57.140.161:10081/newlive/live/hls/1/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV1
-http://183.239.248.218:8181/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/hls/1/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV1
 http://183.223.157.33:9901/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV1
-http://60.223.94.64:9003/hls/1/index.m3u8
+http://110.72.71.15:808/hls/54/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV1
-http://58.56.162.102:4466/newlive/live/hls/1/live.m3u8
+http://110.72.71.15:808/hls/54/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV1
+http://110.72.75.174:808/hls/54/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV1
+http://110.72.75.174:808/hls/54/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV1
+http://183.7.19.157:8081/hls/1/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV1
 http://110.72.75.114:808/hls/54/index.m3u8
@@ -62,194 +41,158 @@ http://110.72.75.114:808/hls/54/index.m3u8
 #EXTINF:-1 group-title="IPTV",CCTV1
 http://110.72.75.114:808/hls/54/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV2
-http://113.205.165.1:8089/newlive/live/hls/2/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV1
+http://113.205.185.244:8089/newlive/live/hls/1/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV2
-http://27.223.110.214:8009/newlive/live/hls/2/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV2
-http://221.226.51.220:50081/newlive/live/hls/2/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV1
+http://222.86.14.254:9999/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV2
 http://221.221.137.78:8000/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV2
-http://110.72.77.228:808/hls/97/index.m3u8
+http://221.226.51.220:50081/newlive/live/hls/2/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV2
-http://110.72.78.29:808/hls/97/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV2
-http://110.72.85.1:808/hls/97/index.m3u8
+http://101.18.25.227:808/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV2
-http://110.72.84.243:808/hls/97/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV2
-http://110.72.59.198:808/hls/97/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV2
-http://113.57.140.161:10081/newlive/live/hls/2/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV2
-http://183.239.248.218:8181/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/hls/2/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV2
 http://183.223.157.33:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV2
-http://60.223.94.64:9003/hls/2/index.m3u8
+http://110.72.71.15:808/hls/97/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV2
-http://58.56.162.102:4466/newlive/live/hls/2/live.m3u8
+http://110.72.75.174:808/hls/97/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV2
+http://183.7.19.157:8081/hls/2/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV2
 http://110.72.75.114:808/hls/97/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV3
-http://113.205.165.1:8089/newlive/live/hls/3/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV2
+http://113.205.185.244:8089/newlive/live/hls/2/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV3
-http://27.223.110.214:8009/newlive/live/hls/3/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV2
+http://222.86.14.254:9999/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV3
 http://221.226.51.220:50081/newlive/live/hls/3/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV3
-http://110.72.77.228:808/hls/37/index.m3u8
+http://101.18.25.227:808/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV3
-http://110.72.78.29:808/hls/37/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV3
-http://110.72.85.1:808/hls/37/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV3
-http://110.72.84.243:808/hls/37/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV3
-http://110.72.59.198:808/hls/37/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV3
-http://113.57.140.161:10081/newlive/live/hls/3/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV3
-http://183.239.248.218:8181/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/hls/3/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV3
 http://183.223.157.33:9901/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV3
-http://60.223.94.64:9003/hls/3/index.m3u8
+http://110.72.71.15:808/hls/37/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV3
-http://58.56.162.102:4466/newlive/live/hls/3/live.m3u8
+http://110.72.75.174:808/hls/37/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV3
+http://183.7.19.157:8081/hls/3/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV3
 http://110.72.75.114:808/hls/37/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV4
-http://113.205.165.1:8089/newlive/live/hls/4/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV3
+http://113.205.185.244:8089/newlive/live/hls/3/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV4
-http://27.223.110.214:8009/newlive/live/hls/4/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV4
-http://221.226.51.220:50081/newlive/live/hls/4/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV3
+http://222.86.14.254:9999/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV4
 http://221.221.137.78:8000/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV4
-http://110.72.77.228:808/hls/113/index.m3u8
+http://221.226.51.220:50081/newlive/live/hls/4/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV4
-http://110.72.78.29:808/hls/113/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV4
-http://110.72.85.1:808/hls/113/index.m3u8
+http://101.18.25.227:808/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV4
-http://110.72.84.243:808/hls/113/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV4
-http://110.72.59.198:808/hls/113/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV4
-http://113.57.140.161:10081/newlive/live/hls/4/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV4
-http://183.239.248.218:8181/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/hls/4/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV4
 http://183.223.157.33:9901/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV4
-http://60.223.94.64:9003/hls/4/index.m3u8
+http://110.72.71.15:808/hls/113/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV4
-http://58.56.162.102:4466/newlive/live/hls/4/live.m3u8
+http://110.72.75.174:808/hls/113/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV4
+http://183.7.19.157:8081/hls/4/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV4
 http://110.72.75.114:808/hls/113/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV5
-http://113.205.165.1:8089/newlive/live/hls/5/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV4
+http://113.205.185.244:8089/newlive/live/hls/4/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV5
-http://27.223.110.214:8009/newlive/live/hls/5/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV5
-http://221.226.51.220:50081/newlive/live/hls/5/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV4
+http://222.86.14.254:9999/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV5
 http://221.221.137.78:8000/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV5
-http://110.72.77.228:808/hls/38/index.m3u8
+http://221.226.51.220:50081/newlive/live/hls/5/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV5
-http://110.72.77.228:808/hls/38/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV5
-http://110.72.78.29:808/hls/38/index.m3u8
+http://101.18.25.227:808/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV5
-http://110.72.78.29:808/hls/38/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV5
-http://110.72.85.1:808/hls/38/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV5
-http://110.72.85.1:808/hls/38/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV5
-http://110.72.84.243:808/hls/38/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV5
-http://110.72.84.243:808/hls/38/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV5
-http://110.72.59.198:808/hls/38/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV5
-http://110.72.59.198:808/hls/38/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV5
-http://113.57.140.161:10081/newlive/live/hls/5/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV5
-http://183.239.248.218:8181/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/hls/5/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV5
 http://183.223.157.33:9901/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV5
-http://60.223.94.64:9003/hls/5/index.m3u8
+http://110.72.71.15:808/hls/38/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV5
-http://58.56.162.102:4466/newlive/live/hls/5/live.m3u8
+http://110.72.71.15:808/hls/38/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV5
+http://110.72.75.174:808/hls/38/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV5
+http://110.72.75.174:808/hls/38/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV5
+http://183.7.19.157:8081/hls/5/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV5
 http://110.72.75.114:808/hls/38/index.m3u8
@@ -257,101 +200,80 @@ http://110.72.75.114:808/hls/38/index.m3u8
 #EXTINF:-1 group-title="IPTV",CCTV5
 http://110.72.75.114:808/hls/38/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV5+
-http://113.205.165.1:8089/newlive/live/hls/6/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV5
+http://113.205.185.244:8089/newlive/live/hls/5/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV5+
-http://27.223.110.214:8009/newlive/live/hls/6/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV5+
-http://221.226.51.220:50081/newlive/live/hls/6/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV5
+http://222.86.14.254:9999/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV5+
 http://221.221.137.78:8000/tsfile/live/0016_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV5+
-http://110.72.77.228:808/hls/14/index.m3u8
+http://221.226.51.220:50081/newlive/live/hls/6/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV5+
-http://110.72.78.29:808/hls/14/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0016_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV5+
-http://110.72.85.1:808/hls/14/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV5+
-http://110.72.84.243:808/hls/14/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV5+
-http://110.72.59.198:808/hls/14/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV5+
-http://113.57.140.161:10081/newlive/live/hls/6/live.m3u8
+http://101.18.25.227:808/tsfile/live/0017_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV5+
 http://183.223.157.33:9901/tsfile/live/0018_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV5+
-http://58.56.162.102:4466/newlive/live/hls/6/live.m3u8
+http://110.72.71.15:808/hls/14/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV5+
+http://110.72.75.174:808/hls/14/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV5+
+http://183.7.19.157:8081/hls/16/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV5+
 http://110.72.75.114:808/hls/14/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV6
-http://113.205.165.1:8089/newlive/live/hls/7/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV5+
+http://113.205.185.244:8089/newlive/live/hls/6/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV6
-http://27.223.110.214:8009/newlive/live/hls/7/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV6
-http://221.226.51.220:50081/newlive/live/hls/7/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV5+
+http://222.86.14.254:9999/tsfile/live/0018_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV6
 http://221.221.137.78:8000/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV6
-http://110.72.77.228:808/hls/39/index.m3u8
+http://221.226.51.220:50081/newlive/live/hls/7/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV6
-http://110.72.77.228:808/hls/39/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV6
-http://110.72.78.29:808/hls/39/index.m3u8
+http://101.18.25.227:808/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV6
-http://110.72.78.29:808/hls/39/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV6
-http://110.72.85.1:808/hls/39/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV6
-http://110.72.85.1:808/hls/39/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV6
-http://110.72.84.243:808/hls/39/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV6
-http://110.72.84.243:808/hls/39/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV6
-http://110.72.59.198:808/hls/39/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV6
-http://110.72.59.198:808/hls/39/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV6
-http://113.57.140.161:10081/newlive/live/hls/7/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV6
-http://183.239.248.218:8181/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/hls/6/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV6
 http://183.223.157.33:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV6
-http://60.223.94.64:9003/hls/6/index.m3u8
+http://110.72.71.15:808/hls/39/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV6
-http://58.56.162.102:4466/newlive/live/hls/7/live.m3u8
+http://110.72.71.15:808/hls/39/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV6
+http://110.72.75.174:808/hls/39/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV6
+http://110.72.75.174:808/hls/39/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV6
+http://183.7.19.157:8081/hls/6/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV6
 http://110.72.75.114:808/hls/39/index.m3u8
@@ -359,77 +281,53 @@ http://110.72.75.114:808/hls/39/index.m3u8
 #EXTINF:-1 group-title="IPTV",CCTV6
 http://110.72.75.114:808/hls/39/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV7
-http://113.205.165.1:8089/newlive/live/hls/8/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV6
+http://113.205.185.244:8089/newlive/live/hls/7/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV7
-http://27.223.110.214:8009/newlive/live/hls/8/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV7
-http://221.226.51.220:50081/newlive/live/hls/8/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV6
+http://222.86.14.254:9999/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV7
 http://221.221.137.78:8000/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV7
-http://110.72.77.228:808/hls/98/index.m3u8
+http://221.226.51.220:50081/newlive/live/hls/8/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV7
-http://110.72.77.228:808/hls/5/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV7
-http://110.72.77.228:808/hls/98/index.m3u8
+http://101.18.25.227:808/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV7
-http://110.72.78.29:808/hls/98/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV7
-http://110.72.78.29:808/hls/5/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV7
-http://110.72.78.29:808/hls/98/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV7
-http://110.72.85.1:808/hls/98/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV7
-http://110.72.85.1:808/hls/5/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV7
-http://110.72.85.1:808/hls/98/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV7
-http://110.72.84.243:808/hls/98/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV7
-http://110.72.84.243:808/hls/5/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV7
-http://110.72.84.243:808/hls/98/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV7
-http://110.72.59.198:808/hls/98/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV7
-http://110.72.59.198:808/hls/5/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV7
-http://110.72.59.198:808/hls/98/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV7
-http://113.57.140.161:10081/newlive/live/hls/8/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV7
-http://183.239.248.218:8181/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/hls/7/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV7
 http://183.223.157.33:9901/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV7
-http://60.223.94.64:9003/hls/7/index.m3u8
+http://110.72.71.15:808/hls/98/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV7
-http://58.56.162.102:4466/newlive/live/hls/8/live.m3u8
+http://110.72.71.15:808/hls/5/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV7
+http://110.72.71.15:808/hls/98/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV7
+http://110.72.75.174:808/hls/98/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV7
+http://110.72.75.174:808/hls/5/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV7
+http://110.72.75.174:808/hls/98/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV7
+http://183.7.19.157:8081/hls/7/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV7
 http://110.72.75.114:808/hls/98/index.m3u8
@@ -440,59 +338,41 @@ http://110.72.75.114:808/hls/5/index.m3u8
 #EXTINF:-1 group-title="IPTV",CCTV7
 http://110.72.75.114:808/hls/98/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV8
-http://113.205.165.1:8089/newlive/live/hls/9/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV7
+http://113.205.185.244:8089/newlive/live/hls/8/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV8
-http://27.223.110.214:8009/newlive/live/hls/9/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV7
+http://222.86.14.254:9999/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV8
 http://221.226.51.220:50081/newlive/live/hls/9/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV8
-http://110.72.77.228:808/hls/40/index.m3u8
+http://101.18.25.227:808/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV8
-http://110.72.77.228:808/hls/40/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV8
-http://110.72.78.29:808/hls/40/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV8
-http://110.72.78.29:808/hls/40/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV8
-http://110.72.85.1:808/hls/40/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV8
-http://110.72.85.1:808/hls/40/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV8
-http://110.72.84.243:808/hls/40/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV8
-http://110.72.84.243:808/hls/40/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV8
-http://110.72.59.198:808/hls/40/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV8
-http://110.72.59.198:808/hls/40/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV8
-http://113.57.140.161:10081/newlive/live/hls/9/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV8
-http://183.239.248.218:8181/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/hls/8/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV8
 http://183.223.157.33:9901/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV8
-http://60.223.94.64:9003/hls/8/index.m3u8
+http://110.72.71.15:808/hls/40/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV8
-http://58.56.162.102:4466/newlive/live/hls/9/live.m3u8
+http://110.72.71.15:808/hls/40/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV8
+http://110.72.75.174:808/hls/40/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV8
+http://110.72.75.174:808/hls/40/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV8
+http://183.7.19.157:8081/hls/8/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV8
 http://110.72.75.114:808/hls/40/index.m3u8
@@ -500,62 +380,47 @@ http://110.72.75.114:808/hls/40/index.m3u8
 #EXTINF:-1 group-title="IPTV",CCTV8
 http://110.72.75.114:808/hls/40/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV9
-http://113.205.165.1:8089/newlive/live/hls/10/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV8
+http://113.205.185.244:8089/newlive/live/hls/9/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV9
-http://27.223.110.214:8009/newlive/live/hls/10/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV9
-http://221.226.51.220:50081/newlive/live/hls/10/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV8
+http://222.86.14.254:9999/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV9
 http://221.221.137.78:8000/tsfile/live/0009_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV9
-http://110.72.77.228:808/hls/119/index.m3u8
+http://221.226.51.220:50081/newlive/live/hls/10/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV9
-http://110.72.77.228:808/hls/119/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0009_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV9
-http://110.72.78.29:808/hls/119/index.m3u8
+http://101.18.25.227:808/tsfile/live/0009_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV9
-http://110.72.78.29:808/hls/119/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0009_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV9
-http://110.72.85.1:808/hls/119/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV9
-http://110.72.85.1:808/hls/119/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV9
-http://110.72.84.243:808/hls/119/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV9
-http://110.72.84.243:808/hls/119/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV9
-http://110.72.59.198:808/hls/119/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV9
-http://110.72.59.198:808/hls/119/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV9
-http://113.57.140.161:10081/newlive/live/hls/10/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV9
-http://183.239.248.218:8181/tsfile/live/0009_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/hls/9/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV9
 http://183.223.157.33:9901/tsfile/live/0009_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV9
-http://60.223.94.64:9003/hls/9/index.m3u8
+http://110.72.71.15:808/hls/119/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV9
-http://58.56.162.102:4466/newlive/live/hls/10/live.m3u8
+http://110.72.71.15:808/hls/119/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV9
+http://110.72.75.174:808/hls/119/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV9
+http://110.72.75.174:808/hls/119/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV9
+http://183.7.19.157:8081/hls/9/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV9
 http://110.72.75.114:808/hls/119/index.m3u8
@@ -563,149 +428,119 @@ http://110.72.75.114:808/hls/119/index.m3u8
 #EXTINF:-1 group-title="IPTV",CCTV9
 http://110.72.75.114:808/hls/119/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV10
-http://113.205.165.1:8089/newlive/live/hls/11/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV9
+http://113.205.185.244:8089/newlive/live/hls/10/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV10
-http://27.223.110.214:8009/newlive/live/hls/11/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV10
-http://221.226.51.220:50081/newlive/live/hls/11/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV9
+http://222.86.14.254:9999/tsfile/live/0009_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV10
 http://221.221.137.78:8000/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV10
-http://110.72.77.228:808/hls/99/index.m3u8
+http://221.226.51.220:50081/newlive/live/hls/11/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV10
-http://110.72.78.29:808/hls/99/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV10
-http://110.72.85.1:808/hls/99/index.m3u8
+http://101.18.25.227:808/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV10
-http://110.72.84.243:808/hls/99/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV10
-http://110.72.59.198:808/hls/99/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV10
-http://113.57.140.161:10081/newlive/live/hls/11/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV10
-http://183.239.248.218:8181/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/hls/10/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV10
 http://183.223.157.33:9901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV10
-http://60.223.94.64:9003/hls/10/index.m3u8
+http://110.72.71.15:808/hls/99/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV10
-http://58.56.162.102:4466/newlive/live/hls/11/live.m3u8
+http://110.72.75.174:808/hls/99/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV10
+http://183.7.19.157:8081/hls/10/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV10
 http://110.72.75.114:808/hls/99/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV11
-http://113.205.165.1:8089/newlive/live/hls/12/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV10
+http://113.205.185.244:8089/newlive/live/hls/11/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV11
-http://27.223.110.214:8009/newlive/live/hls/12/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV10
+http://222.86.14.254:9999/tsfile/live/0010_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV11
 http://221.226.51.220:50081/newlive/live/hls/12/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV11
-http://110.72.77.228:808/hls/100/index.m3u8
+http://101.18.25.227:808/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV11
-http://110.72.78.29:808/hls/100/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV11
-http://110.72.85.1:808/hls/100/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV11
-http://110.72.84.243:808/hls/100/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV11
-http://110.72.59.198:808/hls/100/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV11
-http://113.57.140.161:10081/newlive/live/hls/12/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV11
-http://183.239.248.218:8181/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/hls/11/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV11
 http://183.223.157.33:9901/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV11
-http://60.223.94.64:9003/hls/11/index.m3u8
+http://110.72.71.15:808/hls/100/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV11
-http://58.56.162.102:4466/newlive/live/hls/12/live.m3u8
+http://110.72.75.174:808/hls/100/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV11
+http://183.7.19.157:8081/hls/11/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV11
 http://110.72.75.114:808/hls/100/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV12
-http://113.205.165.1:8089/newlive/live/hls/13/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV11
+http://113.205.185.244:8089/newlive/live/hls/12/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV12
-http://27.223.110.214:8009/newlive/live/hls/13/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV12
-http://221.226.51.220:50081/newlive/live/hls/13/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV11
+http://222.86.14.254:9999/tsfile/live/0011_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV12
 http://221.221.137.78:8000/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV12
-http://110.72.77.228:808/hls/101/index.m3u8
+http://221.226.51.220:50081/newlive/live/hls/13/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV12
-http://110.72.77.228:808/hls/101/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV12
-http://110.72.78.29:808/hls/101/index.m3u8
+http://101.18.25.227:808/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV12
-http://110.72.78.29:808/hls/101/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV12
-http://110.72.85.1:808/hls/101/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV12
-http://110.72.85.1:808/hls/101/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV12
-http://110.72.84.243:808/hls/101/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV12
-http://110.72.84.243:808/hls/101/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV12
-http://110.72.59.198:808/hls/101/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV12
-http://110.72.59.198:808/hls/101/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV12
-http://113.57.140.161:10081/newlive/live/hls/13/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV12
-http://183.239.248.218:8181/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/hls/12/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV12
 http://183.223.157.33:9901/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV12
-http://60.223.94.64:9003/hls/12/index.m3u8
+http://110.72.71.15:808/hls/101/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV12
-http://58.56.162.102:4466/newlive/live/hls/13/live.m3u8
+http://110.72.71.15:808/hls/101/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV12
+http://110.72.75.174:808/hls/101/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV12
+http://110.72.75.174:808/hls/101/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV12
+http://183.7.19.157:8081/hls/12/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV12
 http://110.72.75.114:808/hls/101/index.m3u8
@@ -713,293 +548,248 @@ http://110.72.75.114:808/hls/101/index.m3u8
 #EXTINF:-1 group-title="IPTV",CCTV12
 http://110.72.75.114:808/hls/101/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV13
-http://113.205.165.1:8089/newlive/live/hls/14/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV12
+http://113.205.185.244:8089/newlive/live/hls/13/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV13
-http://27.223.110.214:8009/newlive/live/hls/14/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV13
-http://221.226.51.220:50081/newlive/live/hls/14/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV12
+http://222.86.14.254:9999/tsfile/live/0012_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV13
 http://221.221.137.78:8000/tsfile/live/0013_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV13
-http://110.72.77.228:808/hls/106/index.m3u8
+http://221.226.51.220:50081/newlive/live/hls/14/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV13
-http://110.72.78.29:808/hls/106/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0013_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV13
-http://110.72.85.1:808/hls/106/index.m3u8
+http://101.18.25.227:808/tsfile/live/0013_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV13
-http://110.72.84.243:808/hls/106/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0013_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV13
-http://110.72.59.198:808/hls/106/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV13
-http://113.57.140.161:10081/newlive/live/hls/14/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV13
-http://183.239.248.218:8181/tsfile/live/0013_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/hls/13/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV13
 http://183.223.157.33:9901/tsfile/live/0013_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV13
-http://60.223.94.64:9003/hls/13/index.m3u8
+http://110.72.71.15:808/hls/106/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV13
-http://58.56.162.102:4466/newlive/live/hls/14/live.m3u8
+http://110.72.75.174:808/hls/106/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV13
+http://183.7.19.157:8081/hls/13/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV13
 http://110.72.75.114:808/hls/106/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV14
-http://113.205.165.1:8089/newlive/live/hls/15/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV13
+http://113.205.185.244:8089/newlive/live/hls/14/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV14
-http://27.223.110.214:8009/newlive/live/hls/15/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV13
+http://222.86.14.254:9999/tsfile/live/0013_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV14
 http://221.226.51.220:50081/newlive/live/hls/15/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV14
-http://110.72.77.228:808/hls/105/index.m3u8
+http://101.18.25.227:808/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV14
-http://110.72.78.29:808/hls/105/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV14
-http://110.72.85.1:808/hls/105/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV14
-http://110.72.84.243:808/hls/105/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV14
-http://110.72.59.198:808/hls/105/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV14
-http://113.57.140.161:10081/newlive/live/hls/15/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV14
-http://183.239.248.218:8181/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/hls/14/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV14
 http://183.223.157.33:9901/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV14
-http://60.223.94.64:9003/hls/14/index.m3u8
+http://110.72.71.15:808/hls/105/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV14
-http://58.56.162.102:4466/newlive/live/hls/15/live.m3u8
+http://110.72.75.174:808/hls/105/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV14
+http://183.7.19.157:8081/hls/14/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV14
 http://110.72.75.114:808/hls/105/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV15
-http://113.205.165.1:8089/newlive/live/hls/16/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV14
+http://113.205.185.244:8089/newlive/live/hls/15/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV15
-http://27.223.110.214:8009/newlive/live/hls/16/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV14
+http://222.86.14.254:9999/tsfile/live/0014_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV15
 http://221.226.51.220:50081/newlive/live/hls/16/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV15
-http://110.72.77.228:808/hls/102/index.m3u8
+http://101.18.25.227:808/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV15
-http://110.72.78.29:808/hls/102/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV15
-http://110.72.85.1:808/hls/102/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV15
-http://110.72.84.243:808/hls/102/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV15
-http://110.72.59.198:808/hls/102/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV15
-http://113.57.140.161:10081/newlive/live/hls/16/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV15
-http://183.239.248.218:8181/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/hls/15/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV15
 http://183.223.157.33:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV15
-http://60.223.94.64:9003/hls/15/index.m3u8
+http://110.72.71.15:808/hls/102/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV15
-http://58.56.162.102:4466/newlive/live/hls/16/live.m3u8
+http://110.72.75.174:808/hls/102/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV15
+http://183.7.19.157:8081/hls/15/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV15
 http://110.72.75.114:808/hls/102/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV16
-http://113.205.165.1:8089/newlive/live/hls/17/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV15
+http://113.205.185.244:8089/newlive/live/hls/16/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CCTV16
-http://27.223.110.214:8009/newlive/live/hls/17/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV16
-http://221.226.51.220:50081/newlive/live/hls/17/live.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV15
+http://222.86.14.254:9999/tsfile/live/0015_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV16
 http://221.221.137.78:8000/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV16
-http://113.57.140.161:10081/newlive/live/hls/17/live.m3u8
+http://221.226.51.220:50081/newlive/live/hls/17/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV16
-http://58.56.162.102:4466/newlive/live/hls/17/live.m3u8
+http://221.221.137.78:9000/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",CCTV16
+http://113.205.185.244:8089/newlive/live/hls/17/live.m3u8
+
+#EXTINF:-1 group-title="IPTV",CCTV17
+http://101.18.25.227:808/tsfile/live/0016_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CCTV17
 http://183.223.157.33:9901/tsfile/live/0016_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",CCTV娱乐
-http://110.72.77.228:808/hls/66/index.m3u8
+#EXTINF:-1 group-title="IPTV",CCTV17
+http://183.7.19.157:8081/hls/17/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV娱乐
-http://110.72.78.29:808/hls/66/index.m3u8
+http://110.72.71.15:808/hls/66/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV娱乐
-http://110.72.85.1:808/hls/66/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV娱乐
-http://110.72.84.243:808/hls/66/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",CCTV娱乐
-http://110.72.59.198:808/hls/66/index.m3u8
+http://110.72.75.174:808/hls/66/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CCTV娱乐
 http://110.72.75.114:808/hls/66/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",三沙卫视
-http://183.239.248.218:8181/tsfile/live/1016_1.m3u8?key=txiptv&playlive=1&authid=0
+http://101.18.25.227:808/tsfile/live/0109_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",上海卫视
-http://183.239.248.218:8181/tsfile/live/0107_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",东南卫视
-http://113.205.165.1:8089/newlive/live/hls/20/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",东南卫视
-http://27.223.110.214:8009/newlive/live/hls/20/live.m3u8
+http://219.145.93.74:10000/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",东南卫视
 http://221.226.51.220:50081/newlive/live/hls/20/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",东南卫视
-http://113.57.140.161:10081/newlive/live/hls/20/live.m3u8
+http://101.18.25.227:808/tsfile/live/1013_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",东南卫视
-http://183.239.248.218:8181/tsfile/live/0137_1.m3u8?key=txiptv&playlive=1&authid=0
+http://219.145.93.74:10000/tsfile/live/0116_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",东南卫视
-http://60.223.94.64:9003/hls/26/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.32:1061
 
 #EXTINF:-1 group-title="IPTV",东南卫视
-http://58.56.162.102:4466/newlive/live/hls/20/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",东方卫视
-http://113.205.165.1:8089/newlive/live/hls/29/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",东方卫视
-http://27.223.110.214:8009/newlive/live/hls/29/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",东方卫视
-http://221.226.51.220:50081/newlive/live/hls/29/live.m3u8
+http://113.205.185.244:8089/newlive/live/hls/20/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",东方卫视
 http://221.221.137.78:8000/tsfile/live/0107_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",东方卫视
-http://110.72.77.228:808/hls/29/index.m3u8
+http://221.226.51.220:50081/newlive/live/hls/29/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",东方卫视
-http://110.72.78.29:808/hls/29/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0107_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",东方卫视
-http://110.72.85.1:808/hls/29/index.m3u8
+http://101.18.25.227:808/tsfile/live/1025_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",东方卫视
-http://110.72.84.243:808/hls/29/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.85:1114
 
 #EXTINF:-1 group-title="IPTV",东方卫视
-http://110.72.59.198:808/hls/29/index.m3u8
+http://110.72.71.15:808/hls/29/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",东方卫视
-http://113.57.140.161:10081/newlive/live/hls/29/live.m3u8
+http://110.72.75.174:808/hls/29/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",东方卫视
-http://60.223.94.64:9003/hls/25/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",东方卫视
-http://58.56.162.102:4466/newlive/live/hls/29/live.m3u8
+http://183.7.19.157:8081/hls/45/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",东方卫视
 http://110.72.75.114:808/hls/29/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",云南卫视
-http://110.72.77.228:808/hls/15/index.m3u8
+#EXTINF:-1 group-title="IPTV",东方卫视
+http://113.205.185.244:8089/newlive/live/hls/29/live.m3u8
+
+#EXTINF:-1 group-title="IPTV",东方卫视
+http://222.86.14.254:9999/tsfile/live/0107_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",云南卫视
-http://110.72.78.29:808/hls/15/index.m3u8
+http://101.18.25.227:808/tsfile/live/0112_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",云南卫视
-http://110.72.85.1:808/hls/15/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.33:1062
 
 #EXTINF:-1 group-title="IPTV",云南卫视
-http://110.72.84.243:808/hls/15/index.m3u8
+http://110.72.71.15:808/hls/15/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",云南卫视
-http://110.72.59.198:808/hls/15/index.m3u8
+http://110.72.75.174:808/hls/15/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",云南卫视
-http://183.239.248.218:8181/tsfile/live/0119_1.m3u8?key=txiptv&playlive=1&authid=0
+http://183.7.19.157:8081/hls/62/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",云南卫视
 http://110.72.75.114:808/hls/15/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",农林卫视
-http://110.72.77.228:808/hls/18/index.m3u8
+#EXTINF:-1 group-title="IPTV",云南卫视
+http://222.86.14.254:9999/tsfile/live/0119_1.m3u8?key=txiptv&playlive=0&authid=0
+
+#EXTINF:-1 group-title="IPTV",兵团卫视
+http://222.71.55.147:9901/tsfile/live/0115_1.m3u8?key=txiptv&playlive=0&authid=0
+
+#EXTINF:-1 group-title="IPTV",内蒙古卫视
+http://171.8.74.166:8888/rtp/225.1.4.45:1074
+
+#EXTINF:-1 group-title="IPTV",内蒙古卫视
+http://222.71.55.147:9901/tsfile/live/0109_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",农林卫视
-http://110.72.78.29:808/hls/18/index.m3u8
+http://110.72.71.15:808/hls/18/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",农林卫视
-http://110.72.85.1:808/hls/18/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",农林卫视
-http://110.72.84.243:808/hls/18/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",农林卫视
-http://110.72.59.198:808/hls/18/index.m3u8
+http://110.72.75.174:808/hls/18/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",农林卫视
 http://110.72.75.114:808/hls/18/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",凤凰卫视
-http://110.72.77.228:808/hls/249449646/index.m3u8
+http://219.145.93.74:10000/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",凤凰卫视
-http://110.72.78.29:808/hls/249449646/index.m3u8
+http://110.72.71.15:808/hls/249449646/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",凤凰卫视
-http://110.72.85.1:808/hls/249449646/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",凤凰卫视
-http://110.72.84.243:808/hls/249449646/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",凤凰卫视
-http://110.72.59.198:808/hls/249449646/index.m3u8
+http://110.72.75.174:808/hls/249449646/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",凤凰卫视
 http://110.72.75.114:808/hls/249449646/index.m3u8
@@ -1008,631 +798,532 @@ http://110.72.75.114:808/hls/249449646/index.m3u8
 http://221.221.137.78:8000/tsfile/live/0122_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",北京卫视
-http://110.72.77.228:808/hls/137/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0122_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",北京卫视
-http://110.72.78.29:808/hls/137/index.m3u8
+http://101.18.25.227:808/tsfile/live/1014_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",北京卫视
-http://110.72.85.1:808/hls/137/index.m3u8
+http://219.145.93.74:10000/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",北京卫视
-http://110.72.84.243:808/hls/137/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.81:1110
 
 #EXTINF:-1 group-title="IPTV",北京卫视
-http://110.72.59.198:808/hls/137/index.m3u8
+http://110.72.71.15:808/hls/137/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",北京卫视
-http://183.239.248.218:8181/tsfile/live/0122_1.m3u8?key=txiptv&playlive=1&authid=0
+http://110.72.75.174:808/hls/137/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",北京卫视
-http://60.223.94.64:9003/hls/17/index.m3u8
+http://183.7.19.157:8081/hls/46/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",北京卫视
 http://110.72.75.114:808/hls/137/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",南方卫视
-http://110.72.77.228:808/hls/81/index.m3u8
+#EXTINF:-1 group-title="IPTV",北京卫视
+http://222.86.14.254:9999/tsfile/live/0122_1.m3u8?key=txiptv&playlive=0&authid=0
+
+#EXTINF:-1 group-title="IPTV",北京卫视高4K
+http://101.18.25.227:808/tsfile/live/0018_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",南方卫视
-http://110.72.78.29:808/hls/81/index.m3u8
+http://110.72.71.15:808/hls/81/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",南方卫视
-http://110.72.85.1:808/hls/81/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",南方卫视
-http://110.72.84.243:808/hls/81/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",南方卫视
-http://110.72.59.198:808/hls/81/index.m3u8
+http://110.72.75.174:808/hls/81/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",南方卫视
 http://110.72.75.114:808/hls/81/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",厦门卫视
-http://113.205.165.1:8089/newlive/live/hls/28/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",厦门卫视
-http://27.223.110.214:8009/newlive/live/hls/28/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",厦门卫视
 http://221.226.51.220:50081/newlive/live/hls/28/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",厦门卫视
-http://110.72.77.228:808/hls/122/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.95:1124
 
 #EXTINF:-1 group-title="IPTV",厦门卫视
-http://110.72.78.29:808/hls/122/index.m3u8
+http://110.72.71.15:808/hls/122/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",厦门卫视
-http://110.72.85.1:808/hls/122/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",厦门卫视
-http://110.72.84.243:808/hls/122/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",厦门卫视
-http://110.72.59.198:808/hls/122/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",厦门卫视
-http://113.57.140.161:10081/newlive/live/hls/28/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",厦门卫视
-http://58.56.162.102:4466/newlive/live/hls/28/live.m3u8
+http://110.72.75.174:808/hls/122/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",厦门卫视
 http://110.72.75.114:808/hls/122/index.m3u8
 
+#EXTINF:-1 group-title="IPTV",厦门卫视
+http://113.205.185.244:8089/newlive/live/hls/28/live.m3u8
+
 #EXTINF:-1 group-title="IPTV",吉林卫视
-http://183.239.248.218:8181/tsfile/live/0116_1.m3u8?key=txiptv&playlive=1&authid=0
+http://101.18.25.227:808/tsfile/live/1019_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",吉林卫视
+http://171.8.74.166:8888/rtp/225.1.4.36:1065
+
+#EXTINF:-1 group-title="IPTV",吉林卫视
+http://183.7.19.157:8081/hls/60/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",吉林卫视
+http://222.86.14.254:9999/tsfile/live/0116_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",四川卫视
-http://110.72.77.228:808/hls/44/index.m3u8
+http://101.18.25.227:808/tsfile/live/1020_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",四川卫视
-http://110.72.78.29:808/hls/44/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",四川卫视
-http://110.72.85.1:808/hls/44/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",四川卫视
-http://110.72.84.243:808/hls/44/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",四川卫视
-http://110.72.59.198:808/hls/44/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",四川卫视
-http://183.239.248.218:8181/tsfile/live/0123_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/rtp/225.1.4.40:1069
 
 #EXTINF:-1 group-title="IPTV",四川卫视
 http://183.223.157.33:9901/tsfile/live/0123_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",四川卫视
+http://110.72.71.15:808/hls/44/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",四川卫视
+http://110.72.75.174:808/hls/44/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",四川卫视
+http://183.7.19.157:8081/hls/56/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",四川卫视
 http://110.72.75.114:808/hls/44/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",天津卫视
-http://110.72.77.228:808/hls/20/index.m3u8
+#EXTINF:-1 group-title="IPTV",四川卫视
+http://222.86.14.254:9999/tsfile/live/0123_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",天津卫视
-http://110.72.78.29:808/hls/20/index.m3u8
+http://101.18.25.227:808/tsfile/live/1015_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",天津卫视
-http://110.72.85.1:808/hls/20/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.86:1115
 
 #EXTINF:-1 group-title="IPTV",天津卫视
-http://110.72.84.243:808/hls/20/index.m3u8
+http://110.72.71.15:808/hls/20/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",天津卫视
-http://110.72.59.198:808/hls/20/index.m3u8
+http://110.72.75.174:808/hls/20/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",天津卫视
-http://183.239.248.218:8181/tsfile/live/0111_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",天津卫视
-http://60.223.94.64:9003/hls/22/index.m3u8
+http://183.7.19.157:8081/hls/50/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",天津卫视
 http://110.72.75.114:808/hls/20/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",宁夏卫视
-http://110.72.77.228:808/hls/50/index.m3u8
+#EXTINF:-1 group-title="IPTV",天津卫视
+http://222.86.14.254:9999/tsfile/live/0135_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",宁夏卫视
-http://110.72.78.29:808/hls/50/index.m3u8
+http://101.18.25.227:808/tsfile/live/1029_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",宁夏卫视
-http://110.72.85.1:808/hls/50/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.43:1072
 
 #EXTINF:-1 group-title="IPTV",宁夏卫视
-http://110.72.84.243:808/hls/50/index.m3u8
+http://110.72.71.15:808/hls/50/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",宁夏卫视
-http://110.72.59.198:808/hls/50/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",宁夏卫视
-http://183.239.248.218:8181/tsfile/live/0112_1.m3u8?key=txiptv&playlive=1&authid=0
+http://110.72.75.174:808/hls/50/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",宁夏卫视
 http://110.72.75.114:808/hls/50/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",安多卫视
-http://110.72.77.228:808/hls/4/index.m3u8
+#EXTINF:-1 group-title="IPTV",宁夏卫视
+http://222.71.55.147:9901/tsfile/live/0112_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",安多卫视
-http://110.72.78.29:808/hls/4/index.m3u8
+http://110.72.71.15:808/hls/4/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",安多卫视
-http://110.72.85.1:808/hls/4/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",安多卫视
-http://110.72.84.243:808/hls/4/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",安多卫视
-http://110.72.59.198:808/hls/4/index.m3u8
+http://110.72.75.174:808/hls/4/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",安多卫视
 http://110.72.75.114:808/hls/4/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",安徽卫视
-http://113.205.165.1:8089/newlive/live/hls/40/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",安徽卫视
-http://27.223.110.214:8009/newlive/live/hls/40/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",安徽卫视
 http://221.226.51.220:50081/newlive/live/hls/40/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",安徽卫视
-http://110.72.77.228:808/hls/145/index.m3u8
+http://101.18.25.227:808/tsfile/live/1012_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",安徽卫视
-http://110.72.78.29:808/hls/145/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",安徽卫视
-http://110.72.85.1:808/hls/145/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.87:1116
 
 #EXTINF:-1 group-title="IPTV",安徽卫视
-http://110.72.84.243:808/hls/145/index.m3u8
+http://110.72.71.15:808/hls/145/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",安徽卫视
-http://110.72.59.198:808/hls/145/index.m3u8
+http://110.72.75.174:808/hls/145/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",安徽卫视
-http://113.57.140.161:10081/newlive/live/hls/40/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",安徽卫视
-http://183.239.248.218:8181/tsfile/live/0130_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",安徽卫视
-http://60.223.94.64:9003/hls/23/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",安徽卫视
-http://58.56.162.102:4466/newlive/live/hls/40/live.m3u8
+http://183.7.19.157:8081/hls/53/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",安徽卫视
 http://110.72.75.114:808/hls/145/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",山东卫视
-http://113.205.165.1:8089/newlive/live/hls/35/live.m3u8
+#EXTINF:-1 group-title="IPTV",安徽卫视
+http://113.205.185.244:8089/newlive/live/hls/40/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",山东卫视
-http://27.223.110.214:8009/newlive/live/hls/35/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",山东卫视
-http://221.226.51.220:50081/newlive/live/hls/35/live.m3u8
+#EXTINF:-1 group-title="IPTV",安徽卫视
+http://222.86.14.254:9999/tsfile/live/0130_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",山东卫视
 http://221.221.137.78:8000/tsfile/live/0131_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",山东卫视
-http://110.72.77.228:808/hls/35/index.m3u8
+http://221.226.51.220:50081/newlive/live/hls/35/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",山东卫视
-http://110.72.78.29:808/hls/35/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0131_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",山东卫视
-http://110.72.85.1:808/hls/35/index.m3u8
+http://101.18.25.227:808/tsfile/live/1017_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",山东卫视
-http://110.72.84.243:808/hls/35/index.m3u8
+http://219.145.93.74:10000/tsfile/live/1010_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",山东卫视
-http://110.72.59.198:808/hls/35/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.88:1117
 
 #EXTINF:-1 group-title="IPTV",山东卫视
-http://113.57.140.161:10081/newlive/live/hls/35/live.m3u8
+http://110.72.71.15:808/hls/35/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",山东卫视
-http://183.239.248.218:8181/tsfile/live/0131_1.m3u8?key=txiptv&playlive=1&authid=0
+http://110.72.75.174:808/hls/35/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",山东卫视
-http://60.223.94.64:9003/hls/18/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",山东卫视
-http://58.56.162.102:4466/newlive/live/hls/35/live.m3u8
+http://183.7.19.157:8081/hls/51/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",山东卫视
 http://110.72.75.114:808/hls/35/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",山西卫视
-http://110.72.77.228:808/hls/42/index.m3u8
+#EXTINF:-1 group-title="IPTV",山东卫视
+http://113.205.185.244:8089/newlive/live/hls/35/live.m3u8
+
+#EXTINF:-1 group-title="IPTV",山东卫视
+http://222.86.14.254:9999/tsfile/live/0131_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",山西卫视
-http://110.72.78.29:808/hls/42/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0120_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",山西卫视
-http://110.72.85.1:808/hls/42/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.38:1067
 
 #EXTINF:-1 group-title="IPTV",山西卫视
-http://110.72.84.243:808/hls/42/index.m3u8
+http://110.72.71.15:808/hls/42/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",山西卫视
-http://110.72.59.198:808/hls/42/index.m3u8
+http://110.72.75.174:808/hls/42/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",山西卫视
-http://60.223.94.64:9003/hls/16/index.m3u8
+http://183.7.19.157:8081/hls/64/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",山西卫视
 http://110.72.75.114:808/hls/42/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",广东卫视
-http://113.205.165.1:8089/newlive/live/hls/34/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",广东卫视
-http://27.223.110.214:8009/newlive/live/hls/34/live.m3u8
+#EXTINF:-1 group-title="IPTV",广东南方卫视
+http://183.7.19.157:8081/hls/23/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东卫视
 http://221.226.51.220:50081/newlive/live/hls/34/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东卫视
-http://110.72.77.228:808/hls/11/index.m3u8
+http://101.18.25.227:808/tsfile/live/1027_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",广东卫视
-http://110.72.78.29:808/hls/11/index.m3u8
+http://219.145.93.74:10000/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",广东卫视
-http://110.72.85.1:808/hls/11/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.166:1207
 
 #EXTINF:-1 group-title="IPTV",广东卫视
-http://110.72.84.243:808/hls/11/index.m3u8
+http://110.72.71.15:808/hls/11/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东卫视
-http://110.72.59.198:808/hls/11/index.m3u8
+http://110.72.75.174:808/hls/11/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东卫视
-http://113.57.140.161:10081/newlive/live/hls/34/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",广东卫视
-http://183.239.248.218:8181/tsfile/live/0125_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",广东卫视
-http://60.223.94.64:9003/hls/28/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广东卫视
-http://58.56.162.102:4466/newlive/live/hls/34/live.m3u8
+http://183.7.19.157:8081/hls/42/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东卫视
 http://110.72.75.114:808/hls/11/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",广西卫视
-http://110.72.77.228:808/hls/9/index.m3u8
+#EXTINF:-1 group-title="IPTV",广东卫视
+http://113.205.185.244:8089/newlive/live/hls/34/live.m3u8
+
+#EXTINF:-1 group-title="IPTV",广东卫视
+http://222.86.14.254:9999/tsfile/live/0125_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",广西卫视
-http://110.72.78.29:808/hls/9/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.31:1060
 
 #EXTINF:-1 group-title="IPTV",广西卫视
-http://110.72.85.1:808/hls/9/index.m3u8
+http://110.72.71.15:808/hls/9/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西卫视
-http://110.72.84.243:808/hls/9/index.m3u8
+http://110.72.75.174:808/hls/9/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西卫视
-http://110.72.59.198:808/hls/9/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西卫视
-http://60.223.94.64:9003/hls/29/index.m3u8
+http://183.7.19.157:8081/hls/61/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西卫视
 http://110.72.75.114:808/hls/9/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",延边卫视
-http://183.239.248.218:8181/tsfile/live/1036_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",广西卫视
+http://222.86.14.254:9999/tsfile/live/0113_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",新疆卫视
-http://183.239.248.218:8181/tsfile/live/0110_1.m3u8?key=txiptv&playlive=1&authid=0
+http://101.18.25.227:808/tsfile/live/0136_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",新疆卫视
+http://171.8.74.166:8888/rtp/225.1.4.47:1076
+
+#EXTINF:-1 group-title="IPTV",新疆卫视
+http://222.71.55.147:9901/tsfile/live/0110_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",旅游卫视
 http://221.221.137.78:8000/tsfile/live/0114_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",旅游卫视
-http://110.72.77.228:808/hls/1/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0114_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",旅游卫视
-http://110.72.78.29:808/hls/1/index.m3u8
+http://110.72.71.15:808/hls/1/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",旅游卫视
-http://110.72.85.1:808/hls/1/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",旅游卫视
-http://110.72.84.243:808/hls/1/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",旅游卫视
-http://110.72.59.198:808/hls/1/index.m3u8
+http://110.72.75.174:808/hls/1/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",旅游卫视
 http://110.72.75.114:808/hls/1/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",星空卫视
-http://110.72.77.228:808/hls/226879611/index.m3u8
+http://110.72.71.15:808/hls/226879611/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",星空卫视
-http://110.72.78.29:808/hls/226879611/index.m3u8
+http://110.72.75.174:808/hls/226879611/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",星空卫视
-http://110.72.85.1:808/hls/226879611/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",星空卫视
-http://110.72.84.243:808/hls/226879611/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",星空卫视
-http://110.72.59.198:808/hls/226879611/index.m3u8
+http://183.7.19.157:8081/hls/18/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",星空卫视
 http://110.72.75.114:808/hls/226879611/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",江苏卫视
-http://113.205.165.1:8089/newlive/live/hls/31/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",江苏卫视
-http://27.223.110.214:8009/newlive/live/hls/31/live.m3u8
+http://221.221.137.78:8000/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",江苏卫视
 http://221.226.51.220:50081/newlive/live/hls/31/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",江苏卫视
-http://221.221.137.78:8000/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1&authid=0
+http://221.221.137.78:9000/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",江苏卫视
-http://110.72.77.228:808/hls/30/index.m3u8
+http://101.18.25.227:808/tsfile/live/1011_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",江苏卫视
-http://110.72.78.29:808/hls/30/index.m3u8
+http://219.145.93.74:10000/tsfile/live/1008_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",江苏卫视
-http://110.72.85.1:808/hls/30/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",江苏卫视
-http://110.72.84.243:808/hls/30/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",江苏卫视
-http://110.72.59.198:808/hls/30/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",江苏卫视
-http://113.57.140.161:10081/newlive/live/hls/31/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",江苏卫视
-http://183.239.248.218:8181/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/rtp/225.1.4.83:1112
 
 #EXTINF:-1 group-title="IPTV",江苏卫视
 http://183.223.157.33:9901/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",江苏卫视
-http://58.56.162.102:4466/newlive/live/hls/31/live.m3u8
+http://110.72.71.15:808/hls/30/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",江苏卫视
+http://110.72.75.174:808/hls/30/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",江苏卫视
+http://183.7.19.157:8081/hls/48/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",江苏卫视
 http://110.72.75.114:808/hls/30/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",江苏卫视
+http://113.205.185.244:8089/newlive/live/hls/31/live.m3u8
+
+#EXTINF:-1 group-title="IPTV",江苏卫视
+http://222.86.14.254:9999/tsfile/live/0127_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",江西卫视
 http://221.221.137.78:8000/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",江西卫视
-http://110.72.77.228:808/hls/41/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",江西卫视
-http://110.72.78.29:808/hls/41/index.m3u8
+http://101.18.25.227:808/tsfile/live/1021_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",江西卫视
-http://110.72.85.1:808/hls/41/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0141_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",江西卫视
-http://110.72.84.243:808/hls/41/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.37:1066
 
 #EXTINF:-1 group-title="IPTV",江西卫视
-http://110.72.59.198:808/hls/41/index.m3u8
+http://110.72.71.15:808/hls/41/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",江西卫视
-http://183.239.248.218:8181/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0
+http://110.72.75.174:808/hls/41/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",江西卫视
+http://183.7.19.157:8081/hls/59/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",江西卫视
 http://110.72.75.114:808/hls/41/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",河北卫视
-http://113.205.165.1:8089/newlive/live/hls/33/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",河北卫视
-http://27.223.110.214:8009/newlive/live/hls/33/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",河北卫视
-http://221.226.51.220:50081/newlive/live/hls/33/live.m3u8
+#EXTINF:-1 group-title="IPTV",江西卫视
+http://222.86.14.254:9999/tsfile/live/0138_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",河北卫视
 http://221.221.137.78:8000/tsfile/live/0117_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",河北卫视
-http://110.72.77.228:808/hls/51/index.m3u8
+http://221.226.51.220:50081/newlive/live/hls/33/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",河北卫视
-http://110.72.78.29:808/hls/51/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0117_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",河北卫视
-http://110.72.85.1:808/hls/51/index.m3u8
+http://101.18.25.227:808/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",河北卫视
-http://110.72.84.243:808/hls/51/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.34:1063
 
 #EXTINF:-1 group-title="IPTV",河北卫视
-http://110.72.59.198:808/hls/51/index.m3u8
+http://110.72.71.15:808/hls/51/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",河北卫视
-http://113.57.140.161:10081/newlive/live/hls/33/live.m3u8
+http://110.72.75.174:808/hls/51/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",河北卫视
-http://60.223.94.64:9003/hls/19/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",河北卫视
-http://58.56.162.102:4466/newlive/live/hls/33/live.m3u8
+http://183.7.19.157:8081/hls/58/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",河北卫视
 http://110.72.75.114:808/hls/51/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",河北卫视
+http://113.205.185.244:8089/newlive/live/hls/33/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",河南卫视
 http://221.221.137.78:8000/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",河南卫视
-http://110.72.77.228:808/hls/49/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",河南卫视
-http://110.72.78.29:808/hls/49/index.m3u8
+http://101.18.25.227:808/tsfile/live/1018_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",河南卫视
-http://110.72.85.1:808/hls/49/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0118_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",河南卫视
-http://110.72.84.243:808/hls/49/index.m3u8
+http://171.8.74.166:8888/hls/16/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",河南卫视
-http://110.72.59.198:808/hls/49/index.m3u8
+http://110.72.71.15:808/hls/49/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",河南卫视
-http://183.239.248.218:8181/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",河南卫视
-http://60.223.94.64:9003/hls/20/index.m3u8
+http://110.72.75.174:808/hls/49/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",河南卫视
 http://110.72.75.114:808/hls/49/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",浙江卫视
-http://113.205.165.1:8089/newlive/live/hls/32/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",浙江卫视
-http://27.223.110.214:8009/newlive/live/hls/32/live.m3u8
+#EXTINF:-1 group-title="IPTV",河南卫视
+http://222.86.14.254:9999/tsfile/live/0139_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",浙江卫视
 http://221.226.51.220:50081/newlive/live/hls/32/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",浙江卫视
-http://110.72.77.228:808/hls/34/index.m3u8
+http://101.18.25.227:808/tsfile/live/1010_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",浙江卫视
-http://110.72.78.29:808/hls/34/index.m3u8
+http://219.145.93.74:10000/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",浙江卫视
-http://110.72.85.1:808/hls/34/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.84:1113
 
 #EXTINF:-1 group-title="IPTV",浙江卫视
-http://110.72.84.243:808/hls/34/index.m3u8
+http://110.72.71.15:808/hls/34/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",浙江卫视
-http://110.72.59.198:808/hls/34/index.m3u8
+http://110.72.75.174:808/hls/34/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",浙江卫视
-http://113.57.140.161:10081/newlive/live/hls/32/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",浙江卫视
-http://183.239.248.218:8181/tsfile/live/0124_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",浙江卫视
-http://58.56.162.102:4466/newlive/live/hls/32/live.m3u8
+http://183.7.19.157:8081/hls/47/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",浙江卫视
 http://110.72.75.114:808/hls/34/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",浙江卫视
+http://113.205.185.244:8089/newlive/live/hls/32/live.m3u8
+
+#EXTINF:-1 group-title="IPTV",浙江卫视
+http://222.86.14.254:9999/tsfile/live/0124_1.m3u8?key=txiptv&playlive=0&authid=0
+
+#EXTINF:-1 group-title="IPTV",海南卫视
+http://101.18.25.227:808/tsfile/live/0119_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",海南卫视
+http://171.8.74.166:8888/rtp/225.1.4.25:1054
 
 #EXTINF:-1 group-title="IPTV",海南卫视
 http://183.223.157.33:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",海峡卫视
-http://113.205.165.1:8089/newlive/live/hls/27/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",海峡卫视
-http://27.223.110.214:8009/newlive/live/hls/27/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",海峡卫视
 http://221.226.51.220:50081/newlive/live/hls/27/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",海峡卫视
-http://110.72.77.228:808/hls/590478925/index.m3u8
+http://110.72.71.15:808/hls/590478925/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",海峡卫视
-http://110.72.78.29:808/hls/590478925/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",海峡卫视
-http://110.72.85.1:808/hls/590478925/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",海峡卫视
-http://110.72.84.243:808/hls/590478925/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",海峡卫视
-http://110.72.59.198:808/hls/590478925/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",海峡卫视
-http://113.57.140.161:10081/newlive/live/hls/27/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",海峡卫视
-http://58.56.162.102:4466/newlive/live/hls/27/live.m3u8
+http://110.72.75.174:808/hls/590478925/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",海峡卫视
 http://110.72.75.114:808/hls/590478925/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",深圳卫视
-http://113.205.165.1:8089/newlive/live/hls/37/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",深圳卫视
-http://27.223.110.214:8009/newlive/live/hls/37/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",深圳卫视
-http://221.226.51.220:50081/newlive/live/hls/37/live.m3u8
+#EXTINF:-1 group-title="IPTV",海峡卫视
+http://113.205.185.244:8089/newlive/live/hls/27/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",深圳卫视
 http://221.221.137.78:8000/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",深圳卫视
-http://110.72.77.228:808/hls/1033/index.m3u8
+http://221.226.51.220:50081/newlive/live/hls/37/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",深圳卫视
-http://110.72.77.228:808/hls/1033/index.m3u8
+http://221.221.137.78:9000/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",深圳卫视
-http://110.72.78.29:808/hls/1033/index.m3u8
+http://101.18.25.227:808/tsfile/live/1023_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",深圳卫视
-http://110.72.78.29:808/hls/1033/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",深圳卫视
-http://110.72.85.1:808/hls/1033/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.90:1119
 
 #EXTINF:-1 group-title="IPTV",深圳卫视
-http://110.72.85.1:808/hls/1033/index.m3u8
+http://110.72.71.15:808/hls/1033/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",深圳卫视
-http://110.72.84.243:808/hls/1033/index.m3u8
+http://110.72.71.15:808/hls/1033/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",深圳卫视
-http://110.72.84.243:808/hls/1033/index.m3u8
+http://110.72.75.174:808/hls/1033/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",深圳卫视
-http://110.72.59.198:808/hls/1033/index.m3u8
+http://110.72.75.174:808/hls/1033/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",深圳卫视
-http://110.72.59.198:808/hls/1033/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",深圳卫视
-http://113.57.140.161:10081/newlive/live/hls/37/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",深圳卫视
-http://183.239.248.218:8181/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",深圳卫视
-http://58.56.162.102:4466/newlive/live/hls/37/live.m3u8
+http://183.7.19.157:8081/hls/43/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",深圳卫视
 http://110.72.75.114:808/hls/1033/index.m3u8
@@ -1640,242 +1331,209 @@ http://110.72.75.114:808/hls/1033/index.m3u8
 #EXTINF:-1 group-title="IPTV",深圳卫视
 http://110.72.75.114:808/hls/1033/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",湖北卫视
-http://113.205.165.1:8089/newlive/live/hls/36/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",湖北卫视
-http://27.223.110.214:8009/newlive/live/hls/36/live.m3u8
+#EXTINF:-1 group-title="IPTV",深圳卫视
+http://113.205.185.244:8089/newlive/live/hls/37/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",湖北卫视
 http://221.226.51.220:50081/newlive/live/hls/36/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",湖北卫视
-http://110.72.77.228:808/hls/27/index.m3u8
+http://101.18.25.227:808/tsfile/live/1024_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",湖北卫视
-http://110.72.78.29:808/hls/27/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.89:1118
 
 #EXTINF:-1 group-title="IPTV",湖北卫视
-http://110.72.85.1:808/hls/27/index.m3u8
+http://110.72.71.15:808/hls/27/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",湖北卫视
-http://110.72.84.243:808/hls/27/index.m3u8
+http://110.72.75.174:808/hls/27/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",湖北卫视
-http://110.72.59.198:808/hls/27/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",湖北卫视
-http://113.57.140.161:10081/newlive/live/hls/36/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",湖北卫视
-http://183.239.248.218:8181/tsfile/live/0132_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",湖北卫视
-http://60.223.94.64:9003/hls/32/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",湖北卫视
-http://58.56.162.102:4466/newlive/live/hls/36/live.m3u8
+http://183.7.19.157:8081/hls/52/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",湖北卫视
 http://110.72.75.114:808/hls/27/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",湖南卫视
-http://113.205.165.1:8089/newlive/live/hls/30/live.m3u8
+#EXTINF:-1 group-title="IPTV",湖北卫视
+http://113.205.185.244:8089/newlive/live/hls/36/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",湖南卫视
-http://27.223.110.214:8009/newlive/live/hls/30/live.m3u8
+#EXTINF:-1 group-title="IPTV",湖北卫视
+http://222.86.14.254:9999/tsfile/live/0132_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",湖南卫视
 http://221.226.51.220:50081/newlive/live/hls/30/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",湖南卫视
-http://110.72.77.228:808/hls/25/index.m3u8
+http://101.18.25.227:808/tsfile/live/1009_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",湖南卫视
-http://110.72.78.29:808/hls/25/index.m3u8
+http://219.145.93.74:10000/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",湖南卫视
-http://110.72.85.1:808/hls/25/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",湖南卫视
-http://110.72.84.243:808/hls/25/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",湖南卫视
-http://110.72.59.198:808/hls/25/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",湖南卫视
-http://113.57.140.161:10081/newlive/live/hls/30/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",湖南卫视
-http://183.239.248.218:8181/tsfile/live/0128_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.8.74.166:8888/rtp/225.1.4.82:1111
 
 #EXTINF:-1 group-title="IPTV",湖南卫视
 http://183.223.157.33:9901/tsfile/live/0019_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",湖南卫视
-http://58.56.162.102:4466/newlive/live/hls/30/live.m3u8
+http://110.72.71.15:808/hls/25/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",湖南卫视
+http://110.72.75.174:808/hls/25/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",湖南卫视
+http://183.7.19.157:8081/hls/44/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",湖南卫视
 http://110.72.75.114:808/hls/25/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",甘肃卫视
-http://110.72.77.228:808/hls/19/index.m3u8
+#EXTINF:-1 group-title="IPTV",湖南卫视
+http://113.205.185.244:8089/newlive/live/hls/30/live.m3u8
+
+#EXTINF:-1 group-title="IPTV",湖南卫视
+http://222.86.14.254:9999/tsfile/live/0128_1.m3u8?key=txiptv&playlive=0&authid=0
+
+#EXTINF:-1 group-title="IPTV",澳亚卫视
+http://183.7.19.157:8081/hls/22/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",甘肃卫视
-http://110.72.78.29:808/hls/19/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.42:1071
 
 #EXTINF:-1 group-title="IPTV",甘肃卫视
-http://110.72.85.1:808/hls/19/index.m3u8
+http://110.72.71.15:808/hls/19/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",甘肃卫视
-http://110.72.84.243:808/hls/19/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",甘肃卫视
-http://110.72.59.198:808/hls/19/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",甘肃卫视
-http://183.239.248.218:8181/tsfile/live/0141_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",甘肃卫视
-http://60.223.94.64:9003/hls/27/index.m3u8
+http://110.72.75.174:808/hls/19/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",甘肃卫视
 http://110.72.75.114:808/hls/19/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",福建卫视
-http://110.72.77.228:808/hls/121/index.m3u8
+#EXTINF:-1 group-title="IPTV",甘肃卫视
+http://222.86.14.254:9999/tsfile/live/0141_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",福建卫视
-http://110.72.78.29:808/hls/121/index.m3u8
+http://110.72.71.15:808/hls/121/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",福建卫视
-http://110.72.85.1:808/hls/121/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建卫视
-http://110.72.84.243:808/hls/121/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建卫视
-http://110.72.59.198:808/hls/121/index.m3u8
+http://110.72.75.174:808/hls/121/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",福建卫视
 http://110.72.75.114:808/hls/121/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",贵州卫视
-http://113.205.165.1:8089/newlive/live/hls/39/live.m3u8
+#EXTINF:-1 group-title="IPTV",西藏卫视
+http://101.18.25.227:808/tsfile/live/1028_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",贵州卫视
-http://27.223.110.214:8009/newlive/live/hls/39/live.m3u8
+#EXTINF:-1 group-title="IPTV",西藏卫视
+http://171.8.74.166:8888/rtp/225.1.4.46:1075
+
+#EXTINF:-1 group-title="IPTV",西藏卫视
+http://222.71.55.147:9901/tsfile/live/0111_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",贵州卫视
 http://221.226.51.220:50081/newlive/live/hls/39/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",贵州卫视
-http://110.72.77.228:808/hls/52/index.m3u8
+http://101.18.25.227:808/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",贵州卫视
-http://110.72.78.29:808/hls/52/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0112_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",贵州卫视
-http://110.72.85.1:808/hls/52/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.41:1070
 
 #EXTINF:-1 group-title="IPTV",贵州卫视
-http://110.72.84.243:808/hls/52/index.m3u8
+http://110.72.71.15:808/hls/52/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",贵州卫视
-http://110.72.59.198:808/hls/52/index.m3u8
+http://110.72.75.174:808/hls/52/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",贵州卫视
-http://113.57.140.161:10081/newlive/live/hls/39/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",贵州卫视
-http://183.239.248.218:8181/tsfile/live/0120_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",贵州卫视
-http://60.223.94.64:9003/hls/30/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",贵州卫视
-http://58.56.162.102:4466/newlive/live/hls/39/live.m3u8
+http://183.7.19.157:8081/hls/55/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",贵州卫视
 http://110.72.75.114:808/hls/52/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",辽宁卫视
-http://110.72.77.228:808/hls/2/index.m3u8
+#EXTINF:-1 group-title="IPTV",贵州卫视
+http://113.205.185.244:8089/newlive/live/hls/39/live.m3u8
+
+#EXTINF:-1 group-title="IPTV",贵州卫视1
+http://222.86.14.254:9999/tsfile/live/1000_1.m3u8?key=txiptv&playlive=0&authid=0
+
+#EXTINF:-1 group-title="IPTV",贵州卫视2
+http://222.86.14.254:9999/tsfile/live/1001_1.m3u8?key=txiptv&playlive=0&authid=0
+
+#EXTINF:-1 group-title="IPTV",贵州卫视4
+http://222.86.14.254:9999/tsfile/live/1003_1.m3u8?key=txiptv&playlive=0&authid=0
+
+#EXTINF:-1 group-title="IPTV",贵州卫视5
+http://222.86.14.254:9999/tsfile/live/1004_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",辽宁卫视
-http://110.72.78.29:808/hls/2/index.m3u8
+http://101.18.25.227:808/tsfile/live/1016_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",辽宁卫视
-http://110.72.85.1:808/hls/2/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.167:1208
 
 #EXTINF:-1 group-title="IPTV",辽宁卫视
-http://110.72.84.243:808/hls/2/index.m3u8
+http://110.72.71.15:808/hls/2/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",辽宁卫视
-http://110.72.59.198:808/hls/2/index.m3u8
+http://110.72.75.174:808/hls/2/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",辽宁卫视
-http://183.239.248.218:8181/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0
+http://183.7.19.157:8081/hls/54/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",辽宁卫视
 http://110.72.75.114:808/hls/2/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",重庆卫视
-http://110.72.77.228:808/hls/33/index.m3u8
+#EXTINF:-1 group-title="IPTV",辽宁卫视
+http://222.86.14.254:9999/tsfile/live/0121_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",重庆卫视
-http://110.72.78.29:808/hls/33/index.m3u8
+http://101.18.25.227:808/tsfile/live/1026_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",重庆卫视
-http://110.72.85.1:808/hls/33/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",重庆卫视
-http://110.72.84.243:808/hls/33/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.29:1058
 
 #EXTINF:-1 group-title="IPTV",重庆卫视
-http://110.72.59.198:808/hls/33/index.m3u8
+http://110.72.71.15:808/hls/33/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",重庆卫视
-http://183.239.248.218:8181/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
+http://110.72.75.174:808/hls/33/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",重庆卫视
-http://60.223.94.64:9003/hls/24/index.m3u8
+http://183.7.19.157:8081/hls/57/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",重庆卫视
 http://110.72.75.114:808/hls/33/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",陕西卫视
-http://110.72.77.228:808/hls/17/index.m3u8
+#EXTINF:-1 group-title="IPTV",重庆卫视
+http://222.86.14.254:9999/tsfile/live/0142_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",陕西卫视
-http://110.72.77.228:808/hls/17/index.m3u8
+http://219.145.93.74:10000/tsfile/live/0136_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",陕西卫视
-http://110.72.78.29:808/hls/17/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.39:1068
 
 #EXTINF:-1 group-title="IPTV",陕西卫视
-http://110.72.78.29:808/hls/17/index.m3u8
+http://110.72.71.15:808/hls/17/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",陕西卫视
-http://110.72.85.1:808/hls/17/index.m3u8
+http://110.72.71.15:808/hls/17/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",陕西卫视
-http://110.72.85.1:808/hls/17/index.m3u8
+http://110.72.75.174:808/hls/17/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",陕西卫视
-http://110.72.84.243:808/hls/17/index.m3u8
+http://110.72.75.174:808/hls/17/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",陕西卫视
-http://110.72.84.243:808/hls/17/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",陕西卫视
-http://110.72.59.198:808/hls/17/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",陕西卫视
-http://110.72.59.198:808/hls/17/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",陕西卫视
-http://60.223.94.64:9003/hls/21/index.m3u8
+http://183.7.19.157:8081/hls/65/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",陕西卫视
 http://110.72.75.114:808/hls/17/index.m3u8
@@ -1883,377 +1541,227 @@ http://110.72.75.114:808/hls/17/index.m3u8
 #EXTINF:-1 group-title="IPTV",陕西卫视
 http://110.72.75.114:808/hls/17/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",青海卫视
-http://110.72.77.228:808/hls/3/index.m3u8
+#EXTINF:-1 group-title="IPTV",陕西卫视
+http://222.71.55.147:9901/tsfile/live/0136_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",青海卫视
-http://110.72.78.29:808/hls/3/index.m3u8
+http://101.18.25.227:808/tsfile/live/0140_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",青海卫视
-http://110.72.85.1:808/hls/3/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.44:1073
 
 #EXTINF:-1 group-title="IPTV",青海卫视
-http://110.72.84.243:808/hls/3/index.m3u8
+http://110.72.71.15:808/hls/3/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",青海卫视
-http://110.72.59.198:808/hls/3/index.m3u8
+http://110.72.75.174:808/hls/3/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",青海卫视
+http://183.7.19.157:8081/hls/63/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",青海卫视
 http://110.72.75.114:808/hls/3/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",香港卫视
-http://110.72.77.228:808/hls/235577686/index.m3u8
+http://110.72.71.15:808/hls/235577686/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",香港卫视
-http://110.72.78.29:808/hls/235577686/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",香港卫视
-http://110.72.85.1:808/hls/235577686/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",香港卫视
-http://110.72.84.243:808/hls/235577686/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",香港卫视
-http://110.72.59.198:808/hls/235577686/index.m3u8
+http://110.72.75.174:808/hls/235577686/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",香港卫视
 http://110.72.75.114:808/hls/235577686/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",黑龙江卫视
-http://113.205.165.1:8089/newlive/live/hls/38/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",黑龙江卫视
-http://27.223.110.214:8009/newlive/live/hls/38/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",黑龙江卫视
 http://221.226.51.220:50081/newlive/live/hls/38/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",黑龙江卫视
-http://110.72.77.228:808/hls/43/index.m3u8
+http://101.18.25.227:808/tsfile/live/1008_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",黑龙江卫视
-http://110.72.78.29:808/hls/43/index.m3u8
+http://219.145.93.74:10000/tsfile/live/1009_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",黑龙江卫视
-http://110.72.85.1:808/hls/43/index.m3u8
+http://171.8.74.166:8888/rtp/225.1.4.91:1120
 
 #EXTINF:-1 group-title="IPTV",黑龙江卫视
-http://110.72.84.243:808/hls/43/index.m3u8
+http://110.72.71.15:808/hls/43/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",黑龙江卫视
-http://110.72.59.198:808/hls/43/index.m3u8
+http://110.72.75.174:808/hls/43/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",黑龙江卫视
-http://113.57.140.161:10081/newlive/live/hls/38/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",黑龙江卫视
-http://183.239.248.218:8181/tsfile/live/1057_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",黑龙江卫视
-http://60.223.94.64:9003/hls/31/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",黑龙江卫视
-http://58.56.162.102:4466/newlive/live/hls/38/live.m3u8
+http://183.7.19.157:8081/hls/49/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",黑龙江卫视
 http://110.72.75.114:808/hls/43/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",CGTN
-http://113.205.165.1:8089/newlive/live/hls/18/live.m3u8
+#EXTINF:-1 group-title="IPTV",黑龙江卫视
+http://113.205.185.244:8089/newlive/live/hls/38/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",CGTN
-http://27.223.110.214:8009/newlive/live/hls/18/live.m3u8
+#EXTINF:-1 group-title="IPTV",黑龙江卫视
+http://222.86.14.254:9999/tsfile/live/0143_1.m3u8?key=txiptv&playlive=0&authid=0
+
+#EXTINF:-1 group-title="IPTV",3
+http://120.209.208.163:9003/hls/3/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",4
+http://120.209.208.163:9003/hls/4/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",CETV1
+http://183.7.19.157:8081/hls/67/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",CGTN
 http://221.226.51.220:50081/newlive/live/hls/18/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",CGTN
-http://113.57.140.161:10081/newlive/live/hls/18/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",CGTN
 http://183.223.157.33:9901/tsfile/live/0017_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",CGTN
-http://58.56.162.102:4466/newlive/live/hls/18/live.m3u8
+http://113.205.185.244:8089/newlive/live/hls/18/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV3
-http://110.72.77.228:808/hls/2012/index.m3u8
+http://110.72.71.15:808/hls/2012/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV3
-http://110.72.78.29:808/hls/2012/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV3
-http://110.72.85.1:808/hls/2012/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV3
-http://110.72.84.243:808/hls/2012/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV3
-http://110.72.59.198:808/hls/2012/index.m3u8
+http://110.72.75.174:808/hls/2012/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV3
 http://110.72.75.114:808/hls/2012/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV5
-http://110.72.77.228:808/hls/2014/index.m3u8
+http://110.72.71.15:808/hls/2014/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV5
-http://110.72.78.29:808/hls/2014/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV5
-http://110.72.85.1:808/hls/2014/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV5
-http://110.72.84.243:808/hls/2014/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV5
-http://110.72.59.198:808/hls/2014/index.m3u8
+http://110.72.75.174:808/hls/2014/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV5
 http://110.72.75.114:808/hls/2014/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV6
-http://110.72.77.228:808/hls/2015/index.m3u8
+http://110.72.71.15:808/hls/2015/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV6
-http://110.72.78.29:808/hls/2015/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV6
-http://110.72.85.1:808/hls/2015/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV6
-http://110.72.84.243:808/hls/2015/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV6
-http://110.72.59.198:808/hls/2015/index.m3u8
+http://110.72.75.174:808/hls/2015/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV6
 http://110.72.75.114:808/hls/2015/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV8
-http://110.72.77.228:808/hls/2017/index.m3u8
+http://110.72.71.15:808/hls/2017/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV8
-http://110.72.78.29:808/hls/2017/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV8
-http://110.72.85.1:808/hls/2017/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV8
-http://110.72.84.243:808/hls/2017/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV8
-http://110.72.59.198:808/hls/2017/index.m3u8
+http://110.72.75.174:808/hls/2017/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV8
 http://110.72.75.114:808/hls/2017/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV法治
-http://110.72.77.228:808/hls/1028/index.m3u8
+http://110.72.71.15:808/hls/1028/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV法治
-http://110.72.78.29:808/hls/1028/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV法治
-http://110.72.85.1:808/hls/1028/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV法治
-http://110.72.84.243:808/hls/1028/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV法治
-http://110.72.59.198:808/hls/1028/index.m3u8
+http://110.72.75.174:808/hls/1028/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV法治
 http://110.72.75.114:808/hls/1028/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV野外
-http://110.72.77.228:808/hls/1027/index.m3u8
+http://110.72.71.15:808/hls/1027/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV野外
-http://110.72.78.29:808/hls/1027/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV野外
-http://110.72.85.1:808/hls/1027/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV野外
-http://110.72.84.243:808/hls/1027/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",IPTV野外
-http://110.72.59.198:808/hls/1027/index.m3u8
+http://110.72.75.174:808/hls/1027/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",IPTV野外
 http://110.72.75.114:808/hls/1027/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",东方
-http://110.72.77.228:808/hls/1004/index.m3u8
+#EXTINF:-1 group-title="IPTV",MTV
+http://183.7.19.157:8081/hls/73/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",东方
-http://110.72.78.29:808/hls/1004/index.m3u8
+http://110.72.71.15:808/hls/1004/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",东方
-http://110.72.85.1:808/hls/1004/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",东方
-http://110.72.84.243:808/hls/1004/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",东方
-http://110.72.59.198:808/hls/1004/index.m3u8
+http://110.72.75.174:808/hls/1004/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",东方
 http://110.72.75.114:808/hls/1004/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",东方海外
-http://110.72.77.228:808/hls/69/index.m3u8
+http://110.72.71.15:808/hls/69/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",东方海外
-http://110.72.78.29:808/hls/69/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",东方海外
-http://110.72.85.1:808/hls/69/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",东方海外
-http://110.72.84.243:808/hls/69/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",东方海外
-http://110.72.59.198:808/hls/69/index.m3u8
+http://110.72.75.174:808/hls/69/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",东方海外
 http://110.72.75.114:808/hls/69/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",中国教育1
-http://110.72.77.228:808/hls/129/index.m3u8
+http://110.72.71.15:808/hls/129/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",中国教育1
-http://110.72.78.29:808/hls/129/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",中国教育1
-http://110.72.85.1:808/hls/129/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",中国教育1
-http://110.72.84.243:808/hls/129/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",中国教育1
-http://110.72.59.198:808/hls/129/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",中国教育1
-http://183.239.248.218:8181/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0
+http://110.72.75.174:808/hls/129/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",中国教育1
 http://110.72.75.114:808/hls/129/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",中国电影
-http://110.72.77.228:808/hls/61/index.m3u8
+http://110.72.71.15:808/hls/61/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",中国电影
-http://110.72.78.29:808/hls/61/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",中国电影
-http://110.72.85.1:808/hls/61/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",中国电影
-http://110.72.84.243:808/hls/61/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",中国电影
-http://110.72.59.198:808/hls/61/index.m3u8
+http://110.72.75.174:808/hls/61/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",中国电影
 http://110.72.75.114:808/hls/61/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",中国电影2
-http://110.72.77.228:808/hls/65/index.m3u8
+http://110.72.71.15:808/hls/65/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",中国电影2
-http://110.72.78.29:808/hls/65/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",中国电影2
-http://110.72.85.1:808/hls/65/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",中国电影2
-http://110.72.84.243:808/hls/65/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",中国电影2
-http://110.72.59.198:808/hls/65/index.m3u8
+http://110.72.75.174:808/hls/65/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",中国电影2
 http://110.72.75.114:808/hls/65/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",优漫卡通
-http://110.72.77.228:808/hls/31/index.m3u8
+http://110.72.71.15:808/hls/31/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",优漫卡通
-http://110.72.78.29:808/hls/31/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",优漫卡通
-http://110.72.85.1:808/hls/31/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",优漫卡通
-http://110.72.84.243:808/hls/31/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",优漫卡通
-http://110.72.59.198:808/hls/31/index.m3u8
+http://110.72.75.174:808/hls/31/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",优漫卡通
 http://110.72.75.114:808/hls/31/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",凤凰中文
-http://110.72.77.228:808/hls/234575323/index.m3u8
+#EXTINF:-1 group-title="IPTV",保定新闻综合
+http://101.18.25.227:808/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",保定生活
+http://101.18.25.227:808/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",全纪实
+http://183.7.19.157:8081/hls/69/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",凤凰中文
-http://110.72.78.29:808/hls/234575323/index.m3u8
+http://110.72.71.15:808/hls/234575323/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",凤凰中文
-http://110.72.85.1:808/hls/234575323/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",凤凰中文
-http://110.72.84.243:808/hls/234575323/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",凤凰中文
-http://110.72.59.198:808/hls/234575323/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",凤凰中文
-http://183.239.248.218:8181/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",凤凰中文
-http://183.239.248.218:8181/tsfile/live/1014_1.m3u8?key=txiptv&playlive=1&authid=0
+http://110.72.75.174:808/hls/234575323/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",凤凰中文
 http://110.72.75.114:808/hls/234575323/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",凤凰资讯
-http://110.72.77.228:808/hls/261263452/index.m3u8
+#EXTINF:-1 group-title="IPTV",凤凰中文台
+http://183.7.19.157:8081/hls/19/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",凤凰资讯
-http://110.72.77.228:808/hls/219429978/index.m3u8
+http://110.72.71.15:808/hls/261263452/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",凤凰资讯
-http://110.72.78.29:808/hls/261263452/index.m3u8
+http://110.72.71.15:808/hls/219429978/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",凤凰资讯
-http://110.72.78.29:808/hls/219429978/index.m3u8
+http://110.72.75.174:808/hls/261263452/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",凤凰资讯
-http://110.72.85.1:808/hls/261263452/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",凤凰资讯
-http://110.72.85.1:808/hls/219429978/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",凤凰资讯
-http://110.72.84.243:808/hls/261263452/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",凤凰资讯
-http://110.72.84.243:808/hls/219429978/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",凤凰资讯
-http://110.72.59.198:808/hls/261263452/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",凤凰资讯
-http://110.72.59.198:808/hls/219429978/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",凤凰资讯
-http://183.239.248.218:8181/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",凤凰资讯
-http://183.239.248.218:8181/tsfile/live/1015_1.m3u8?key=txiptv&playlive=1&authid=0
+http://110.72.75.174:808/hls/219429978/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",凤凰资讯
 http://110.72.75.114:808/hls/261263452/index.m3u8
@@ -2261,95 +1769,53 @@ http://110.72.75.114:808/hls/261263452/index.m3u8
 #EXTINF:-1 group-title="IPTV",凤凰资讯
 http://110.72.75.114:808/hls/219429978/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",凤凰香港
-http://183.239.248.218:8181/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",动作电影
-http://183.239.248.218:8181/tsfile/live/1047_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",劲爆体育
+http://183.7.19.157:8081/hls/68/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",北京
-http://110.72.77.228:808/hls/1005/index.m3u8
+http://110.72.71.15:808/hls/1005/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",北京
-http://110.72.78.29:808/hls/1005/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",北京
-http://110.72.85.1:808/hls/1005/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",北京
-http://110.72.84.243:808/hls/1005/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",北京
-http://110.72.59.198:808/hls/1005/index.m3u8
+http://110.72.75.174:808/hls/1005/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",北京
 http://110.72.75.114:808/hls/1005/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",北京国际
-http://110.72.77.228:808/hls/68/index.m3u8
+http://110.72.71.15:808/hls/68/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",北京国际
-http://110.72.78.29:808/hls/68/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",北京国际
-http://110.72.85.1:808/hls/68/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",北京国际
-http://110.72.84.243:808/hls/68/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",北京国际
-http://110.72.59.198:808/hls/68/index.m3u8
+http://110.72.75.174:808/hls/68/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",北京国际
 http://110.72.75.114:808/hls/68/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",南方1
-http://183.239.248.218:8181/tsfile/live/1050_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",南方3
-http://183.239.248.218:8181/tsfile/live/1051_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",南方4
-http://183.239.248.218:8181/tsfile/live/1052_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",南方5
-http://183.239.248.218:8181/tsfile/live/1053_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",卡酷动漫
+http://110.72.71.15:808/hls/138/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",卡酷动漫
-http://110.72.77.228:808/hls/138/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",卡酷动漫
-http://110.72.78.29:808/hls/138/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",卡酷动漫
-http://110.72.85.1:808/hls/138/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",卡酷动漫
-http://110.72.84.243:808/hls/138/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",卡酷动漫
-http://110.72.59.198:808/hls/138/index.m3u8
+http://110.72.75.174:808/hls/138/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",卡酷动漫
 http://110.72.75.114:808/hls/138/index.m3u8
 
+#EXTINF:-1 group-title="IPTV",唐山公共
+http://101.18.25.227:808/tsfile/live/1039_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",唐山影视
+http://101.18.25.227:808/tsfile/live/1043_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",唐山新闻
+http://101.18.25.227:808/tsfile/live/1040_1.m3u8?key=txiptv&playlive=1&authid=0
+
 #EXTINF:-1 group-title="IPTV",嘉佳卡通
-http://183.239.248.218:8181/tsfile/live/1013_1.m3u8?key=txiptv&playlive=1&authid=0
+http://222.86.14.254:9999/tsfile/live/1008_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",嘉嘉卡通
-http://110.72.77.228:808/hls/12/index.m3u8
+http://110.72.71.15:808/hls/12/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",嘉嘉卡通
-http://110.72.78.29:808/hls/12/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",嘉嘉卡通
-http://110.72.85.1:808/hls/12/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",嘉嘉卡通
-http://110.72.84.243:808/hls/12/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",嘉嘉卡通
-http://110.72.59.198:808/hls/12/index.m3u8
+http://110.72.75.174:808/hls/12/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",嘉嘉卡通
 http://110.72.75.114:808/hls/12/index.m3u8
@@ -2367,766 +1833,481 @@ http://183.223.157.33:9901/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=
 http://183.223.157.33:9901/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",天津
-http://110.72.77.228:808/hls/1009/index.m3u8
+http://110.72.71.15:808/hls/1009/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",天津
-http://110.72.78.29:808/hls/1009/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",天津
-http://110.72.85.1:808/hls/1009/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",天津
-http://110.72.84.243:808/hls/1009/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",天津
-http://110.72.59.198:808/hls/1009/index.m3u8
+http://110.72.75.174:808/hls/1009/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",天津
 http://110.72.75.114:808/hls/1009/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",山东
-http://110.72.77.228:808/hls/1011/index.m3u8
+http://110.72.71.15:808/hls/1011/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",山东
-http://110.72.78.29:808/hls/1011/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",山东
-http://110.72.85.1:808/hls/1011/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",山东
-http://110.72.84.243:808/hls/1011/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",山东
-http://110.72.59.198:808/hls/1011/index.m3u8
+http://110.72.75.174:808/hls/1011/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",山东
 http://110.72.75.114:808/hls/1011/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",山东教育
-http://110.72.77.228:808/hls/36/index.m3u8
+http://110.72.71.15:808/hls/36/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",山东教育
-http://110.72.78.29:808/hls/36/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",山东教育
-http://110.72.85.1:808/hls/36/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",山东教育
-http://110.72.84.243:808/hls/36/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",山东教育
-http://110.72.59.198:808/hls/36/index.m3u8
+http://110.72.75.174:808/hls/36/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",山东教育
 http://110.72.75.114:808/hls/36/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",岭南戏曲
+http://183.7.19.157:8081/hls/72/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",峨眉电影
 http://183.223.157.33:9901/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",平南综合
-http://110.72.77.228:808/hls/6/index.m3u8
+http://110.72.71.15:808/hls/6/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",平南综合
-http://110.72.78.29:808/hls/6/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",平南综合
-http://110.72.85.1:808/hls/6/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",平南综合
-http://110.72.84.243:808/hls/6/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",平南综合
-http://110.72.59.198:808/hls/6/index.m3u8
+http://110.72.75.174:808/hls/6/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",平南综合
 http://110.72.75.114:808/hls/6/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东
-http://110.72.77.228:808/hls/1002/index.m3u8
+http://110.72.71.15:808/hls/1002/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东
-http://110.72.78.29:808/hls/1002/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广东
-http://110.72.85.1:808/hls/1002/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广东
-http://110.72.84.243:808/hls/1002/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广东
-http://110.72.59.198:808/hls/1002/index.m3u8
+http://110.72.75.174:808/hls/1002/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东
 http://110.72.75.114:808/hls/1002/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东体育
-http://110.72.77.228:808/hls/13/index.m3u8
+http://110.72.71.15:808/hls/13/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东体育
-http://110.72.78.29:808/hls/13/index.m3u8
+http://110.72.75.174:808/hls/13/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东体育
-http://110.72.85.1:808/hls/13/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广东体育
-http://110.72.84.243:808/hls/13/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广东体育
-http://110.72.59.198:808/hls/13/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广东体育
-http://183.239.248.218:8181/tsfile/live/1041_1.m3u8?key=txiptv&playlive=1&authid=0
+http://183.7.19.157:8081/hls/41/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东体育
 http://110.72.75.114:808/hls/13/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",广东影视
-http://110.72.77.228:808/hls/59/index.m3u8
+#EXTINF:-1 group-title="IPTV",广东公共
+http://183.7.19.157:8081/hls/26/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",广东嘉佳卡通
+http://183.7.19.157:8081/hls/28/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",广东少儿
+http://183.7.19.157:8081/hls/32/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东影视
-http://110.72.78.29:808/hls/59/index.m3u8
+http://110.72.71.15:808/hls/59/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东影视
-http://110.72.85.1:808/hls/59/index.m3u8
+http://110.72.75.174:808/hls/59/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东影视
-http://110.72.84.243:808/hls/59/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广东影视
-http://110.72.59.198:808/hls/59/index.m3u8
+http://183.7.19.157:8081/hls/31/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东影视
 http://110.72.75.114:808/hls/59/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东新闻
-http://183.239.248.218:8181/tsfile/live/1040_1.m3u8?key=txiptv&playlive=1&authid=0
+http://183.7.19.157:8081/hls/27/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广东珠江
-http://183.239.248.218:8181/tsfile/live/1039_1.m3u8?key=txiptv&playlive=1&authid=0
+http://183.7.19.157:8081/hls/25/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",广东经济科教
+http://183.7.19.157:8081/hls/30/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",广东经济科教
+http://183.7.19.157:8081/hls/40/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广告宣传
-http://110.72.77.228:808/hls/10/index.m3u8
+http://110.72.71.15:808/hls/10/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广告宣传
-http://110.72.78.29:808/hls/10/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广告宣传
-http://110.72.85.1:808/hls/10/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广告宣传
-http://110.72.84.243:808/hls/10/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广告宣传
-http://110.72.59.198:808/hls/10/index.m3u8
+http://110.72.75.174:808/hls/10/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广告宣传
 http://110.72.75.114:808/hls/10/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广州台
-http://183.239.248.218:8181/tsfile/live/0115_1.m3u8?key=txiptv&playlive=1&authid=0
+http://183.7.19.157:8081/hls/24/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",广州影视
+http://183.7.19.157:8081/hls/36/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",广州新闻
+http://183.7.19.157:8081/hls/34/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",广州新闻
+http://183.7.19.157:8081/hls/39/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",广州竞赛
+http://183.7.19.157:8081/hls/35/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",广州经济
+http://183.7.19.157:8081/hls/37/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",广州综合
+http://183.7.19.157:8081/hls/33/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西
-http://110.72.77.228:808/hls/1001/index.m3u8
+http://110.72.71.15:808/hls/1001/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西
-http://110.72.78.29:808/hls/1001/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西
-http://110.72.85.1:808/hls/1001/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西
-http://110.72.84.243:808/hls/1001/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西
-http://110.72.59.198:808/hls/1001/index.m3u8
+http://110.72.75.174:808/hls/1001/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西
 http://110.72.75.114:808/hls/1001/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西公共
-http://110.72.77.228:808/hls/202/index.m3u8
+http://110.72.71.15:808/hls/202/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西公共
-http://110.72.78.29:808/hls/202/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西公共
-http://110.72.85.1:808/hls/202/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西公共
-http://110.72.84.243:808/hls/202/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西公共
-http://110.72.59.198:808/hls/202/index.m3u8
+http://110.72.75.174:808/hls/202/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西公共
 http://110.72.75.114:808/hls/202/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西影视
-http://110.72.77.228:808/hls/201/index.m3u8
+http://110.72.71.15:808/hls/201/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西影视
-http://110.72.78.29:808/hls/201/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西影视
-http://110.72.85.1:808/hls/201/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西影视
-http://110.72.84.243:808/hls/201/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西影视
-http://110.72.59.198:808/hls/201/index.m3u8
+http://110.72.75.174:808/hls/201/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西影视
 http://110.72.75.114:808/hls/201/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西新闻
-http://110.72.77.228:808/hls/206/index.m3u8
+http://110.72.71.15:808/hls/206/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西新闻
-http://110.72.78.29:808/hls/206/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西新闻
-http://110.72.85.1:808/hls/206/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西新闻
-http://110.72.84.243:808/hls/206/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西新闻
-http://110.72.59.198:808/hls/206/index.m3u8
+http://110.72.75.174:808/hls/206/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西新闻
 http://110.72.75.114:808/hls/206/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西综艺
-http://110.72.77.228:808/hls/334/index.m3u8
+http://110.72.71.15:808/hls/334/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西综艺
-http://110.72.78.29:808/hls/334/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西综艺
-http://110.72.85.1:808/hls/334/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西综艺
-http://110.72.84.243:808/hls/334/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西综艺
-http://110.72.59.198:808/hls/334/index.m3u8
+http://110.72.75.174:808/hls/334/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西综艺
 http://110.72.75.114:808/hls/334/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西都市
-http://110.72.77.228:808/hls/204/index.m3u8
+http://110.72.71.15:808/hls/204/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西都市
-http://110.72.78.29:808/hls/204/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西都市
-http://110.72.85.1:808/hls/204/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西都市
-http://110.72.84.243:808/hls/204/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",广西都市
-http://110.72.59.198:808/hls/204/index.m3u8
+http://110.72.75.174:808/hls/204/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",广西都市
 http://110.72.75.114:808/hls/204/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",廉江公共
-http://183.239.248.218:8181/tsfile/live/1048_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",廊坊公共
+http://101.18.25.227:808/tsfile/live/1030_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",本港台
-http://183.239.248.218:8181/tsfile/live/1070_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",廊坊新闻
+http://101.18.25.227:808/tsfile/live/1034_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",江苏
-http://110.72.77.228:808/hls/1007/index.m3u8
+#EXTINF:-1 group-title="IPTV",承德公共
+http://101.18.25.227:808/tsfile/live/0110_1.m3u8?key=txiptv&playlive=1&authid=0
 
-#EXTINF:-1 group-title="IPTV",江苏
-http://110.72.78.29:808/hls/1007/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",江苏
-http://110.72.85.1:808/hls/1007/index.m3u8
+#EXTINF:-1 group-title="IPTV",承德新闻
+http://101.18.25.227:808/tsfile/live/1032_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",江苏
-http://110.72.84.243:808/hls/1007/index.m3u8
+http://110.72.71.15:808/hls/1007/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",江苏
-http://110.72.59.198:808/hls/1007/index.m3u8
+http://110.72.75.174:808/hls/1007/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",江苏
 http://110.72.75.114:808/hls/1007/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",法治天地
-http://110.72.77.228:808/hls/207/index.m3u8
+#EXTINF:-1 group-title="IPTV",河北三农
+http://101.18.25.227:808/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",河北少儿科教
+http://101.18.25.227:808/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",河北文旅体育
+http://101.18.25.227:808/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",河北都市
+http://101.18.25.227:808/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",河南公共
+http://171.8.74.166:8888/rtp/225.1.4.58:1087
+
+#EXTINF:-1 group-title="IPTV",河南梨园
+http://171.8.74.166:8888/rtp/225.1.4.99:1128
+
+#EXTINF:-1 group-title="IPTV",河南民生
+http://171.8.74.166:8888/rtp/225.1.4.53:1082
+
+#EXTINF:-1 group-title="IPTV",河南法治
+http://171.8.74.166:8888/rtp/225.1.4.54:1083
+
+#EXTINF:-1 group-title="IPTV",河南都市
+http://171.8.74.166:8888/rtp/225.1.4.52:1081
 
 #EXTINF:-1 group-title="IPTV",法治天地
-http://110.72.78.29:808/hls/207/index.m3u8
+http://110.72.71.15:808/hls/207/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",法治天地
-http://110.72.85.1:808/hls/207/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",法治天地
-http://110.72.84.243:808/hls/207/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",法治天地
-http://110.72.59.198:808/hls/207/index.m3u8
+http://110.72.75.174:808/hls/207/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",法治天地
 http://110.72.75.114:808/hls/207/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",测试5
-http://183.239.248.218:8181/tsfile/live/1073_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",测试6
-http://183.239.248.218:8181/tsfile/live/1074_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",测试7
-http://183.239.248.218:8181/tsfile/live/1075_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",测试8
-http://183.239.248.218:8181/tsfile/live/1066_1.m3u8?key=txiptv&playlive=1&authid=0
-
-#EXTINF:-1 group-title="IPTV",测试9
-http://183.239.248.218:8181/tsfile/live/1067_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",测试TVBJ
+http://110.72.71.15:808/hls/58/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",测试TVBJ
-http://110.72.77.228:808/hls/58/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",测试TVBJ
-http://110.72.78.29:808/hls/58/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",测试TVBJ
-http://110.72.85.1:808/hls/58/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",测试TVBJ
-http://110.72.84.243:808/hls/58/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",测试TVBJ
-http://110.72.59.198:808/hls/58/index.m3u8
+http://110.72.75.174:808/hls/58/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",测试TVBJ
 http://110.72.75.114:808/hls/58/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",测试TVB剧集体彩
-http://110.72.77.228:808/hls/57/index.m3u8
+http://110.72.71.15:808/hls/57/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",测试TVB剧集体彩
-http://110.72.78.29:808/hls/57/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",测试TVB剧集体彩
-http://110.72.85.1:808/hls/57/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",测试TVB剧集体彩
-http://110.72.84.243:808/hls/57/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",测试TVB剧集体彩
-http://110.72.59.198:808/hls/57/index.m3u8
+http://110.72.75.174:808/hls/57/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",测试TVB剧集体彩
 http://110.72.75.114:808/hls/57/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",浙江
-http://110.72.77.228:808/hls/1006/index.m3u8
+http://110.72.71.15:808/hls/1006/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",浙江
-http://110.72.78.29:808/hls/1006/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",浙江
-http://110.72.85.1:808/hls/1006/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",浙江
-http://110.72.84.243:808/hls/1006/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",浙江
-http://110.72.59.198:808/hls/1006/index.m3u8
+http://110.72.75.174:808/hls/1006/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",浙江
 http://110.72.75.114:808/hls/1006/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",深圳
-http://110.72.77.228:808/hls/1008/index.m3u8
+#EXTINF:-1 group-title="IPTV",涿州新闻
+http://101.18.25.227:808/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",深圳
-http://110.72.78.29:808/hls/1008/index.m3u8
+http://110.72.71.15:808/hls/1008/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",深圳
-http://110.72.85.1:808/hls/1008/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",深圳
-http://110.72.84.243:808/hls/1008/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",深圳
-http://110.72.59.198:808/hls/1008/index.m3u8
+http://110.72.75.174:808/hls/1008/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",深圳
 http://110.72.75.114:808/hls/1008/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",游戏风云
-http://110.72.77.228:808/hls/215/index.m3u8
+http://110.72.71.15:808/hls/215/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",游戏风云
-http://110.72.78.29:808/hls/215/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",游戏风云
-http://110.72.85.1:808/hls/215/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",游戏风云
-http://110.72.84.243:808/hls/215/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",游戏风云
-http://110.72.59.198:808/hls/215/index.m3u8
+http://110.72.75.174:808/hls/215/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",游戏风云
 http://110.72.75.114:808/hls/215/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",湖北
-http://110.72.77.228:808/hls/1010/index.m3u8
+http://110.72.71.15:808/hls/1010/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",湖北
-http://110.72.78.29:808/hls/1010/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",湖北
-http://110.72.85.1:808/hls/1010/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",湖北
-http://110.72.84.243:808/hls/1010/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",湖北
-http://110.72.59.198:808/hls/1010/index.m3u8
+http://110.72.75.174:808/hls/1010/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",湖北
 http://110.72.75.114:808/hls/1010/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",湖南
-http://110.72.77.228:808/hls/1003/index.m3u8
+http://110.72.71.15:808/hls/1003/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",湖南
-http://110.72.78.29:808/hls/1003/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",湖南
-http://110.72.85.1:808/hls/1003/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",湖南
-http://110.72.84.243:808/hls/1003/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",湖南
-http://110.72.59.198:808/hls/1003/index.m3u8
+http://110.72.75.174:808/hls/1003/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",湖南
 http://110.72.75.114:808/hls/1003/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",炫动卡通
-http://110.72.77.228:808/hls/28/index.m3u8
+http://110.72.71.15:808/hls/28/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",炫动卡通
-http://110.72.78.29:808/hls/28/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",炫动卡通
-http://110.72.85.1:808/hls/28/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",炫动卡通
-http://110.72.84.243:808/hls/28/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",炫动卡通
-http://110.72.59.198:808/hls/28/index.m3u8
+http://110.72.75.174:808/hls/28/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",炫动卡通
 http://110.72.75.114:808/hls/28/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",热播剧场
-http://110.72.77.228:808/hls/220/index.m3u8
+http://110.72.71.15:808/hls/220/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",热播剧场
-http://110.72.78.29:808/hls/220/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",热播剧场
-http://110.72.85.1:808/hls/220/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",热播剧场
-http://110.72.84.243:808/hls/220/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",热播剧场
-http://110.72.59.198:808/hls/220/index.m3u8
+http://110.72.75.174:808/hls/220/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",热播剧场
 http://110.72.75.114:808/hls/220/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",珠江台
-http://110.72.77.228:808/hls/24/index.m3u8
+http://110.72.71.15:808/hls/24/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",珠江台
-http://110.72.78.29:808/hls/24/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",珠江台
-http://110.72.85.1:808/hls/24/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",珠江台
-http://110.72.84.243:808/hls/24/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",珠江台
-http://110.72.59.198:808/hls/24/index.m3u8
+http://110.72.75.174:808/hls/24/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",珠江台
 http://110.72.75.114:808/hls/24/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",珠江电影
-http://183.239.248.218:8181/tsfile/live/1046_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",相声小品
+http://110.72.71.15:808/hls/1025/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",相声小品
-http://110.72.77.228:808/hls/1025/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",相声小品
-http://110.72.78.29:808/hls/1025/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",相声小品
-http://110.72.85.1:808/hls/1025/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",相声小品
-http://110.72.84.243:808/hls/1025/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",相声小品
-http://110.72.59.198:808/hls/1025/index.m3u8
+http://110.72.75.174:808/hls/1025/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",相声小品
 http://110.72.75.114:808/hls/1025/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",碟战剧场
-http://110.72.77.228:808/hls/1024/index.m3u8
+#EXTINF:-1 group-title="IPTV",石家庄娱乐
+http://101.18.25.227:808/tsfile/live/1038_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",石家庄新闻
+http://101.18.25.227:808/tsfile/live/1037_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",石家庄生活
+http://101.18.25.227:808/tsfile/live/1036_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",碟战剧场
-http://110.72.78.29:808/hls/1024/index.m3u8
+http://110.72.71.15:808/hls/1024/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",碟战剧场
-http://110.72.85.1:808/hls/1024/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",碟战剧场
-http://110.72.84.243:808/hls/1024/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",碟战剧场
-http://110.72.59.198:808/hls/1024/index.m3u8
+http://110.72.75.174:808/hls/1024/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",碟战剧场
 http://110.72.75.114:808/hls/1024/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",福建乡村振兴
-http://113.205.165.1:8089/newlive/live/hls/21/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建乡村振兴
-http://27.223.110.214:8009/newlive/live/hls/21/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建乡村振兴
 http://221.226.51.220:50081/newlive/live/hls/21/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",福建乡村振兴
-http://113.57.140.161:10081/newlive/live/hls/21/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建乡村振兴
-http://58.56.162.102:4466/newlive/live/hls/21/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建少儿
-http://113.205.165.1:8089/newlive/live/hls/26/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建少儿
-http://27.223.110.214:8009/newlive/live/hls/26/live.m3u8
+http://113.205.185.244:8089/newlive/live/hls/21/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",福建少儿
 http://221.226.51.220:50081/newlive/live/hls/26/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",福建少儿
-http://113.57.140.161:10081/newlive/live/hls/26/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建少儿
-http://58.56.162.102:4466/newlive/live/hls/26/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建新闻
-http://113.205.165.1:8089/newlive/live/hls/22/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建新闻
-http://27.223.110.214:8009/newlive/live/hls/22/live.m3u8
+http://113.205.185.244:8089/newlive/live/hls/26/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",福建新闻
 http://221.226.51.220:50081/newlive/live/hls/22/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",福建新闻
-http://113.57.140.161:10081/newlive/live/hls/22/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建新闻
-http://58.56.162.102:4466/newlive/live/hls/22/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建旅游
-http://113.205.165.1:8089/newlive/live/hls/24/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建旅游
-http://27.223.110.214:8009/newlive/live/hls/24/live.m3u8
+http://113.205.185.244:8089/newlive/live/hls/22/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",福建旅游
 http://221.226.51.220:50081/newlive/live/hls/24/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",福建旅游
-http://113.57.140.161:10081/newlive/live/hls/24/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建旅游
-http://58.56.162.102:4466/newlive/live/hls/24/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建电视剧
-http://113.205.165.1:8089/newlive/live/hls/23/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建电视剧
-http://27.223.110.214:8009/newlive/live/hls/23/live.m3u8
+http://113.205.185.244:8089/newlive/live/hls/24/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",福建电视剧
 http://221.226.51.220:50081/newlive/live/hls/23/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",福建电视剧
-http://113.57.140.161:10081/newlive/live/hls/23/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建电视剧
-http://58.56.162.102:4466/newlive/live/hls/23/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建经济生活
-http://113.205.165.1:8089/newlive/live/hls/25/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建经济生活
-http://27.223.110.214:8009/newlive/live/hls/25/live.m3u8
+http://113.205.185.244:8089/newlive/live/hls/23/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",福建经济生活
 http://221.226.51.220:50081/newlive/live/hls/25/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",福建经济生活
-http://113.57.140.161:10081/newlive/live/hls/25/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建经济生活
-http://58.56.162.102:4466/newlive/live/hls/25/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建综合
-http://113.205.165.1:8089/newlive/live/hls/19/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",福建综合
-http://27.223.110.214:8009/newlive/live/hls/19/live.m3u8
+http://113.205.185.244:8089/newlive/live/hls/25/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",福建综合
 http://221.226.51.220:50081/newlive/live/hls/19/live.m3u8
 
 #EXTINF:-1 group-title="IPTV",福建综合
-http://113.57.140.161:10081/newlive/live/hls/19/live.m3u8
+http://113.205.185.244:8089/newlive/live/hls/19/live.m3u8
 
-#EXTINF:-1 group-title="IPTV",福建综合
-http://58.56.162.102:4466/newlive/live/hls/19/live.m3u8
-
-#EXTINF:-1 group-title="IPTV",经典电影
-http://110.72.77.228:808/hls/220/index.m3u8
+#EXTINF:-1 group-title="IPTV",秦皇岛1
+http://101.18.25.227:808/tsfile/live/1041_1.m3u8?key=txiptv&playlive=1&authid=0
 
 #EXTINF:-1 group-title="IPTV",经典电影
-http://110.72.78.29:808/hls/220/index.m3u8
+http://110.72.71.15:808/hls/220/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",经典电影
-http://110.72.85.1:808/hls/220/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",经典电影
-http://110.72.84.243:808/hls/220/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",经典电影
-http://110.72.59.198:808/hls/220/index.m3u8
+http://110.72.75.174:808/hls/220/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",经典电影
 http://110.72.75.114:808/hls/220/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",翡翠台
-http://183.239.248.218:8181/tsfile/live/1049_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",贵港新闻综合
+http://110.72.71.15:808/hls/7/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",贵港新闻综合
-http://110.72.77.228:808/hls/7/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",贵港新闻综合
-http://110.72.78.29:808/hls/7/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",贵港新闻综合
-http://110.72.85.1:808/hls/7/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",贵港新闻综合
-http://110.72.84.243:808/hls/7/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",贵港新闻综合
-http://110.72.59.198:808/hls/7/index.m3u8
+http://110.72.75.174:808/hls/7/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",贵港新闻综合
 http://110.72.75.114:808/hls/7/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",金色
-http://110.72.77.228:808/hls/1021/index.m3u8
+#EXTINF:-1 group-title="IPTV",贵阳1
+http://222.86.14.254:9999/tsfile/live/1005_1.m3u8?key=txiptv&playlive=0&authid=0
 
 #EXTINF:-1 group-title="IPTV",金色
-http://110.72.78.29:808/hls/1021/index.m3u8
+http://110.72.71.15:808/hls/1021/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",金色
-http://110.72.85.1:808/hls/1021/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",金色
-http://110.72.84.243:808/hls/1021/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",金色
-http://110.72.59.198:808/hls/1021/index.m3u8
+http://110.72.75.174:808/hls/1021/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",金色
 http://110.72.75.114:808/hls/1021/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",金鹰卡通
-http://110.72.77.228:808/hls/26/index.m3u8
+http://110.72.71.15:808/hls/26/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",金鹰卡通
-http://110.72.78.29:808/hls/26/index.m3u8
+http://110.72.75.174:808/hls/26/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",金鹰卡通
-http://110.72.85.1:808/hls/26/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",金鹰卡通
-http://110.72.84.243:808/hls/26/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",金鹰卡通
-http://110.72.59.198:808/hls/26/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",金鹰卡通
-http://183.239.248.218:8181/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
+http://183.7.19.157:8081/hls/71/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",金鹰卡通
 http://110.72.75.114:808/hls/26/index.m3u8
 
-#EXTINF:-1 group-title="IPTV",预留2
-http://183.239.248.218:8181/tsfile/live/1069_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="IPTV",金鹰卡通
+http://222.86.14.254:9999/tsfile/live/1007_1.m3u8?key=txiptv&playlive=0&authid=0
+
+#EXTINF:-1 group-title="IPTV",金鹰纪实
+http://101.18.25.227:808/tsfile/live/0111_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",陕西一套
+http://219.145.93.74:10000/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",陕西二套
+http://219.145.93.74:10000/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="IPTV",香港明珠
+http://183.7.19.157:8081/hls/21/index.m3u8
+
+#EXTINF:-1 group-title="IPTV",香港翡翠
+http://183.7.19.157:8081/hls/20/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",香港音乐
-http://110.72.77.228:808/hls/229291699/index.m3u8
+http://110.72.71.15:808/hls/229291699/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",香港音乐
-http://110.72.78.29:808/hls/229291699/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",香港音乐
-http://110.72.85.1:808/hls/229291699/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",香港音乐
-http://110.72.84.243:808/hls/229291699/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",香港音乐
-http://110.72.59.198:808/hls/229291699/index.m3u8
+http://110.72.75.174:808/hls/229291699/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",香港音乐
 http://110.72.75.114:808/hls/229291699/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",魅力时尚
-http://110.72.77.228:808/hls/219/index.m3u8
+http://110.72.71.15:808/hls/219/index.m3u8
 
 #EXTINF:-1 group-title="IPTV",魅力时尚
-http://110.72.78.29:808/hls/219/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",魅力时尚
-http://110.72.85.1:808/hls/219/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",魅力时尚
-http://110.72.84.243:808/hls/219/index.m3u8
-
-#EXTINF:-1 group-title="IPTV",魅力时尚
-http://110.72.59.198:808/hls/219/index.m3u8
+http://110.72.75.174:808/hls/219/index.m3u8
 
 
 
@@ -3359,8 +2540,12 @@ https://nklive.nbs.cn/hls/75b3c462-b831-4de7-a34b-5d3221db2069/index.m3u8
 http://8.137.162.154:5009/proxy/qingdao-5.m3u8
 #EXTINF:-1 tvg-id="天津教育" tvg-name="天津教育" tvg-logo="http://8.137.162.154:5009/logo-cache/85bde19fc110ec138a4a.png?v=1793688733215&from=source" catchup="none" group-title="教育",天津教育
 http://8.137.162.154:5009/proxy/tianjin-education.m3u8
-#EXTINF:-1 tvg-id="[高清] 哔哩哔哩英雄联盟赛事 · 【预告】7日6点 T1 vs KC" tvg-name="[高清] 哔哩哔哩英雄联盟赛事 · 【预告】7日6点 T1 vs KC" tvg-logo="http://8.137.162.154:5009/logo-cache/a2d4506b24babe461919.jpg?v=1793688733215&from=source" group-title="B站",[高清] 哔哩哔哩英雄联盟赛事 · 【预告】7日6点 T1 vs KC
+#EXTINF:-1 tvg-id="[高清] 哔哩哔哩英雄联盟赛事 · 【直播】T1 vs KC" tvg-name="[高清] 哔哩哔哩英雄联盟赛事 · 【直播】T1 vs KC" tvg-logo="http://8.137.162.154:5009/logo-cache/a2d4506b24babe461919.jpg?v=1793688733215&from=source" group-title="B站",[高清] 哔哩哔哩英雄联盟赛事 · 【直播】T1 vs KC
 http://8.137.162.154:5009/relay/bili-7734200.m3u8
+#EXTINF:-1 tvg-id="[超清] 英雄联盟4K赛事 · 英雄联盟S16 4K房间" tvg-name="[超清] 英雄联盟4K赛事 · 英雄联盟S16 4K房间" tvg-logo="http://8.137.162.154:5009/logo-cache/ef39387d3a7df02c7e6a.jpg?v=1793753867593&from=source" group-title="B站",[超清] 英雄联盟4K赛事 · 英雄联盟S16 4K房间
+http://8.137.162.154:5009/relay/bili-13242941.m3u8
+#EXTINF:-1 tvg-id="[超清] 彩虹六号攻势 · DK vs KZ【入围赛败者组半决赛】" tvg-name="[超清] 彩虹六号攻势 · DK vs KZ【入围赛败者组半决赛】" tvg-logo="http://8.137.162.154:5009/logo-cache/407a14c840a94f6d6c9a.jpg?v=1793929968584&from=source" group-title="B站",[超清] 彩虹六号攻势 · DK vs KZ【入围赛败者组半决赛】
+http://8.137.162.154:5009/relay/bili-1814198336.m3u8
 #EXTINF:-1 tvg-id="[高清] 哔哩哔哩王者荣耀赛事 · 【预告】18点 广州TTG vs 杭州LGD.NBW" tvg-name="[高清] 哔哩哔哩王者荣耀赛事 · 【预告】18点 广州TTG vs 杭州LGD.NBW" tvg-logo="http://8.137.162.154:5009/logo-cache/2b962261bcb168e5da51.jpg?v=1793688733215&from=source" group-title="B站",[高清] 哔哩哔哩王者荣耀赛事 · 【预告】18点 广州TTG vs 杭州LGD.NBW
 http://8.137.162.154:5009/relay/bili-21144080.m3u8
 #EXTINF:-1 tvg-id="[超清] 第五人格赛事 · 【重播】2026IVL秋季赛W6D1" tvg-name="[超清] 第五人格赛事 · 【重播】2026IVL秋季赛W6D1" tvg-logo="http://8.137.162.154:5009/logo-cache/4d49f7ce15f0a4283409.jpg?v=1793688733215&from=source" group-title="B站",[超清] 第五人格赛事 · 【重播】2026IVL秋季赛W6D1
@@ -3608,21 +2793,21 @@ http://live.zohi.tv/video/s10001-fztv-3/index.m3u8
 #EXTINF:-1 tvg-id="福州少儿" tvg-name="福州少儿" tvg-logo="http://8.137.162.154:5009/logo-cache/b0a740ca9074581f516e.jpg?v=1793688733215&from=source" group-title="福建",福州少儿
 http://live.zohi.tv/video/s10001-fztv-4/index.m3u8
 #EXTINF:-1 tvg-id="漳州新闻综合" tvg-name="漳州新闻综合" tvg-logo="http://8.137.162.154:5009/logo-cache/c5f7042f9511c48bf09c.jpg?v=1793688733215&from=source" group-title="福建",漳州新闻综合
-https://live4-fuyun.fjtv.net/hb_zztv/sd/live.m3u8?_upt=c5caf3491793991853
+https://live4-fuyun.fjtv.net/hb_zztv/sd/live.m3u8?_upt=ba4520ec1794013749
 #EXTINF:-1 tvg-id="三明综合" tvg-name="三明综合" tvg-logo="http://8.137.162.154:5009/logo-cache/f2cbaf10f364852c4fbc.jpg?v=1793688733215&from=source" group-title="福建",三明综合
-https://live4-fuyun.fjtv.net/hb_smtv/sd/live.m3u8?_upt=59ca5e501793991853
+https://live4-fuyun.fjtv.net/hb_smtv/sd/live.m3u8?_upt=be515db31794013749
 #EXTINF:-1 tvg-id="泉州新闻综合" tvg-name="泉州新闻综合" tvg-logo="http://8.137.162.154:5009/logo-cache/5d28759b9d15461e5330.jpg?v=1793688733215&from=source" group-title="福建",泉州新闻综合
-https://live4-fuyun.fjtv.net/hb_qztv/sd/live.m3u8?_upt=1cee13111793991853
+https://live4-fuyun.fjtv.net/hb_qztv/sd/live.m3u8?_upt=bd20c10b1794013749
 #EXTINF:-1 tvg-id="南平综合" tvg-name="南平综合" tvg-logo="http://8.137.162.154:5009/logo-cache/963a3a386481159c03d9.png?v=1793688733215&from=source" group-title="福建",南平综合
-https://live4-fuyun.fjtv.net/hb_nptv/sd/live.m3u8?_upt=83ca81e01793991853
+https://live4-fuyun.fjtv.net/hb_nptv/sd/live.m3u8?_upt=08ac19b21794013749
 #EXTINF:-1 tvg-id="龙岩综合" tvg-name="龙岩综合" tvg-logo="http://8.137.162.154:5009/logo-cache/e6ce208cbee0695d8ce8.jpg?v=1793688733215&from=source" group-title="福建",龙岩综合
-https://live4-fuyun.fjtv.net/hb_lytv/sd/live.m3u8?_upt=f63217df1793991853
+https://live4-fuyun.fjtv.net/hb_lytv/sd/live.m3u8?_upt=80d11d6a1794013749
 #EXTINF:-1 tvg-id="莆田新闻综合" tvg-name="莆田新闻综合" tvg-logo="http://8.137.162.154:5009/logo-cache/14367d692af06b1d9e12.jpg?v=1793688733215&from=source" group-title="福建",莆田新闻综合
-https://live4-fuyun.fjtv.net/hb_puttv/sd/live.m3u8?_upt=87fb14df1793991853
+https://live4-fuyun.fjtv.net/hb_puttv/sd/live.m3u8?_upt=2bc123041794013749
 #EXTINF:-1 tvg-id="平潭综合" tvg-name="平潭综合" tvg-logo="http://8.137.162.154:5009/logo-cache/11c2f38ecec0146bed38.jpg?v=1793688733215&from=source" group-title="福建",平潭综合
-https://live4-fuyun.fjtv.net/hb_pttv/sd/live.m3u8?_upt=268f5e771793991853
+https://live4-fuyun.fjtv.net/hb_pttv/sd/live.m3u8?_upt=efd1f92f1794013749
 #EXTINF:-1 tvg-id="宁德新闻综合" tvg-name="宁德新闻综合" tvg-logo="http://8.137.162.154:5009/logo-cache/72ea501ea3fa7786cf79.jpg?v=1793688733215&from=source" group-title="福建",宁德新闻综合
-https://live4-fuyun.fjtv.net/hb_ndtv/sd/live.m3u8?_upt=23226e5c1793991853
+https://live4-fuyun.fjtv.net/hb_ndtv/sd/live.m3u8?_upt=e7cb63201794013749
 #EXTINF:-1 tvg-id="泉州新闻综合" tvg-name="泉州新闻综合" tvg-logo="http://8.137.162.154:5009/logo-cache/33f3595e54bb29198114.jpg?v=1793688733215&from=source" catchup="none" group-title="福建",泉州新闻综合
 http://8.137.162.154:5009/proxy/quanzhou-news-tv.m3u8
 #EXTINF:-1 tvg-id="泉州闽南语" tvg-name="泉州闽南语" tvg-logo="http://8.137.162.154:5009/logo-cache/9f643d30362fbf92ae55.jpg?v=1793688733215&from=source" catchup="none" group-title="福建",泉州闽南语
@@ -4125,17 +3310,17 @@ http://www.dalitv.com.tw:4568/live/dali/index.m3u8
 rtmp://f13h.mine.nu/sat/tv771
 #EXTINF:-1 tvg-id="纬来育乐" tvg-name="纬来育乐" tvg-logo="http://8.137.162.154:5009/logo-cache/9e6816b16fce56cb630c.png?v=1793688733215&from=source" group-title="台湾",纬来育乐
 rtmp://f13h.mine.nu/sat/tv701
-#EXTINF:-1 tvg-id="【预告】7日6点 KC vs T1 S16八强淘汰赛" tvg-name="【预告】7日6点 KC vs T1 S16八强淘汰赛" tvg-logo="http://8.137.162.154:5009/logo-cache/fb11d9acd998b709ba20.jpg?v=1793929968584&from=source" group-title="虎牙",【预告】7日6点 KC vs T1 S16八强淘汰赛
+#EXTINF:-1 tvg-id="KC 1:2 T1 S16八强淘汰赛" tvg-name="KC 1:2 T1 S16八强淘汰赛" tvg-logo="http://8.137.162.154:5009/logo-cache/fb11d9acd998b709ba20.jpg?v=1793929968584&from=source" group-title="虎牙",KC 1:2 T1 S16八强淘汰赛
 http://8.137.162.154:5009/relay/huya-660000.m3u8
+#EXTINF:-1 tvg-id="王谢惜败徐金止步八强 2026韩国羽毛球公开赛" tvg-name="王谢惜败徐金止步八强 2026韩国羽毛球公开赛" tvg-logo="http://8.137.162.154:5009/logo-cache/660c05a82f803ac1d79e.png?v=1793688733215&from=source" group-title="虎牙",王谢惜败徐金止步八强 2026韩国羽毛球公开赛
+http://8.137.162.154:5009/relay/huya-880221.m3u8
 #EXTINF:-1 tvg-id="【预告】18点广州TTG vs 杭州LGD KPL年度总决赛淘汰赛" tvg-name="【预告】18点广州TTG vs 杭州LGD KPL年度总决赛淘汰赛" tvg-logo="http://8.137.162.154:5009/logo-cache/f622d9205e8b362f7668.jpg?v=1793987568834&from=source" group-title="虎牙",【预告】18点广州TTG vs 杭州LGD KPL年度总决赛淘汰赛
 http://8.137.162.154:5009/relay/huya-kpl.m3u8
+#EXTINF:-1 tvg-id="邦丫横扫马来晋级，程驰遗憾淘汰 2026韩国羽毛球公开赛" tvg-name="邦丫横扫马来晋级，程驰遗憾淘汰 2026韩国羽毛球公开赛" tvg-logo="http://8.137.162.154:5009/logo-cache/bd4ae01ba6ba6ed76e5b.png?v=1793688733215&from=source" group-title="虎牙",邦丫横扫马来晋级，程驰遗憾淘汰 2026韩国羽毛球公开赛
+http://8.137.162.154:5009/relay/huya-30805932.m3u8
 #EXTINF:-1 tvg-id="常冰玉2- 9希金斯，惨遭淘汰 2026斯诺克国际锦标赛" tvg-name="常冰玉2- 9希金斯，惨遭淘汰 2026斯诺克国际锦标赛" tvg-logo="http://8.137.162.154:5009/logo-cache/fde4de85b5a7086a2f98.png?v=1793987568834&from=source" group-title="虎牙",常冰玉2- 9希金斯，惨遭淘汰 2026斯诺克国际锦标赛
 http://8.137.162.154:5009/relay/huya-880214.m3u8
-#EXTINF:-1 tvg-id="【重播】和平精英PEL夏季赛" tvg-name="【重播】和平精英PEL夏季赛" tvg-logo="http://8.137.162.154:5009/logo-cache/3c68bd01bdada61d13d5.jpg?v=1793987568834&from=source" group-title="虎牙",【重播】和平精英PEL夏季赛
-http://8.137.162.154:5009/relay/huya-660006.m3u8
 #EXTINF:-1 tvg-id="JJ斗地主双骄杯第二季" tvg-name="JJ斗地主双骄杯第二季" tvg-logo="http://8.137.162.154:5009/logo-cache/42063328c881f6760428.jpg?v=1793725068437&from=source" group-title="虎牙",JJ斗地主双骄杯第二季
 http://8.137.162.154:5009/relay/huya-jjworld.m3u8
-#EXTINF:-1 tvg-id="预告：11月8日秋季赛总决赛" tvg-name="预告：11月8日秋季赛总决赛" tvg-logo="http://8.137.162.154:5009/logo-cache/6c1e227d12033da221eb.jpg?v=1793958768814&from=source" group-title="虎牙",预告：11月8日秋季赛总决赛
-http://8.137.162.154:5009/relay/huya-660579.m3u8
-#EXTINF:-1 tvg-id="2026QQ飞车手游S联赛秋季赛" tvg-name="2026QQ飞车手游S联赛秋季赛" tvg-logo="http://8.137.162.154:5009/logo-cache/c15af6df62d08bc1b1a3.jpg?v=1793958768814&from=source" group-title="虎牙",2026QQ飞车手游S联赛秋季赛
-http://8.137.162.154:5009/relay/huya-fcsls.m3u8
+#EXTINF:-1 tvg-id="【重播】和平精英PEL夏季赛" tvg-name="【重播】和平精英PEL夏季赛" tvg-logo="http://8.137.162.154:5009/logo-cache/3c68bd01bdada61d13d5.jpg?v=1793987568834&from=source" group-title="虎牙",【重播】和平精英PEL夏季赛
+http://8.137.162.154:5009/relay/huya-660006.m3u8
